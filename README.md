@@ -2,6 +2,9 @@
 
 ## Back to basics
 
+* [Web application architectures1](http://blog.octo.com/en/new-web-application-architectures-and-impacts-for-enterprises-1/)
+* [Web application architectures2](http://blog.octo.com/en/new-web-application-architectures-and-impacts-for-enterprises-2/)
+
 
 ## Responsive Images
 * [Logo design responsive websites](https://www.smashingmagazine.com/2016/04/logo-design-responsive-websites/)
