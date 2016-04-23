@@ -25,6 +25,11 @@ Image Optimization
 * 
 
 
-http://techbeacon.com/why-all-your-apps-need-security-testing
 
 
+
+* [A Comprehensive Look at Events in jQuery](http://www.sitepoint.com/comprehensive-events-jquery/)
+
+* [Web Font Loading Patterns](https://www.bramstein.com/writing/web-font-loading-patterns.html)
+
+* [Bootstrap 4 Cheat Sheet](http://hackerthemes.com/bootstrap-cheatsheet)
