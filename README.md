@@ -24,7 +24,7 @@
 * [How to automatically create images for Responsive design](http://cloudinary.com/blog/how_to_automatically_create_images_for_responsive_design)
  
 
-
+i
 
 
 ### UI Patterns
