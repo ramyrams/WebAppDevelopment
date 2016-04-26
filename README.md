@@ -6,6 +6,9 @@
 * [Web application architectures2](http://blog.octo.com/en/new-web-application-architectures-and-impacts-for-enterprises-2/)
 
 
+http://webdevchecklist.com/
+
+
 ## Responsive Images
 * [Logo design responsive websites](https://www.smashingmagazine.com/2016/04/logo-design-responsive-websites/)
 * [The state of responsive images in 2015](http://www.webdesignerdepot.com/2015/08/the-state-of-responsive-images/)
