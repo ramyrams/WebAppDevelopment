@@ -1,7 +1,7 @@
 # WebBasic
 
 ## Back to basics
-
+* [Front-end Handbook](https://www.gitbook.com/book/frontendmasters/front-end-handbook/details)
 * [Web application architectures1](http://blog.octo.com/en/new-web-application-architectures-and-impacts-for-enterprises-1/)
 * [Web application architectures2](http://blog.octo.com/en/new-web-application-architectures-and-impacts-for-enterprises-2/)
 
@@ -27,9 +27,6 @@ http://webdevchecklist.com/
 * [How to automatically create images for Responsive design](http://cloudinary.com/blog/how_to_automatically_create_images_for_responsive_design)
  
 
-i
-
-
 ### UI Patterns
 * [Web Font Loading Patterns](https://www.bramstein.com/writing/web-font-loading-patterns.html)
 
@@ -49,11 +46,7 @@ i
 
 
 # UIDevelopment
-
-
-
 * [What every browser knows about you](http://webkay.robinlinus.com/) Get an idea of the amount and type of information a browser can collect.
-
 
 * [Error Handling Javascript](http://www.sitepoint.com/proper-error-handling-javascript/)
 
