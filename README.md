@@ -74,3 +74,8 @@ http://patternlab.io/
 * [The Basics of Web Application Security](http://martinfowler.com/articles/web-security-basics.html)
 * [Site scan](https://developer.microsoft.com/en-us/microsoft-edge/tools/staticscan/) - Run a quick code scan on any URL to check for out-of-date libraries, layout issues, and accessibility
 
+
+* [The Beginners Guide to CSS Object Model (CSSOM)](http://www.hongkiat.com/blog/css-object-model-cssom/)
+* [CSS Object Model](http://nimbupani.com/css-object-model.html)
+* [What Every Frontend Developer Should Know About Webpage Rendering](http://frontendbabel.info/articles/webpage-rendering-101/)
+* [The Basics of JavaScript DOM Manipulation](http://callmenick.com/post/basics-javascript-dom-manipulation)
