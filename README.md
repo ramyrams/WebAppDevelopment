@@ -70,3 +70,7 @@ http://patternlab.io/
 
 * [Sharingbuttons.io](http://sharingbuttons.io) - Super fast and easy Social Media Sharing Buttons. No JavaScript. No tracking.
 
+
+* [The Basics of Web Application Security](http://martinfowler.com/articles/web-security-basics.html)
+* [Site scan](https://developer.microsoft.com/en-us/microsoft-edge/tools/staticscan/) - Run a quick code scan on any URL to check for out-of-date libraries, layout issues, and accessibility
+
