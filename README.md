@@ -64,3 +64,9 @@ http://patternlab.io/
 
 
 * [Debugging Angular 2 Apps with Augury](https://scotch.io/tutorials/debugging-angular-2-apps-with-augury)
+* 
+
+* [10 jQuery Form Validation Plugins](https://www.sitepoint.com/10-jquery-form-validation-plugins/)
+
+* [Sharingbuttons.io](http://sharingbuttons.io) - Super fast and easy Social Media Sharing Buttons. No JavaScript. No tracking.
+
