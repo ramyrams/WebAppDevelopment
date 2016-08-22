@@ -85,38 +85,24 @@ http://webdevchecklist.com/
 
 # UIDevelopment
 * [What every browser knows about you](http://webkay.robinlinus.com/) Get an idea of the amount and type of information a browser can collect.
-
 * [Error Handling Javascript](http://www.sitepoint.com/proper-error-handling-javascript/)
-* 
-
+ 
 # Bootstrap
 * [Bootstrap Tutorial – The Ultimate Guide](https://www.webcodegeeks.com/css/bootstrap/bootstrap-tutorial/?)
 
 
 UI
 http://patternlab.io/
-
 * [Fresh Resources for Web Developers – August 2016](http://www.hongkiat.com/blog/designers-developers-monthly-08-2016/)
 * [The UX of VR](http://www.uxofvr.com/)
 * [9 Best Tools to Optimize Animated GIFs](http://www.hongkiat.com/blog/tools-to-optimize-animating-gifs/)
-
-
 * [Debugging Angular 2 Apps with Augury](https://scotch.io/tutorials/debugging-angular-2-apps-with-augury)
-* 
-
 * [10 jQuery Form Validation Plugins](https://www.sitepoint.com/10-jquery-form-validation-plugins/)
-
 * [Sharingbuttons.io](http://sharingbuttons.io) - Super fast and easy Social Media Sharing Buttons. No JavaScript. No tracking.
-
-
 * [The Basics of Web Application Security](http://martinfowler.com/articles/web-security-basics.html)
 * [Site scan](https://developer.microsoft.com/en-us/microsoft-edge/tools/staticscan/) - Run a quick code scan on any URL to check for out-of-date libraries, layout issues, and accessibility
-
-
 * [The Beginners Guide to CSS Object Model (CSSOM)](http://www.hongkiat.com/blog/css-object-model-cssom/)
 * [CSS Object Model](http://nimbupani.com/css-object-model.html)
 * [What Every Frontend Developer Should Know About Webpage Rendering](http://frontendbabel.info/articles/webpage-rendering-101/)
 * [The Basics of JavaScript DOM Manipulation](http://callmenick.com/post/basics-javascript-dom-manipulation)
-
-
 * [Responsive Email Design](http://www.leemunroe.com/responsive-email-design/)
