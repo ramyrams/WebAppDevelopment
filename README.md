@@ -3,7 +3,7 @@
 # Web Concepts
 How Internet Works?
 How Browser Works?
-How DNS Works?
+* DNS Explained – How Your Browser Finds Websites(https://scotch.io/tutorials/dns-explained-how-your-browser-finds-websites)
 URL
 How Web Server Works?
 HTTP
