@@ -8,6 +8,15 @@ URL
 How Web Server Works?
 HTTP
 
+# HTML
+
+# CSS
+
+# Javascript
+
+# AngularJS
+
+# Bootstrap
 
 
 ## Back to basics
