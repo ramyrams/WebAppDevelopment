@@ -1,13 +1,13 @@
 # WebBasic
 
 # Web Concepts
-How Internet Works?
-How Browser Works?
+* How Internet Works?
+* How Browser Works?
 * DNS Explained – How Your Browser Finds Websites(https://scotch.io/tutorials/dns-explained-how-your-browser-finds-websites)
-URL
-How Web Server Works?
-HTTP
-Single Page Application
+* URL
+* How Web Server Works?
+* HTTP
+* Single Page Application
 
 # HTML
 * [HTML Course](https://github.com/TelerikAcademy/HTML)
