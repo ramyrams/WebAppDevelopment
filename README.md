@@ -1,4 +1,4 @@
-# WebBasic
+# Web Application Development
 
 # Web Concepts
 * How Internet Works?
@@ -8,6 +8,9 @@
 * How Web Server Works?
 * HTTP
 * Single Page Application
+* [Web Hosting](http://www.webhostingsecretrevealed.net/web-hosting-beginner-guide/)
+* [Document Object Model](http://eloquentjavascript.net/13_dom.html)
+
 
 # HTML
 * [HTML Course](https://github.com/TelerikAcademy/HTML)
