@@ -6,7 +6,7 @@
 * [DNS Explained](https://scotch.io/tutorials/dns-explained-how-your-browser-finds-websites)
 * URL
 * How Web Server Works?
-* HTTP
+* [HTTP](http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177)
 * Single Page Application
 * [Web Hosting](http://www.webhostingsecretrevealed.net/web-hosting-beginner-guide/)
 * [Document Object Model](http://eloquentjavascript.net/13_dom.html)
