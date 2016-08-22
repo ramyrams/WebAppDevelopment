@@ -7,22 +7,38 @@ How DNS Works?
 URL
 How Web Server Works?
 HTTP
+Single Page Application
 
 # HTML
-
+* [HTML Course](https://github.com/TelerikAcademy/HTML)
+ 
 # CSS
+* [CSS Styling Course](https://github.com/TelerikAcademy/CSS)
 
 # Javascript
+* [JavaScript Fundamentals](https://github.com/TelerikAcademy/JavaScript-Fundamentals)
+* [JavaScript OOP Course](https://github.com/TelerikAcademy/JavaScript-OOP)
+* [JavaScript UI and DOM Course](https://github.com/TelerikAcademy/JavaScript-UI-and-DOM)
+* [JavaScript Applications](https://github.com/TelerikAcademy/JavaScript-Applications)
 
 # AngularJS
 
 # Bootstrap
+
+# TypeScript
+* [TypeScript-OOP](https://github.com/TelerikAcademy/TypeScript-OOP)
+
+
 
 
 ## Back to basics
 * [Front-end Handbook](https://www.gitbook.com/book/frontendmasters/front-end-handbook/details)
 * [Web application architectures1](http://blog.octo.com/en/new-web-application-architectures-and-impacts-for-enterprises-1/)
 * [Web application architectures2](http://blog.octo.com/en/new-web-application-architectures-and-impacts-for-enterprises-2/)
+
+
+* [Single-Page-Applications](https://github.com/TelerikAcademy/Single-Page-Applications)
+
 
 
 http://webdevchecklist.com/
