@@ -23,10 +23,13 @@
 * [JavaScript OOP Course](https://github.com/TelerikAcademy/JavaScript-OOP)
 * [JavaScript UI and DOM Course](https://github.com/TelerikAcademy/JavaScript-UI-and-DOM)
 * [JavaScript Applications](https://github.com/TelerikAcademy/JavaScript-Applications)
+* [jstips](http://www.jstips.co/)
 
 # AngularJS
 
 # Bootstrap
+* [50 Must-have plugins for extending Twitter Bootstrap](http://tutorialzine.com/2013/07/50-must-have-plugins-for-extending-twitter-bootstrap/)
+
 
 # TypeScript
 * [TypeScript-OOP](https://github.com/TelerikAcademy/TypeScript-OOP)
@@ -106,3 +109,26 @@ http://patternlab.io/
 * [What Every Frontend Developer Should Know About Webpage Rendering](http://frontendbabel.info/articles/webpage-rendering-101/)
 * [The Basics of JavaScript DOM Manipulation](http://callmenick.com/post/basics-javascript-dom-manipulation)
 * [Responsive Email Design](http://www.leemunroe.com/responsive-email-design/)
+
+* [A Case Study on Boosting Front-End Performance](https://css-tricks.com/case-study-boosting-front-end-performance/)
+* [Observing your web app](https://ericbidelman.tumblr.com/post/149032341876/observing-your-web-app)
+* [Offline Storage for Progressive Web Apps](https://medium.com/dev-channel/offline-storage-for-progressive-web-apps-70d52695513c#.1euqp5h2x)
+
+* [4 clear benefits of an A/B tested website](http://www.webdesignerdepot.com/2016/08/4-clear-benefits-of-an-ab-tested-website/)
+* [100 Free Useful Portable Applications You Should Know](http://www.hongkiat.com/blog/70-free-useful-portable-applications-you-should-know/)
+
+http://cdn2.hubspot.net/hub/208250/file-2451034899-jpg/Blog_Images/ContinuousTestingBlog1.jpg
+https://continuousdelivery.com/images/pipeline-sequence.png
+
+* [ARCHITECTING EXTREMELY LARGE SCALE WEB APPLICATIONS](https://www.linkedin.com/pulse/architecting-extremely-large-scale-web-applications-panduranga)
+* [Life and death of a container](https://medium.com/@lherrera/life-and-death-of-a-container-146dfc62f808#.qivi1x8ns)
+* [Microservices Today](https://dzone.com/articles/microservices-today)
+
+
+
+
+Automated web application testing - [https://www.youtube.com/watch?v=v5K_CNaGxrI]
+
+* [URI.js is a javascript library for working with URLs.](http://medialize.github.io/URI.js/)
+
+* [JavaScript Object Notation](http://json.com/)
