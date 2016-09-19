@@ -11,6 +11,11 @@
 * [Web Hosting](http://www.webhostingsecretrevealed.net/web-hosting-beginner-guide/)
 * [Document Object Model](http://eloquentjavascript.net/13_dom.html)
 
+# Back to basics
+* [Front-end Handbook](https://www.gitbook.com/book/frontendmasters/front-end-handbook/details)
+* [Web application architectures1](http://blog.octo.com/en/new-web-application-architectures-and-impacts-for-enterprises-1/)
+* [Web application architectures2](http://blog.octo.com/en/new-web-application-architectures-and-impacts-for-enterprises-2/)
+* [Single-Page-Applications](https://github.com/TelerikAcademy/Single-Page-Applications)
 
 # HTML
 * [HTML Course](https://github.com/TelerikAcademy/HTML)
@@ -18,7 +23,6 @@
 # CSS
 * [CSS Styling Course](https://github.com/TelerikAcademy/CSS)
 * [CSS Exercises and Projects](https://github.com/cmbishop/CSS)
-
 
 # Javascript
 * [JavaScript Fundamentals](https://github.com/TelerikAcademy/JavaScript-Fundamentals)
@@ -37,24 +41,13 @@
 * [The ultimate guide to Bootstrap](http://www.webdesignerdepot.com/2014/10/the-ultimate-guide-to-bootstrap/)
 * [50 Must-have plugins for extending Twitter Bootstrap](http://tutorialzine.com/2013/07/50-must-have-plugins-for-extending-twitter-bootstrap/)
 
-
 # TypeScript
 * [TypeScript-OOP](https://github.com/TelerikAcademy/TypeScript-OOP)
-
 
 # Library&Tools
 * [cookies](https://github.com/franciscop/cookies.js)
 * [URI.js is a javascript library for working with URLs.](http://medialize.github.io/URI.js/)
-
-## Back to basics
-* [Front-end Handbook](https://www.gitbook.com/book/frontendmasters/front-end-handbook/details)
-* [Web application architectures1](http://blog.octo.com/en/new-web-application-architectures-and-impacts-for-enterprises-1/)
-* [Web application architectures2](http://blog.octo.com/en/new-web-application-architectures-and-impacts-for-enterprises-2/)
-* [Single-Page-Applications](https://github.com/TelerikAcademy/Single-Page-Applications)
-
-
-
-http://webdevchecklist.com/
+* [Web Developer Checklist](http://webdevchecklist.com/)
 
 
 ## Responsive Images
@@ -76,6 +69,7 @@ http://webdevchecklist.com/
  
 ### UI Patterns
 * [Web Font Loading Patterns](https://www.bramstein.com/writing/web-font-loading-patterns.html)
+* [Pattern Lab](http://patternlab.io/)
 
 ### jQuery
 * [A Comprehensive Look at Events in jQuery](http://www.sitepoint.com/comprehensive-events-jquery/)
@@ -86,7 +80,6 @@ http://webdevchecklist.com/
 * [Error Handling Javascript](http://www.sitepoint.com/proper-error-handling-javascript/)
 
 # UI
-http://patternlab.io/
 * [Fresh Resources for Web Developers – August 2016](http://www.hongkiat.com/blog/designers-developers-monthly-08-2016/)
 * [The UX of VR](http://www.uxofvr.com/)
 * [9 Best Tools to Optimize Animated GIFs](http://www.hongkiat.com/blog/tools-to-optimize-animating-gifs/)
@@ -107,13 +100,11 @@ http://patternlab.io/
 * [100 Free Useful Portable Applications You Should Know](http://www.hongkiat.com/blog/70-free-useful-portable-applications-you-should-know/)
 
 http://cdn2.hubspot.net/hub/208250/file-2451034899-jpg/Blog_Images/ContinuousTestingBlog1.jpg
-https://continuousdelivery.com/images/pipeline-sequence.png
+
 
 * [ARCHITECTING EXTREMELY LARGE SCALE WEB APPLICATIONS](https://www.linkedin.com/pulse/architecting-extremely-large-scale-web-applications-panduranga)
 * [Life and death of a container](https://medium.com/@lherrera/life-and-death-of-a-container-146dfc62f808#.qivi1x8ns)
 * [Microservices Today](https://dzone.com/articles/microservices-today)
-
-# Library
 
 
 Automated web application testing - [https://www.youtube.com/watch?v=v5K_CNaGxrI]
