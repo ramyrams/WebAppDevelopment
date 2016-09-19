@@ -43,6 +43,8 @@
 
 
 # Library&Tools
+* [cookies](https://github.com/franciscop/cookies.js)
+* [URI.js is a javascript library for working with URLs.](http://medialize.github.io/URI.js/)
 
 ## Back to basics
 * [Front-end Handbook](https://www.gitbook.com/book/frontendmasters/front-end-handbook/details)
@@ -112,8 +114,7 @@ https://continuousdelivery.com/images/pipeline-sequence.png
 * [Microservices Today](https://dzone.com/articles/microservices-today)
 
 # Library
-* [cookies](https://github.com/franciscop/cookies.js)
-* [URI.js is a javascript library for working with URLs.](http://medialize.github.io/URI.js/)
+
 
 Automated web application testing - [https://www.youtube.com/watch?v=v5K_CNaGxrI]
 
