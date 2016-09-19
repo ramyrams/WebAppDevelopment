@@ -124,7 +124,8 @@ https://continuousdelivery.com/images/pipeline-sequence.png
 * [Life and death of a container](https://medium.com/@lherrera/life-and-death-of-a-container-146dfc62f808#.qivi1x8ns)
 * [Microservices Today](https://dzone.com/articles/microservices-today)
 
-
+# Library
+https://github.com/franciscop/cookies.js
 
 
 Automated web application testing - [https://www.youtube.com/watch?v=v5K_CNaGxrI]
@@ -132,3 +133,11 @@ Automated web application testing - [https://www.youtube.com/watch?v=v5K_CNaGxrI
 * [URI.js is a javascript library for working with URLs.](http://medialize.github.io/URI.js/)
 
 * [JavaScript Object Notation](http://json.com/)
+
+* [Don’t ruin your <img>](https://medium.freecodecamp.com/you-need-to-stop-making-these-6-mistakes-with-your-img-s-e242c02d14be#.tulp9wvw6)
+
+
+* [Introducing debugger.html](https://hacks.mozilla.org/2016/09/introducing-debugger-html/)
+
+* [30 Acronyms Web Developers Should Know](http://www.hongkiat.com/blog/web-dev-acronyms/)
+* [Awesome Design](https://github.com/gztchan/awesome-design)
