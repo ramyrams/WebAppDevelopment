@@ -17,6 +17,8 @@
  
 # CSS
 * [CSS Styling Course](https://github.com/TelerikAcademy/CSS)
+* [CSS Exercises and Projects](https://github.com/cmbishop/CSS)
+
 
 # Javascript
 * [JavaScript Fundamentals](https://github.com/TelerikAcademy/JavaScript-Fundamentals)
@@ -25,6 +27,7 @@
 * [JavaScript Applications](https://github.com/TelerikAcademy/JavaScript-Applications)
 * [jstips](http://www.jstips.co/)
 * [Examples of how to do query, style, dom, ajax, event etc like jQuery with plain javascript.](https://github.com/oneuijs/You-Dont-Need-jQuery)
+
 # AngularJS
 
 # Bootstrap
