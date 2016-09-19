@@ -41,6 +41,10 @@
 * [The ultimate guide to Bootstrap](http://www.webdesignerdepot.com/2014/10/the-ultimate-guide-to-bootstrap/)
 * [50 Must-have plugins for extending Twitter Bootstrap](http://tutorialzine.com/2013/07/50-must-have-plugins-for-extending-twitter-bootstrap/)
 
+# jQuery
+* [A Comprehensive Look at Events in jQuery](http://www.sitepoint.com/comprehensive-events-jquery/)
+* [jQuery](https://github.com/ramyrams/FrontendDevelopment/blob/master/jquery.md) 
+
 # TypeScript
 * [TypeScript-OOP](https://github.com/TelerikAcademy/TypeScript-OOP)
 
@@ -71,9 +75,6 @@
 * [Web Font Loading Patterns](https://www.bramstein.com/writing/web-font-loading-patterns.html)
 * [Pattern Lab](http://patternlab.io/)
 
-### jQuery
-* [A Comprehensive Look at Events in jQuery](http://www.sitepoint.com/comprehensive-events-jquery/)
-* [jQuery](https://github.com/ramyrams/FrontendDevelopment/blob/master/jquery.md) 
 
 # UIDevelopment
 * [What every browser knows about you](http://webkay.robinlinus.com/) Get an idea of the amount and type of information a browser can collect.
