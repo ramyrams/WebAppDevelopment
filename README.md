@@ -24,7 +24,7 @@
 * [JavaScript UI and DOM Course](https://github.com/TelerikAcademy/JavaScript-UI-and-DOM)
 * [JavaScript Applications](https://github.com/TelerikAcademy/JavaScript-Applications)
 * [jstips](http://www.jstips.co/)
-
+* [Examples of how to do query, style, dom, ajax, event etc like jQuery with plain javascript.](https://github.com/oneuijs/You-Dont-Need-jQuery)
 # AngularJS
 
 # Bootstrap
