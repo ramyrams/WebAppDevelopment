@@ -1,5 +1,6 @@
 
 ## Learn
+* [Learning jQuery, Third Edition](http://book.learningjquery.com/6549/codebrowser/)
 * [Great Ways to Learn jQuery](http://www.learningjquery.com/2010/07/great-ways-to-learn-jquery)
 * [Setting up Visual Studio Intellisense for jQuery](http://www.learningjquery.com/2009/07/setting-up-visual-studio-intellisense-for-jquery)
 
