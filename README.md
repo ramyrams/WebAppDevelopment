@@ -11,6 +11,9 @@
 * [Web Hosting](http://www.webhostingsecretrevealed.net/web-hosting-beginner-guide/)
 * [Document Object Model](http://eloquentjavascript.net/13_dom.html)
 
+# Web Platform's Features
+* [Web Platform's Features](https://paulirish.github.io/web-feature-availability/)
+
 # Back to basics
 * [Front-end Handbook](https://www.gitbook.com/book/frontendmasters/front-end-handbook/details)
 * [Web application architectures1](http://blog.octo.com/en/new-web-application-architectures-and-impacts-for-enterprises-1/)
