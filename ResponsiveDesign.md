@@ -97,20 +97,15 @@ http://graphicdesignjunction.com/2013/02/25-useful-responsive-frameworks-for-fro
 http://codecondo.com/top-11-tools-which-every-responsive-web-developer-must-have/
 
 
-Responsible Image
+## Responsible Image
+* [Responsive Images 201: Client Hints](https://cloudfour.com/thinks/responsive-images-201-client-hints/)
 
 
-Responsible Table
+# Responsible Table
 http://www.sitepoint.com/responsive-data-tables-comprehensive-list-solutions/
 http://exisweb.net/incredibly-useful-list-of-responsive-navigation-and-menu-patterns
 http://exisweb.net/responsive-table-plugins-and-patterns
-
 http://www.sitepoint.com/responsive-data-tables-comprehensive-list-solutions/
-
-
 http://www.jqueryrain.com/2015/04/responsive-navigation-css3-jquery/?
-
 http://www.wowebook.org/responsive-web-design-by-example-second-edition.html
-
-
 https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Scaling_background_images
