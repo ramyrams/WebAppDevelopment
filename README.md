@@ -1,15 +1,17 @@
 # Web Application Development
 
 # Web Concepts
-* How Internet Works?
-* How Browser Works?
-* [DNS Explained](https://scotch.io/tutorials/dns-explained-how-your-browser-finds-websites)
 * URL
+* Domain Name
+* How Internet Works?
+* [DNS Explained](https://scotch.io/tutorials/dns-explained-how-your-browser-finds-websites)
 * How Web Server Works?
+* IP
+* How Browser Works?
 * [HTTP](http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177)
 * Single Page Application
 * [Web Hosting](http://www.webhostingsecretrevealed.net/web-hosting-beginner-guide/)
-* [Document Object Model](http://eloquentjavascript.net/13_dom.html)
+
 
 # Web Platform's Features
 * [Web Platform's Features](https://paulirish.github.io/web-feature-availability/)
@@ -22,7 +24,8 @@
 
 # HTML
 * [HTML Course](https://github.com/TelerikAcademy/HTML)
- 
+* [Document Object Model](http://eloquentjavascript.net/13_dom.html)
+
 # CSS
 * [CSS Styling Course](https://github.com/TelerikAcademy/CSS)
 * [CSS Exercises and Projects](https://github.com/cmbishop/CSS)
