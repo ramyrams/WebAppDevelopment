@@ -58,6 +58,11 @@
 # Awesome CSS
 * [Awesome CSS](https://github.com/ikkou/awesome-css)
 * [Awesome CSS](https://github.com/sotayamashita/awesome-css)
+* [A curated list of awesome frameworks, style guide and other cool nuggets for the amazing CSS.](https://awesomelists.top/#repos/sotayamashita/awesome-css)
+* [Tools to help prioritize above-the-fold CSS](https://awesomelists.top/#repos/addyosmani/critical-path-css-tools)
+* [A Scalable CSS Reading List](https://awesomelists.top/#repos/davidtheclark/scalable-css-reading-list)
+* [Must-Watch CSS](https://awesomelists.top/#repos/AllThingsSmitty/must-watch-css)
+* [CSS Protips](https://awesomelists.top/#repos/AllThingsSmitty/css-protips)
 * [CSS Flexible Box ](https://github.com/afonsopacifer/awesome-flexbox)
 
 # Selectors
