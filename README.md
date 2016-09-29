@@ -23,18 +23,13 @@
 * [Single-Page-Applications](https://github.com/TelerikAcademy/Single-Page-Applications)
 
 # HTML
-* [HTML Course](https://github.com/TelerikAcademy/HTML)
+
 * [Document Object Model](http://eloquentjavascript.net/13_dom.html)
 
 # CSS
-* [CSS Styling Course](https://github.com/TelerikAcademy/CSS)
-* [CSS Exercises and Projects](https://github.com/cmbishop/CSS)
+
 
 # Javascript
-* [JavaScript Fundamentals](https://github.com/TelerikAcademy/JavaScript-Fundamentals)
-* [JavaScript OOP Course](https://github.com/TelerikAcademy/JavaScript-OOP)
-* [JavaScript UI and DOM Course](https://github.com/TelerikAcademy/JavaScript-UI-and-DOM)
-* [JavaScript Applications](https://github.com/TelerikAcademy/JavaScript-Applications)
 * [jstips](http://www.jstips.co/)
 * [Examples of how to do query, style, dom, ajax, event etc like jQuery with plain javascript.](https://github.com/oneuijs/You-Dont-Need-jQuery)
 
