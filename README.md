@@ -24,23 +24,10 @@
 
 # HTML
 * [HTML](https://github.com/ramyrams/WebAppDevelopment/blob/master/html.md)
-
-
-# CSS
 * [CSS](https://github.com/ramyrams/WebAppDevelopment/blob/master/css.md)
-
-# Javascript
 * [JS](https://github.com/ramyrams/WebAppDevelopment/blob/master/javascript/javascript.md)
-
-# Bootstrap
 * [Bootstrap.md](https://github.com/ramyrams/WebAppDevelopment/blob/master/Bootstrap.md)
-
-# jquery
 * [jquery](https://github.com/ramyrams/WebAppDevelopment/blob/master/jquery.md)
-
-
-# TypeScript
-* [TypeScript-OOP](https://github.com/TelerikAcademy/TypeScript-OOP)
 
 # Library&Tools
 * [cookies](https://github.com/franciscop/cookies.js)
