@@ -23,13 +23,20 @@
 * [Single-Page-Applications](https://github.com/TelerikAcademy/Single-Page-Applications)
 
 # HTML
+* [HTML](https://github.com/ramyrams/WebAppDevelopment/blob/master/html.md)
 
-* [Document Object Model](http://eloquentjavascript.net/13_dom.html)
 
 # CSS
+* [CSS](https://github.com/ramyrams/WebAppDevelopment/blob/master/css.md)
 
 # Javascript
+* [JS](https://github.com/ramyrams/WebAppDevelopment/blob/master/javascript/javascript.md)
 
+# Bootstrap
+* [Bootstrap.md](https://github.com/ramyrams/WebAppDevelopment/blob/master/Bootstrap.md)
+
+# jquery
+* [jquery](https://github.com/ramyrams/WebAppDevelopment/blob/master/jquery.md)
 
 
 # TypeScript
