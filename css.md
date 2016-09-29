@@ -1,4 +1,4 @@
-
+# CSS
 
 * Applying CSS to Web Pages
   * Inline Styles
@@ -20,6 +20,8 @@
   * Child Selectors
   * Adjacent Sibling Selectors
   * Link Pseudo-class Selectors
+  * Pseudo-classes
+  * Pseudo-elements
 
 * CSS Inheritance
   * What is inheritance?
@@ -51,21 +53,7 @@
   * Clearing Floats
 
 
-# Selectors
-* Type selectors
-* Class selectors
-* ID selectors
-* Descendant selectors
-* Child selectors
-* Universal selectors
-* Adjacent sibling selectors
-* Attribute selectors
-* Pseudo-classes
-* Pseudo-elements
 
-# Concepts
-* Inheritance
-* Cascade
 
 # Awesome CSS
 * [Awesome CSS](https://github.com/ikkou/awesome-css)
