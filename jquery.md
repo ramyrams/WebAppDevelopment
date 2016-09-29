@@ -7,6 +7,10 @@
 * [jQuery](https://github.com/ramyrams/FrontendDevelopment/blob/master/jquery.md) 
 * [10 jQuery Form Validation Plugins](https://www.sitepoint.com/10-jquery-form-validation-plugins/)
 
+
+## jQuery Awesome 
+* [Awesome jQuery](https://github.com/peterkokot/awesome-jquery
+
 ## jQuery Plugins 
 * [10 jQuery Plugins to Create a Ripple Effect](http://www.learningjquery.com/2016/06/10-jquery-plugins-to-create-a-ripple-effect)
 * [10 jQuery Credit Card Form Plugins](http://www.learningjquery.com/2016/03/10-jquery-credit-card-form-plugins)
