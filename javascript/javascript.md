@@ -21,3 +21,12 @@ JS
 * [10 JavaScript libraries to draw your own diagrams](http://modeling-languages.com/javascript-drawing-libraries-diagrams/)
 * [35+ Tools to Minify Code - JavaScript, CSS & HTML](http://www.rankred.com/tools-to-minify-code/)
 * [20+ Node.js Frameworks for Developing Web Applications](http://www.rankred.com/node-js-frameworks/)
+
+# Libraries Collection
+* [Top 10 Accurate Tools to Check Duplicate Content](http://www.rankred.com/top-10-tools-to-check-duplicate-content/)
+* [10 Best Online Grammar and Spell checker Tools](http://www.rankred.com/10-best-online-grammar-and-spell-checker-tools/)
+* [10+ Best Tools for Tracking Website Visitors | Free Analytics](http://www.rankred.com/top-10-tools-for-tracking-website-visitors/)
+* [25+ Free Data Mining Tools for Better Analysis](http://www.rankred.com/free-data-mining-tools/)
+* [24 Useful Bootstrap UI Editors for Developers](http://www.rankred.com/bootstrap-ui-editors/)
+* [30+ Excellent Wireframing and Mockup Tools for Designers](http://www.rankred.com/wireframing-and-mockup-tools/)
+* [25+ Front-end Framework: Alternatives to Bootstrap](http://www.rankred.com/alternatives-to-bootstrap/)
