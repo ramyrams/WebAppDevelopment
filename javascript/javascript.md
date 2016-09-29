@@ -18,6 +18,7 @@ JS
 * [Microjs: Fantastic Micro-Frameworks and Micro-Libraries](http://microjs.com/)
 
 # JS Libraries Collection
+* [40 Useful JavaScript Libraries](https://www.smashingmagazine.com/2009/03/40-stand-alone-javascript-libraries-for-specific-purposes/)
 * [Top 20 Most Popular JavaScript Libraries for Users](http://devzum.com/2014/12/top-20-best-javascript-libraries/)
 * [13 JavaScript Libraries to Create Interactive & Customized Maps](http://www.hongkiat.com/blog/javascript-libraries-for-interactive-maps/)
 * [A dynamic, browser based visualization library.](http://visjs.org/)
