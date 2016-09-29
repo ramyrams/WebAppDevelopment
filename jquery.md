@@ -12,6 +12,7 @@
 * [Awesome jQuery](https://github.com/peterkokot/awesome-jquery
 
 ## jQuery Plugins 
+* [50 Amazing jQuery Plugins That You Should Start Using Right Now](http://tutorialzine.com/2013/04/50-amazing-jquery-plugins/)
 * [10 jQuery Plugins to Create a Ripple Effect](http://www.learningjquery.com/2016/06/10-jquery-plugins-to-create-a-ripple-effect)
 * [10 jQuery Credit Card Form Plugins](http://www.learningjquery.com/2016/03/10-jquery-credit-card-form-plugins)
 * [11 Newest jQuery Progress Bar Plugins](http://www.learningjquery.com/2016/02/11-newest-jquery-progress-bar-plugins)
