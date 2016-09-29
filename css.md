@@ -14,6 +14,10 @@
 * Inheritance
 * Cascade
 
+# Awesome CSS
+* [Awesome CSS](https://github.com/ikkou/awesome-css)
+* [Awesome CSS](https://github.com/sotayamashita/awesome-css)
+* [CSS Flexible Box ](https://github.com/afonsopacifer/awesome-flexbox)
 
 
 # Selectors
