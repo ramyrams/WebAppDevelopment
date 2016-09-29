@@ -28,6 +28,11 @@
 * [Pattern Lab](http://patternlab.io/)
 
 
+# Awesome
+* [A curated list of Web Performance Optimization.](https://awesomelists.top/#repos/davidsonfellipe/awesome-wpo)
+* [Tools for web](https://awesomelists.top/#repos/lvwzhen/tools)
+* [Awesome chrome-devtools](https://awesomelists.top/#repos/ChromeDevTools/awesome-chrome-devtools)
+
 # UIDevelopment
 * [What every browser knows about you](http://webkay.robinlinus.com/) Get an idea of the amount and type of information a browser can collect.
 * [Error Handling Javascript](http://www.sitepoint.com/proper-error-handling-javascript/)
