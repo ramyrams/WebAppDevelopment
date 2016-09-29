@@ -3,6 +3,8 @@
 * [Learning jQuery, Third Edition](http://book.learningjquery.com/6549/codebrowser/)
 * [Great Ways to Learn jQuery](http://www.learningjquery.com/2010/07/great-ways-to-learn-jquery)
 * [Setting up Visual Studio Intellisense for jQuery](http://www.learningjquery.com/2009/07/setting-up-visual-studio-intellisense-for-jquery)
+* [A Comprehensive Look at Events in jQuery](http://www.sitepoint.com/comprehensive-events-jquery/)
+* [jQuery](https://github.com/ramyrams/FrontendDevelopment/blob/master/jquery.md) 
 
 ## jQuery Plugins 
 * [10 jQuery Plugins to Create a Ripple Effect](http://www.learningjquery.com/2016/06/10-jquery-plugins-to-create-a-ripple-effect)
