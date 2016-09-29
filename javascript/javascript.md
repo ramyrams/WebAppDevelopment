@@ -27,6 +27,8 @@ JS
 * [Microjs: Fantastic Micro-Frameworks and Micro-Libraries](http://microjs.com/)
 
 # JS Libraries Collection
+* [Top 9 Animation Libraries to Use in 2016](https://www.sitepoint.com/top-9-animation-libraries-use-2016/)
+* [25 New Script Libraries and Plugins on GitHub](http://mashable.com/2013/06/09/github-script-libraries/#MYX3pCzwgEqU)
 * [40 Useful JavaScript Libraries](https://www.smashingmagazine.com/2009/03/40-stand-alone-javascript-libraries-for-specific-purposes/)
 * [Top 20 Most Popular JavaScript Libraries for Users](http://devzum.com/2014/12/top-20-best-javascript-libraries/)
 * [13 JavaScript Libraries to Create Interactive & Customized Maps](http://www.hongkiat.com/blog/javascript-libraries-for-interactive-maps/)
