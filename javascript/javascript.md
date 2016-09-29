@@ -7,6 +7,12 @@ JS
 * [The Basics of JavaScript DOM Manipulation](http://callmenick.com/post/basics-javascript-dom-manipulation)
 
 
+# Top JS Libraries
+* [Handlebars.js: Minimal Templating on Steroids](Handlebars.js)
+* [Underscore.js](whole mess of useful functional programming helpers without extending any built-in objects)
+
+
+
 # JS Libraries Database
 * [JavaScripting.com - The Database of JavaScript Libraries](https://www.javascripting.com/)
 * [Microjs: Fantastic Micro-Frameworks and Micro-Libraries](http://microjs.com/)
