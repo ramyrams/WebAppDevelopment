@@ -11,6 +11,7 @@
 
 * [Logo Design For Responsive Websites](https://www.smashingmagazine.com/2016/04/logo-design-responsive-websites/)
 
+* [Responsive Email Design](http://www.leemunroe.com/responsive-email-design/)
 
 http://knowledge.ridivi.com/why-responsive-web-design-matters-for-your-website/2301
 https://www.lullabot.com/articles/why-responsive-design
