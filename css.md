@@ -53,13 +53,10 @@
   * Clearing Floats
 
 
-
-
 # Awesome CSS
 * [Awesome CSS](https://github.com/ikkou/awesome-css)
 * [Awesome CSS](https://github.com/sotayamashita/awesome-css)
 * [CSS Flexible Box ](https://github.com/afonsopacifer/awesome-flexbox)
-
 
 # Selectors
 * [The 30 CSS Selectors You Must Memorize](https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
@@ -67,19 +64,15 @@
 * [CSS Diner - Where we feast on CSS Selectors!](https://flukeout.github.io/)
 * [Detailed Positioning](https://code.tutsplus.com/tutorials/css-refreshers-borders--net-24655)
 
-
 # Pseudo Selectors
 * [Style Form Elements With Pseudo Selectors](http://tutorialzine.com/2015/07/quick-tip-style-form-elements-with-pseudo-selectors/)
-
 
 # Specificity 
 * [Understanding CSS Specificity](https://code.tutsplus.com/tutorials/quick-tip-understanding-css-specificity--net-10963)
 
-
 # Demo
 * [CSS Demos](http://cssdeck.com/)
 * [A Collection of Pure CSS Animation Snippets & Demos](https://envato.com/blog/pure-css-animation-snippets/)
-
 
 # Tools
 * [CSS LINT](http://csslint.net/)
@@ -95,34 +88,28 @@
 * [CSS Effects Demo](http://1stwebdesigner.com/css-effects/)
 * [](https://www.html5rocks.com/en/tutorials/filters/understanding-css/)
 
-
 # Flexbox
 * [Flexbox Interactive Demo](http://flexboxin5.com/)
 * [A Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-
 
 # CSS Shapes
 * [CSS Shapes 101](http://alistapart.com/article/css-shapes-101)
 
 
-
-
 # View Port
-http://tutorialzine.com/2015/05/simplify-your-stylesheets-with-the-magical-css-viewport-units/
+* [Your Stylesheets With The Magical CSS Viewport Units](http://tutorialzine.com/2015/05/simplify-your-stylesheets-with-the-magical-css-viewport-units/)
 
 # Unit
-https://webdesign.tutsplus.com/articles/7-css-units-you-might-not-know-about--cms-22573
+* [7 CSS Units You Might Not Know About](https://webdesign.tutsplus.com/articles/7-css-units-you-might-not-know-about--cms-22573)
 
 # CSS Transforms
 * [Transforms](http://learn.shayhowe.com/advanced-html-css/css-transforms/)
 
-
 # Transitions & Animations
-http://learn.shayhowe.com/advanced-html-css/transitions-animations/
+* [Transitions Animations](http://learn.shayhowe.com/advanced-html-css/transitions-animations/)
 
 # Responsive Design
-http://learn.shayhowe.com/advanced-html-css/responsive-web-design/
-
+* [Responsive Web Design](http://learn.shayhowe.com/advanced-html-css/responsive-web-design/)
 
 # Preprocessors
 * [Preprocessors](http://learn.shayhowe.com/advanced-html-css/preprocessors/)
@@ -134,6 +121,6 @@ http://learn.shayhowe.com/advanced-html-css/responsive-web-design/
 * [The Beginners Guide to CSS Object Model (CSSOM)](http://www.hongkiat.com/blog/css-object-model-cssom/)
 * [CSS Object Model](http://nimbupani.com/css-object-model.html)
 
-
+# URL
 * [9 Underutilized Features in CSS](https://medium.com/@iamjordanlittle/9-underutilized-features-in-css-90ced6ddbfe7#.frwrl0csx)
 
