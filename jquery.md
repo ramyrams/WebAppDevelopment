@@ -5,6 +5,7 @@
 * [Setting up Visual Studio Intellisense for jQuery](http://www.learningjquery.com/2009/07/setting-up-visual-studio-intellisense-for-jquery)
 * [A Comprehensive Look at Events in jQuery](http://www.sitepoint.com/comprehensive-events-jquery/)
 * [jQuery](https://github.com/ramyrams/FrontendDevelopment/blob/master/jquery.md) 
+* [10 jQuery Form Validation Plugins](https://www.sitepoint.com/10-jquery-form-validation-plugins/)
 
 ## jQuery Plugins 
 * [10 jQuery Plugins to Create a Ripple Effect](http://www.learningjquery.com/2016/06/10-jquery-plugins-to-create-a-ripple-effect)
