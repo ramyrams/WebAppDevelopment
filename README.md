@@ -28,7 +28,17 @@
 
 # CSS
 
+# Javascript
 
+
+
+# TypeScript
+* [TypeScript-OOP](https://github.com/TelerikAcademy/TypeScript-OOP)
+
+# Library&Tools
+* [cookies](https://github.com/franciscop/cookies.js)
+* [URI.js is a javascript library for working with URLs.](http://medialize.github.io/URI.js/)
+* [Web Developer Checklist](http://webdevchecklist.com/)
 
 
 ### UI Tools
