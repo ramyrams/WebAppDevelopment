@@ -130,4 +130,10 @@ http://learn.shayhowe.com/advanced-html-css/responsive-web-design/
 # Box Model
 * [Interactive box-model demo](http://guyroutledge.github.io/box-model/)
 
+# CSS Object Model
+* [The Beginners Guide to CSS Object Model (CSSOM)](http://www.hongkiat.com/blog/css-object-model-cssom/)
+* [CSS Object Model](http://nimbupani.com/css-object-model.html)
+
+
 * [9 Underutilized Features in CSS](https://medium.com/@iamjordanlittle/9-underutilized-features-in-css-90ced6ddbfe7#.frwrl0csx)
+
