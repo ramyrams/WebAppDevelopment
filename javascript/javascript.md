@@ -10,3 +10,14 @@ JS
 # JS Libraries Database
 * [JavaScripting.com - The Database of JavaScript Libraries](https://www.javascripting.com/)
 * [Microjs: Fantastic Micro-Frameworks and Micro-Libraries](http://microjs.com/)
+
+# JS Libraries Collection
+* [Top 20 Most Popular JavaScript Libraries for Users](http://devzum.com/2014/12/top-20-best-javascript-libraries/)
+* [13 JavaScript Libraries to Create Interactive & Customized Maps](http://www.hongkiat.com/blog/javascript-libraries-for-interactive-maps/)
+* [A dynamic, browser based visualization library.](http://visjs.org/)
+* [50 JavaScript Libraries for Charts and Graphs](http://techslides.com/50-javascript-charting-and-graphics-libraries)
+* [JavaScript Libraries for SVG Animation](http://noeticforce.com/Javascript-libraries-for-svg-animation)
+* [20 JavaScript Libraries to Simplify Development Tasks](https://codegeekz.com/javascript-libraries/)
+* [10 JavaScript libraries to draw your own diagrams](http://modeling-languages.com/javascript-drawing-libraries-diagrams/)
+* [35+ Tools to Minify Code - JavaScript, CSS & HTML](http://www.rankred.com/tools-to-minify-code/)
+* [20+ Node.js Frameworks for Developing Web Applications](http://www.rankred.com/node-js-frameworks/)
