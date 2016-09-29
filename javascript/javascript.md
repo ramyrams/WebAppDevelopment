@@ -6,6 +6,12 @@ JS
 * [Examples of how to do query, style, dom, ajax, event etc like jQuery with plain javascript.](https://github.com/oneuijs/You-Dont-Need-jQuery)
 * [The Basics of JavaScript DOM Manipulation](http://callmenick.com/post/basics-javascript-dom-manipulation)
 
+# JS Awesome
+* [A collection of awesome browser-side JavaScript libraries, resources and shiny things.](https://github.com/sorrycc/awesome-javascript)
+* [ A curated list of awesome functional programming stuff in js](https://github.com/stoeffel/awesome-fp-js)
+* [A curated list of astonishing Node.js frameworks, libraries and resources.](https://github.com/vndmtrx/awesome-nodejs)
+* [A list of awesome javascript conferences](https://github.com/a0viedo/awesome-js-conferences)
+* [Must-watch videos about javascript](https://github.com/bolshchikov/js-must-watch)
 
 # Top JS Libraries
 * [Handlebars.js: Minimal Templating on Steroids](Handlebars.js)
