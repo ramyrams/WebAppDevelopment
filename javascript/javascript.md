@@ -5,3 +5,5 @@ JS
 * [jstips](http://www.jstips.co/)
 * [Examples of how to do query, style, dom, ajax, event etc like jQuery with plain javascript.](https://github.com/oneuijs/You-Dont-Need-jQuery)
 * [The Basics of JavaScript DOM Manipulation](http://callmenick.com/post/basics-javascript-dom-manipulation)
+
+http://jscolor.com/examples/
