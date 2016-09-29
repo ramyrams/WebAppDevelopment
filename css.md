@@ -1,3 +1,56 @@
+
+
+* Applying CSS to Web Pages
+  * Inline Styles
+  * Header Styles
+  * External Style Sheets
+
+* CSS Rules
+  * CSS Rules
+  * Multiple Selectors
+  * Multiple Declarations
+  * CSS Comments
+
+* CSS Selectors
+  * Type Selectors
+  * Class Selectors
+  * ID Selectors
+  * Universal Selectors
+  * Descendant Selectors
+  * Child Selectors
+  * Adjacent Sibling Selectors
+  * Link Pseudo-class Selectors
+
+* CSS Inheritance
+  * What is inheritance?
+  * Why is inheritance helpful?
+  * Which Properties
+  * Using Inheritance for Efficiency
+
+* CSS Cascade
+  * Understanding the CSS Cascade
+  * CSS Specificity Exercise
+  * Order Specified
+
+* Block and Inline
+  * Block
+  * Inline
+  * Inline-block
+
+* CSS Positioning
+  * Understanding CSS Positioning
+  * Absolute Positioning
+  * Relative Positioning
+  * Fixed Positioning
+  * Three Key Differences
+
+* CSS Floats
+  * Understanding CSS Floats
+  * Floating a Block-level Element
+  * Floating an Inline Element
+  * Clearing Floats
+
+
 # Selectors
 * Type selectors
 * Class selectors
