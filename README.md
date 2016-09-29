@@ -29,40 +29,6 @@
 # CSS
 
 
-# Javascript
-* [jstips](http://www.jstips.co/)
-* [Examples of how to do query, style, dom, ajax, event etc like jQuery with plain javascript.](https://github.com/oneuijs/You-Dont-Need-jQuery)
-
-# AngularJS
-
-# Bootstrap
-* [Bootstrap Tutorial – The Ultimate Guide](https://www.webcodegeeks.com/css/bootstrap/bootstrap-tutorial/?)
-* [Bootstrap 4 Cheat Sheet](http://hackerthemes.com/bootstrap-cheatsheet)
-* [Understanding Twitter Bootstrap 3](https://www.sitepoint.com/understanding-twitter-bootstrap-3/)
-* [The ultimate guide to Bootstrap](http://www.webdesignerdepot.com/2014/10/the-ultimate-guide-to-bootstrap/)
-* [50 Must-have plugins for extending Twitter Bootstrap](http://tutorialzine.com/2013/07/50-must-have-plugins-for-extending-twitter-bootstrap/)
-
-# jQuery
-* [A Comprehensive Look at Events in jQuery](http://www.sitepoint.com/comprehensive-events-jquery/)
-* [jQuery](https://github.com/ramyrams/FrontendDevelopment/blob/master/jquery.md) 
-
-# TypeScript
-* [TypeScript-OOP](https://github.com/TelerikAcademy/TypeScript-OOP)
-
-# Library&Tools
-* [cookies](https://github.com/franciscop/cookies.js)
-* [URI.js is a javascript library for working with URLs.](http://medialize.github.io/URI.js/)
-* [Web Developer Checklist](http://webdevchecklist.com/)
-
-
-## Responsive Images
-* [Logo design responsive websites](https://www.smashingmagazine.com/2016/04/logo-design-responsive-websites/)
-* [The state of responsive images in 2015](http://www.webdesignerdepot.com/2015/08/the-state-of-responsive-images/)
-* [The anatomy of responsive images](https://jakearchibald.com/2015/anatomy-of-responsive-images/)
-* [Responsive Images: Use Cases and Documented Code Snippets](https://dev.opera.com/articles/responsive-images/)
-* [Which responsive images solution should you use?](https://css-tricks.com/which-responsive-images-solution-should-you-use/)
-* [responsiveimages.org](https://responsiveimages.org/)
-* [Responsive Images in Practice](http://alistapart.com/article/responsive-images-in-practice)
 
 
 ### UI Tools
