@@ -122,6 +122,7 @@
 # CSS Object Model
 * [The Beginners Guide to CSS Object Model (CSSOM)](http://www.hongkiat.com/blog/css-object-model-cssom/)
 * [CSS Object Model](http://nimbupani.com/css-object-model.html)
+* [CSS Object Model](http://nimbupani.com/css-object-model.html)
 
 # Debugging CSS
 * [108 byte CSS Layout Debugger](https://gist.github.com/addyosmani/fd3999ea7fce242756b1)
@@ -138,6 +139,8 @@ PESTICIDE](http://pesticide.io/)
 # CSS Cheat Sheet
 * [CSS Cheat Sheet](http://1stwebdesigner.com/css-cheat-sheet/)
 
+# CSS Demo
+* CSS Sytles Demo = http://www.tulane.edu/~gnorth/2015Fall/CPST-2400-10/demo/demo_css.htm
 
 # URL
 * [9 Underutilized Features in CSS](https://medium.com/@iamjordanlittle/9-underutilized-features-in-css-90ced6ddbfe7#.frwrl0csx)
