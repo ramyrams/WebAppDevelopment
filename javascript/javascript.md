@@ -7,4 +7,3 @@ JS
 * [The Basics of JavaScript DOM Manipulation](http://callmenick.com/post/basics-javascript-dom-manipulation)
 
 
-* [jscolor](http://jscolor.com/examples/)
