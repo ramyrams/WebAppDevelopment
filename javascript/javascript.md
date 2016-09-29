@@ -10,6 +10,9 @@ JS
 # Top JS Libraries
 * [Handlebars.js: Minimal Templating on Steroids](Handlebars.js)
 * [Underscore.js](whole mess of useful functional programming helpers without extending any built-in objects)
+* [A Toolkit by the Dojo Foundation featuring DHTML and AJAX functions](https://dojotoolkit.org/)
+
+
 
 
 
