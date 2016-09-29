@@ -123,6 +123,22 @@
 * [The Beginners Guide to CSS Object Model (CSSOM)](http://www.hongkiat.com/blog/css-object-model-cssom/)
 * [CSS Object Model](http://nimbupani.com/css-object-model.html)
 
+# Debugging CSS
+* [108 byte CSS Layout Debugger](https://gist.github.com/addyosmani/fd3999ea7fce242756b1)
+PESTICIDE](http://pesticide.io/)
+* [Debugging CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Debugging_CSS)
+* [Debugging CSS](https://benfrain.com/debugging-css/)
+
+# CSS Tips
+* [20 Useful CSS Tips For Beginners](http://www.hongkiat.com/blog/20-useful-css-tips-for-beginners/)
+* [CSS skills pro](https://github.com/AllThingsSmitty/css-protips)
+* [70 Expert Ideas For Better CSS Coding](https://hackhands.com/70-Expert-Ideas-For-Better-CSS-Coding/)
+* [100 Exceedingly Useful CSS Tips and Tricks](http://sixrevisions.com/css/100-exceedingly-useful-css-tips-and-tricks/)
+
+# CSS Cheat Sheet
+* [CSS Cheat Sheet](http://1stwebdesigner.com/css-cheat-sheet/)
+
+
 # URL
 * [9 Underutilized Features in CSS](https://medium.com/@iamjordanlittle/9-underutilized-features-in-css-90ced6ddbfe7#.frwrl0csx)
 
