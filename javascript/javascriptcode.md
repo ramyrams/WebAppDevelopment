@@ -483,3 +483,1107 @@ if (someday > today) {
 }
 document.getElementById("demo").innerHTML = text;
 ```
+
+
+### Array
+```js	
+var a = [];                         // no elements
+var b = new Array();                // equivalent to a
+var c = [,,,,];                     // 4 elements, all undefined.
+var d = new Array(4);               // equivalent to c
+var e = ["the", 1, true];           // 3 elements of different types
+var f = new Array("the", 1, true);  // equivalent to e
+var fish = ["Lion", , "Angel"];		//fish[0] is "Lion", fish[1] is undefined, and fish[2] is "Angel"
+
+var arr = ["hello world", 42, true];
+typeof arr;     // "object"
+
+
+//There’s no need to pre-populate an array with data, though. You can create an empty array and then add data to it later in several ways.
+var myArray = [];
+myArray[0] = "Hello";
+myArray[1] = "World";
+
+var empty = []; 					// Create an array with no elements and length = 0.
+var primes = [2, 3, 5, 7, 11]; 		// An array with 5 numeric elements
+var misc = [ 1.1, true, "a", ]; 	// 3 elements of various types + trailing comma
+var cars = ["Saab", "Volvo", "BMW"];
+
+var myArray = [];
+myArray["fruit"] = "apple";
+myArray["vehicle"] = "tank";
+
+
+//Reading and writing
+var a = ["white"];    // Start with a one-element array
+var b = a[0];         // b => "white"
+var c = a[100];       // c => undefined (no error)
+
+
+a[1] = 3.14;          // a => ["white", 3.14]
+var i = 2;
+a[i] = 3;             // a => ["white", 3.14, 3]
+a[i + 1] = "rabbit";  // a => ["white", 3.14, 3, "rabbit"]
+a[a[i]] = a[0];       // a => ["white", 3.14, 3, "white"]
+
+
+//Adding and deleting
+var a = ["follow", "the", "white", "rabbit"];
+var b = a.pop();             // a => ["follow", "the", "white"]
+                             // b => "rabbit"
+var c = a.push("RABBIT");    // a => ["follow", "the", "white", "RABBIT"]
+                             // c => 4 (new length)
+var d = a.shift();           // a => ["the", "white", "RABBIT"]
+                             // d => "follow"
+var e = a.unshift("FOLLOW"); // a => ["FOLLOW", "the", "white", "RABBIT"]
+                             // e => 4 (new length)
+var f = a.splice(2, 1);       // a => ["FOLLOW", "the", "RABBIT"]
+                              // f => "white"
+var g = a.splice(1, 2, "ME"); // a => ["FOLLOW", "ME"]
+                              // g => ["the", "RABBIT"]
+							  
+							  
+							  
+
+var base = 1024;
+var table = [base, base+1, base+2, base+3];
+
+var count = [1,,3]; // An array with 3 elements, the middle one undefined.
+var undefs = [,,]; // An array with 2 elements, both undefined.
+
+
+
+a = new Array(5); // No elements, but a.length is 5.
+a[1000] = 0; // Assignment adds one element but sets length to 1001.
+
+
+var a1 = [,,,]; // This array is [undefined, undefined, undefined]
+var a2 = new Array(3); // This array has no values at all
+0 in a1 // => true: a1 has an element with index 0
+0 in a2 // => false: a2 has no element with index 0
+
+
+[].length // => 0: the array has no elements
+['a','b','c'].length // => 3: highest index is 2, length is 3
+
+var a = ["world"]; // Start with a one-element array
+var value = a[0]; // Read element 0
+a[1] = 3.14; // Write element 1
+i = 2;
+a[i] = 3; // Write element 2
+a[i + 1] = "hello"; // Write element 3
+a[a[i]] = a[0]; // Read elements 0 and 2, write element 3
+
+
+a = [1,2,3,4,5]; // Start with a 5-element array.
+a.length = 3; // a is now [1,2,3].
+a.length = 0; // Delete all elements. a is [].
+a.length = 5; // Length is 5, but no elements, like new Array(5)
+
+
+Array.isArray([]) // => true
+Array.isArray({}) // => false
+
+
+
+
+//Furthermore, you can mix the types of data stored in the array:
+var stuff = [1, "apple", undefined, 42, "tanks", null, []];
+
+//You Can Have Different Objects in One Array
+myArray[0] = Date.now;
+myArray[1] = myFunction;
+myArray[2] = myCars;
+
+
+var cars = [
+    "Saab",
+    "Volvo",
+    "BMW"
+];
+
+
+var car1 = "Saab";
+var car2 = "Volvo";
+var car3 = "BMW";
+
+
+var cars = new Array("Saab", "Volvo", "BMW");
+
+
+
+a = []; // Start with an empty array
+a.push("zero") // Add a value at the end. a = ["zero"]
+a.push("one", "two") // Add two more values. a = ["zero", "one", "two"]
+
+
+
+a = [1,2,3];
+delete a[1]; // a now has no element at index 1
+1 in a // => false: no array index 1 is defined
+a.length // => 3: delete does not affect array length
+
+
+//join()
+var a = [1, 2, 3]; // Create a new array with these three elements
+a.join(); // => "1,2,3"
+a.join(" "); // => "1 2 3"
+a.join(""); // => "123"
+var b = new Array(10); // An array of length 10 with no elements
+b.join('-') // => '---------': a string of 9 hyphens
+
+
+
+//reverse()
+var a = [1,2,3];
+a.reverse().join() // => "3,2,1" and a is now [3,2,1]
+
+
+//sort()
+var a = new Array("banana", "cherry", "apple");
+a.sort();
+var s = a.join(", "); // s == "apple, banana, cherry"
+
+
+var a = [33, 4, 1111, 222];
+a.sort(); // Alphabetical order: 1111, 222, 33, 4
+a.sort(function(a,b) { // Numerical order: 4, 33, 222, 1111
+return a-b; // Returns &lt; 0, 0, or &gt; 0, depending on order
+});
+a.sort(function(a,b) {return b-a}); // Reverse numerical order
+
+
+a = ['ant', 'Bug', 'cat', 'Dog']
+a.sort(); // case-sensitive sort: ['Bug','Dog','ant',cat']
+a.sort(function(s,t) { // Case-insensitive sort
+var a = s.toLowerCase();
+var b = t.toLowerCase();
+if (a < b) return -1;
+if (a > b) return 1;
+return 0;
+}); // => ['ant','Bug','cat','Dog']
+
+
+//concat()
+var a = [1,2,3];
+a.concat(4, 5) // Returns [1,2,3,4,5]
+a.concat([4,5]); // Returns [1,2,3,4,5]
+a.concat([4,5],[6,7]) // Returns [1,2,3,4,5,6,7]
+a.concat(4, [5,[6,7]]) // Returns [1,2,3,4,5,[6,7]]
+
+
+//slice()
+var a = [1,2,3,4,5];
+a.slice(0,3); // Returns [1,2,3]
+a.slice(3); // Returns [4,5]
+a.slice(1,-1); // Returns [2,3,4]
+a.slice(-3,-2); // Returns [3]
+
+
+//splice()
+var a = [1,2,3,4,5,6,7,8];
+a.splice(4); // Returns [5,6,7,8]; a is [1,2,3,4]
+a.splice(1,2); // Returns [2,3]; a is [1,4]
+a.splice(1,1); // Returns [4]; a is [1]
+
+
+var a = [1,2,3,4,5];
+a.splice(2,0,'a','b'); // Returns []; a is [1,2,'a','b',3,4,5]
+a.splice(2,2,[1,2],3); // Returns ['a','b']; a is [1,2,[1,2],3,3,4,5]
+
+//push() and pop()
+var stack = []; // stack: []
+stack.push(1,2); // stack: [1,2] Returns 2
+stack.pop(); // stack: [1] Returns 2
+stack.push(3); // stack: [1,3] Returns 2
+stack.pop(); // stack: [1] Returns 3
+stack.push([4,5]); // stack: [1,[4,5]] Returns 2
+stack.pop() // stack: [1] Returns [4,5]
+stack.pop(); // stack: [] Returns 1
+
+
+//unshift() and shift()
+var a = []; // a:[]
+a.unshift(1); // a:[1] Returns: 1
+a.unshift(22); // a:[22,1] Returns: 2
+a.shift(); // a:[1] Returns: 22
+a.unshift(3,[4,5]); // a:[3,[4,5],1] Returns: 3
+a.shift(); // a:[[4,5],1] Returns: 3
+a.shift(); // a:[1] Returns: [4,5]
+a.shift(); // a:[] Returns: 1
+
+//toString() and toLocaleString()
+[1,2,3].toString() // Yields '1,2,3'
+["a", "b", "c"].toString() // Yields 'a,b,c'
+[1, [2,'c']].toString() // Yields '1,2,c'
+
+
+//forEach()
+var data = [1,2,3,4,5]; // An array to sum
+// Compute the sum of the array elements
+var sum = 0; // Start at 0
+data.forEach(function(value) { sum += value; }); // Add each value to sum
+sum // => 15
+// Now increment each array element
+data.forEach(function(v, i, a) { a[i] = v + 1; });
+data // => [2,3,4,5,6]
+
+
+
+function foreach(a,f,t) {
+try { a.forEach(f,t); }
+catch(e) {
+if (e === foreach.break) return;
+else throw e;
+}
+}
+foreach.break = new Error("StopIteration");
+
+
+//map()
+a = [1, 2, 3];
+b = a.map(function(x) { return x*x; }); // b is [1, 4, 9]
+
+//filter()
+a = [5, 4, 3, 2, 1];
+smallvalues = a.filter(function(x) { return x < 3 }); // [2, 1]
+everyother = a.filter(function(x,i) { return i%2==0 }); // [5, 3, 1]
+
+
+//every() and some()
+a = [1,2,3,4,5];
+a.every(function(x) { return x < 10; }) // => true: all values < 10.
+a.every(function(x) { return x % 2 === 0; }) // => false: not all values even.
+
+a = [1,2,3,4,5];
+a.some(function(x) { return x%2===0; }) // => true a has some even numbers.
+a.some(isNaN) // => false: a has no non-numbers.
+
+
+//reduce(), reduceRight()
+var a = [1,2,3,4,5]
+var sum = a.reduce(function(x,y) { return x+y }, 0); // Sum of values
+var product = a.reduce(function(x,y) { return x*y }, 1); // Product of values
+var max = a.reduce(function(x,y) { return (x>y)?x:y; }); // Largest value
+
+var a = [2, 3, 4]
+// Compute 2^(3^4). Exponentiation has right-to-left precedence
+var big = a.reduceRight(function(accumulator,value) {
+return Math.pow(value,accumulator);
+});
+
+
+//indexOf() and lastIndexOf()
+a = [0,1,2,1,0];
+a.indexOf(1) // => 1: a[1] is 1
+a.lastIndexOf(1) // => 3: a[3] is 1
+a.indexOf(3) // => -1: no element has value 3
+
+
+var cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;
+
+var cars = [
+    "Saab",
+    "Volvo",
+    "BMW"
+];
+
+
+var car1 = "Saab";
+var car2 = "Volvo";
+var car3 = "BMW";
+
+
+var cars = new Array("Saab", "Volvo", "BMW");
+
+
+
+//You Can Have Different Objects in One Array
+myArray[0] = Date.now;
+myArray[1] = myFunction;
+myArray[2] = myCars;
+
+
+
+var person = ["John", "Doe", 46];
+
+var person = {firstName:"John", lastName:"Doe", age:46};
+
+
+var x = cars.length;         // The length property returns the number of elements in cars
+var y = cars.sort();         // The sort() method sort cars in alphabetical order
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.length;                       // the length of fruits is 4
+
+
+//Adding Array Elements
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Lemon");                // adds a new element (Lemon) to fruits
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[fruits.length] = "Lemon";     // adds a new element (Lemon) to fruits
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[10] = "Lemon";                // adds a new element (Lemon) to fruits
+
+
+var index;
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+for	(index = 0; index < fruits.length; index++) {
+    text += fruits[index];
+}
+
+
+
+var person = [];
+person[0] = "John";
+person[1] = "Doe";
+person[2] = 46;
+var x = person.length;         // person.length will return 3
+var y = person[0];             // person[0] will return "John"
+
+
+var person = [];
+person["firstName"] = "John";
+person["lastName"] = "Doe";
+person["age"] = 46;
+var x = person.length;         // person.length will return 0
+var y = person[0];             // person[0] will return undefined
+
+
+
+var points = new Array();         // Bad
+var points = [];                  // Good 
+
+
+var points = new Array(40, 100, 1, 5, 25, 10)  // Bad
+var points = [40, 100, 1, 5, 25, 10];          // Good
+
+
+var points = new Array(40, 100);  // Creates an array with two elements (40 and 100)
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+typeof fruits;             // typeof returns object
+
+
+
+function isArray(myArray) {
+    return myArray.constructor.toString().indexOf("Array") > -1;
+}
+
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.valueOf();
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+
+
+var fruits = ["Banana", "Orange","Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.join(" * ");
+
+//The pop() method removes the last element from an array:
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.pop();              // Removes the last element ("Mango") from fruits
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var x = fruits.pop();      // the value of x is "Mango"
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi");       //  Adds a new element ("Kiwi") to fruits
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var x = fruits.push("Kiwi");   //  the value of x is 5
+
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();            // Removes the first element "Banana" from fruits
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.unshift("Lemon");    // Adds a new element "Lemon" to fruits
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[0] = "Kiwi";        // Changes the first element of fruits to "Kiwi"
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[fruits.length] = "Kiwi";          // Appends "Kiwi" to fruit
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+delete fruits[0];           // Changes the first element in fruits to undefined
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi");
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(0, 1);        // Removes the first element of fruits
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();            // Sorts the elements of fruits
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();            // Sorts the elements of fruits 
+fruits.reverse();         // Reverses the order of the elements
+
+
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a-b});
+
+
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return b-a});
+
+
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return b-a});
+// now points[0] contains the highest value
+
+
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a-b});
+// now points[0] contains the lowest value
+
+
+
+var myGirls = ["Cecilie", "Lone"];
+var myBoys = ["Emil", "Tobias","Linus"];
+var myChildren = myGirls.concat(myBoys);     // Concatenates (joins) myGirls and myBoys
+
+
+var arr1 = ["Cecilie", "Lone"];
+var arr2 = ["Emil", "Tobias","Linus"];
+var arr3 = ["Robin", "Morgan"];
+var myChildren = arr1.concat(arr2, arr3);     // Concatenates arr1 with arr2 and arr3
+
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(1);
+
+```
+
+```js	
+var person = ["John", "Doe", 46];
+var person = {firstName:"John", lastName:"Doe", age:46};
+
+var x = cars.length;         // The length property returns the number of elements in cars
+var y = cars.sort();         // The sort() method sort cars in alphabetical order
+
+//Mutator Methods
+
+//Adding Array Elements
+//push - push will add an item to the end of the array and return the array’s new length:
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Lemon");                // adds a new element (Lemon) to fruits
+
+
+//pop - pop will remove the last element from the array and return it to you:
+var tasks = [
+"Pay phone bill",
+"Write best-selling novel",
+"Walk the dog"
+];
+tasks.pop(); // returns "Walk the dog"
+
+//reverse - reverse will reverse the order of the items in the array
+var tasks = [
+"Pay phone bill",
+"Write best-selling novel",
+"Walk the dog"
+];
+tasks.reverse();
+
+
+//shift - shift removes the first item in the array and returns it:
+var tasks = [
+"Pay phone bill",
+"Write best-selling novel",
+"Walk the dog"
+];
+tasks.shift(); // returns "Pay phone bill"
+// tasks is now:
+// ["Write best-selling novel",
+// "Walk the dog"]
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.length;                       // the length of fruits is 4
+
+
+//splice
+//splice lets you perform selective surgery on an array, allowing you to simultaneously add and remove items from an array with just one command
+var tasks = [
+"Pay phone bill",
+"Write best-selling novel",
+"Walk the dog"
+];
+tasks.splice(1, 1, "World domination");
+// tasks is now:
+// ["Pay phone bill",
+// "World domination",
+// "Walk the dog"]
+
+
+//slice
+//slice will copy a part of an array and return it. Rather than modify the original array, it just makes a shallow copy.
+
+var tasks, todo, cleanup, noCleaning;
+tasks = [
+"Fly a kite",
+"Save the world",
+[
+"Clean bathroom",
+"Clean garage",
+"Clean up act"
+]
+];
+todo = tasks.slice(0); // makes a copy of tasks
+cleanup = tasks.slice(-1); // copies only the nested array
+noCleaning = tasks.slice(0, 2);
+➥// copies only the first two items
+
+
+//toString - toString returns a string representing the array and its items
+
+var arr = ["These", "words", "are", "separated", "by", "commas"];
+arr.toString(); // returns "These,words,are,separated,by,commas"
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[fruits.length] = "Lemon";     // adds a new element (Lemon) to fruits
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[10] = "Lemon";                // adds a new element (Lemon) to fruits
+
+
+var index;
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+for	(index = 0; index < fruits.length; index++) {
+    text += fruits[index];
+}
+
+//indexOf
+var alphabet;
+alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v",  "w", "x", "y", "z"];
+alert("The letter ’m’ is at index: " + alphabet.indexOf("m"));
+
+
+//lastIndexOf works exactly like indexOf, but begins its search from the end of the array rather than the beginning
+array.lastIndexOf(searchElement, [fromIndex]);
+
+
+//forEach (JavaScript 1.6)
+var arr, total;
+arr = [4, 8, 15, 16, 23, 42];
+total = 0;
+arr.forEach(function(num) {
+total = total + num;
+});
+alert("The total is: " + total);
+
+
+
+
+var person = [];
+person[0] = "John";
+person[1] = "Doe";
+person[2] = 46;
+var x = person.length;         // person.length will return 3
+var y = person[0];             // person[0] will return "John"
+
+
+var person = [];
+person["firstName"] = "John";
+person["lastName"] = "Doe";
+person["age"] = 46;
+var x = person.length;         // person.length will return 0
+var y = person[0];             // person[0] will return undefined
+
+
+
+var points = new Array();         // Bad
+var points = [];                  // Good 
+
+
+var points = new Array(40, 100, 1, 5, 25, 10)  // Bad
+var points = [40, 100, 1, 5, 25, 10];          // Good
+
+
+var points = new Array(40, 100);  // Creates an array with two elements (40 and 100)
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+typeof fruits;             // typeof returns object
+
+
+
+function isArray(myArray) {
+    return myArray.constructor.toString().indexOf("Array") > -1;
+}
+
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.valueOf();
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+
+
+var fruits = ["Banana", "Orange","Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.join(" * ");
+
+//The pop() method removes the last element from an array:
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.pop();              // Removes the last element ("Mango") from fruits
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var x = fruits.pop();      // the value of x is "Mango"
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi");       //  Adds a new element ("Kiwi") to fruits
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var x = fruits.push("Kiwi");   //  the value of x is 5
+
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();            // Removes the first element "Banana" from fruits
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.unshift("Lemon");    // Adds a new element "Lemon" to fruits
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[0] = "Kiwi";        // Changes the first element of fruits to "Kiwi"
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[fruits.length] = "Kiwi";          // Appends "Kiwi" to fruit
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+delete fruits[0];           // Changes the first element in fruits to undefined
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi");
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(0, 1);        // Removes the first element of fruits
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();            // Sorts the elements of fruits
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();            // Sorts the elements of fruits 
+fruits.reverse();         // Reverses the order of the elements
+
+
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a-b});
+
+
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return b-a});
+
+
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return b-a});
+// now points[0] contains the highest value
+
+
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a-b});
+// now points[0] contains the lowest value
+
+
+
+var myGirls = ["Cecilie", "Lone"];
+var myBoys = ["Emil", "Tobias","Linus"];
+var myChildren = myGirls.concat(myBoys);     // Concatenates (joins) myGirls and myBoys
+
+
+var arr1 = ["Cecilie", "Lone"];
+var arr2 = ["Emil", "Tobias","Linus"];
+var arr3 = ["Robin", "Morgan"];
+var myChildren = arr1.concat(arr2, arr3);     // Concatenates arr1 with arr2 and arr3
+
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(1);
+
+
+
+//Conditional (Ternary) Operator
+var voteable = (age < 18) ? "Too young":"Old enough";
+
+
+//JavaScript Comparison and Logical Operators
+
+//Array! Array! Array!
+//One of the greatest love stories of all time is that between a data structure known as an array and the for loop:
+
+var myArray = ["one", "two", "three"];
+  
+for (var i = 0; i < myArray.length; i++) {
+    document.writeln(myArray[i]);
+}
+
+
+for (i = 0, len = cars.length, text = ""; i < len; i++) { 
+    text += cars[i] + "<br>";
+}
+
+
+var i = 2;
+var len = cars.length;
+var text = "";
+for (; i < len; i++) { 
+    text += cars[i] + "<br>";
+}
+
+
+
+//You Don't Have to Use Numbers. When filling out your for loop, you don't have to only use numbers:
+
+for (var i = "a"; i !="aaaaaaaa"; i += "a") {
+    document.writeln("hmm...");
+}
+
+
+```
+
+
+### Objects
+```js	
+
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+
+var person = {
+    firstName:"John",
+    lastName:"Doe",
+    age:50,
+    eyeColor:"blue"
+};
+
+
+var person = new Object();
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 50;
+person.eyeColor = "blue";
+
+
+
+//Using an Object Constructor
+function person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+}
+var myFather = new person("John", "Doe", 50, "blue");
+var myMother = new person("Sally", "Rally", 48, "green");
+
+
+
+person.firstname + " is " + person.age + " years old.";
+
+
+person["firstname"] + " is " + person["age"] + " years old.";
+
+
+var person = {fname:"John", lname:"Doe", age:25}; 
+
+for (x in person) {
+    txt += person[x];
+}
+
+
+//Deleting Properties
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+delete person.age;   // or delete person["age"]; 
+
+
+name = person.fullName();
+
+
+name = person.fullName;
+
+
+
+//Adding New Methods
+function person(firstName, lastName, age, eyeColor) {
+    this.firstName = firstName;  
+    this.lastName = lastName;
+    this.age = age;
+    this.eyeColor = eyeColor;
+    this.changeName = function (name) {
+        this.lastName = name;
+    }
+}
+
+
+function person(first, last, age, eyecolor) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eyecolor;
+}
+person.prototype.nationality = "English";
+
+
+
+function person(first, last, age, eyecolor) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eyecolor;
+}
+person.prototype.name = function() {
+    return this.firstName + " " + this.lastName;
+};
+
+
+var myObject = new Object();
+
+//it is much better to do this:
+var myObject = {};
+
+var empty = {}; // An object with no properties
+var point = { x:0, y:0 }; // Two properties
+var point2 = { x:point.x, y:point.y+1 }; // More complex values
+var book = {
+"main title": "JavaScript", // Property names include spaces,
+'sub-title': "The Definitive Guide", // and hyphens, so use string literals
+"for": "all audiences", // for is a reserved word, so quote
+author: { // The value of this property is
+firstname: "David", // itself an object. Note that
+surname: "Flanagan" // these property names are unquoted.
+}
+};
+
+//Additionally, you can use a numeric or string literal for the name of a property or nest an object inside another. The following example uses these options.
+var car = { manyCars: {a: "Saab", "b": "Jeep"}, 7: "Mazda" };
+console.log(car.manyCars.b); // Jeep
+console.log(car[7]); // Mazda
+
+
+var foo = {a: "alpha", 2: "two"};
+console.log(foo.a);    // alpha
+console.log(foo[2]);   // two
+//console.log(foo.2);  // Error: missing ) after argument list
+//console.log(foo[a]); // Error: a is not defined
+console.log(foo["a"]); // alpha
+console.log(foo["2"]); // two
+
+
+//:EX:1
+var car = {type:"Fiat", model:500, color:"white"};
+
+//:EX:1
+var obj = {};
+obj["firstName"] = "Hugo";
+obj["lastName"] = "Reyes";
+
+//:EX:1
+var obj = {};
+obj.firstName = "Hugo";
+obj.lastName = "Reyes";
+
+//:EX:2
+//Reading from an Object
+var obj = {};
+obj.firstName = "Hugo";
+obj.lastName = "Reyes";
+alert("Hello, my name is " + obj.firstName + " " + obj.lastName + ".");
+
+//:EX:2
+//Unlike arrays, it’s not possible to read the contents of an object using a numeric index.
+var obj = {};
+obj.firstName = "Hugo";
+obj[0]; // returns undefined
+obj["firstName"]; // returns "Hugo"
+obj.firstName; // returns "Hugo"
+
+
+//:EX:2
+//Nested Objects
+
+var person;
+person = {
+name: {
+first: "Hugo",
+last: "Reyes"
+}
+};
+person.name.first; // returns "Hugo"
+person.name.last; // returns "Reyes"
+
+//:EX:2
+//Nested Objects - assign objects
+var person;
+person = {};
+person.name = {};
+person.name.first = "Hugo";
+person.name.last = "Reyes";
+
+
+//:EX:2
+//Note, however, that the following will fail to work:
+var person;
+person = {};
+person.name.first = "Hugo";
+
+
+//:EX:2
+//Namespacing through Nested Objects
+Project.Strings.Warnings.sessionExpired =  "Your session has expired."
+
+var Project = {
+	Strings: {
+		Warnings: {
+			overQuota: "You've exceeded your quota!",
+			outOfStock: "We're out of stock!"
+		}
+	}
+};
+
+//Looping over an Object
+var data, key;
+data = {
+	firstName: "James",
+	lastName: "Kirk",
+	occupation: "Captain"
+};
+
+for (key in data) {
+	alert(key + " is " + data[key]);
+}
+
+
+
+
+//:EX:2
+// Define Person constructor function in order to create custom Person() objects later.
+var Person = function (living, age, gender) {
+this.living = living;
+this.age = age;
+this.gender = gender;
+this.getGender = function () { return this.gender; };
+};
+
+// Instantiate a Person object and store it in the cody variable.
+var cody = new Person(true, 33, 'male');
+console.log(cody);
+
+
+//Property Access Expressions
+var o = {x:1,y:{z:3}}; // An example object
+var a = [o,4,[5,6]]; // An example array that contains the object
+o.x // => 1: property x of expression o
+o.y.z // => 3: property z of expression o.y
+o["x"] // => 1: property x of object o
+a[1] // => 4: element at index 1 of expression a
+a[2]["1"] // => 6: element at index 1 of expression a[2]
+a[0].x // => 1: property x of expression a[0]
+
+
+var person = {
+    firstName:"John",
+    lastName:"Doe",
+    age:50,
+    eyeColor:"blue"
+};
+
+person.lastName;
+person["lastName"];
+
+name = person.fullName();
+
+
+name = person.fullName;
+
+
+//Do Not Declare Strings, Numbers, and Booleans as Objects!
+var x = new String();        // Declares x as a String object
+var y = new Number();        // Declares y as a Number object
+var z = new Boolean();       //	Declares z as a Boolean object
+
+//Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed.
+
+```
+
+var x = {};  									// new Empty Object
+var x = {firstName:"John", lastName:"Doe"};    // Object
+
+
+//Array of objects
+var tasks;
+tasks = [
+			{
+				text: "Pay phone bill",
+				complete: false,
+				priority: 1
+			},
+			{
+				text: "Write best-selling novel",
+				complete: false,
+				priority: 3
+			},
+			{
+				text: "Walk the dog",
+				complete: false,
+				priority: 2
+			}
+		];
+
+```	
+
+
+```js
+var person = {fname:"John", lname:"Doe", age:25}; 
+
+var text = "";
+var x;
+for (x in person) {
+    text += person[x];
+}
+
+
+var cars = ["BMW", "Volvo", "Saab", "Ford"];
+var i = 0;
+var text = "";
+
+for (;cars[i];) {
+    text += cars[i] + "<br>";
+    i++;
+}
+
+
+
+for (i = 0; i < 10; i++) {
+    if (i === 3) { break; }
+    text += "The number is " + i + "<br>";
+}
+
+```
