@@ -396,3 +396,90 @@ x.valueOf();            // returns 123 from variable x
 (123).valueOf();        // returns 123 from literal 123
 (100 + 23).valueOf();   // returns 123 from expression 100 + 23
 ```
+
+
+### Date
+```js	
+var then = new Date(2010, 0, 1); 				// The 1st day of the 1st month of 2010
+var later = new Date(2010, 0, 1, 17, 10, 30); 	// Same day, at 5:10:30pm, local time
+
+var now = new Date(); // The current date and time
+var elapsed = now - then; 		// Date subtraction: interval in milliseconds
+later.getFullYear() 			// => 2010
+later.getMonth() 				// => 0: zero-based months
+later.getDate() 				// => 1: one-based days
+later.getDay() 					// => 5: day of week. 0 is Sunday 5 is Friday.
+later.getHours() 				// => 17: 5pm, local time
+later.getUTCHours() 			// hours in UTC time; depends on timezone
+later.toString() 				// => "Fri Jan 01 2010 17:10:30 GMT-0800 (PST)"
+later.toUTCString() 			// => "Sat, 02 Jan 2010 01:10:30 GMT"
+later.toLocaleDateString() 		// => "01/01/2010"
+later.toLocaleTimeString() 		// => "05:10:30 PM"
+later.toISOString() 			// => "2010-01-02T01:10:30.000Z"; ES5 only
+
+
+var d = new Date();
+document.getElementById("demo").innerHTML = d.getTime();
+
+
+new Date()
+new Date(milliseconds)
+new Date(dateString)
+new Date(year, month, day, hours, minutes, seconds, milliseconds)
+
+var d = new Date("2015-03-25");
+var d = new Date("2015-03");
+var d = new Date("2015");
+var d = new Date("2015-03-25T12:00:00");
+var d = new Date("Mar 25 2015");
+var d = new Date("2015 Mar 25");
+var d = new Date("January 25 2015");
+var d = new Date("Jan 25 2015");
+var d = new Date("2015, JANUARY, 25");
+var d = new Date("03-25-2015");
+var d = new Date("2015/03/25");
+var d = new Date("Wed Mar 25 2015 09:56:24 GMT+0100 (W. Europe Standard Time)");
+var d = new Date("Fri Mar 25 2015 09:56:24 GMT+0100 (Tokyo Time)");
+
+
+
+var d = new Date();
+var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+document.getElementById("demo").innerHTML = days[d.getDay()];
+
+var d = new Date();
+d.setFullYear(2020, 0, 14);
+document.getElementById("demo").innerHTML = d;
+
+
+var d = new Date();
+d.setDate(20);
+document.getElementById("demo").innerHTML = d;
+
+
+var d = new Date();
+d.setDate(d.getDate() + 50);
+document.getElementById("demo").innerHTML = d;
+
+
+var msec = Date.parse("March 21, 2012");
+document.getElementById("demo").innerHTML = msec;
+
+
+var msec = Date.parse("March 21, 2012");
+var d = new Date(msec);
+document.getElementById("demo").innerHTML = d;
+
+
+var today, someday, text;
+today = new Date();
+someday = new Date();
+someday.setFullYear(2100, 0, 14);
+
+if (someday > today) {
+    text = "Today is before January 14, 2100.";
+} else {
+    text = "Today is after January 14, 2100.";
+}
+document.getElementById("demo").innerHTML = text;
+```
