@@ -2061,3 +2061,136 @@ Math.log(512)/Math.LN2 // Base 2 logarithm of 512
 Math.exp(3) // Math.E cubed
 ```
 
+
+###  Conditions
+```js	
+//Conditional (Ternary) Operator
+var voteable = (age < 18) ? "Too young":"Old enough";
+
+
+if (i > 25) {
+	alert(“Greater than 25.”);
+} else if (i < 0) {
+	alert(“Less than 0.”);
+} else {
+	alert(“Between 0 and 25, inclusive.”);
+}
+
+
+age = Number(age);
+if (isNaN(age)) {
+    voteable = "Error in input";
+} else {
+    voteable = (age < 18) ? "Too young" : "Old enough";
+}
+
+
+
+
+if (time < 10) {
+    greeting = "Good morning";
+} else if (time < 20) {
+    greeting = "Good day";
+} else {
+    greeting = "Good evening";
+}
+
+
+```
+
+
+
+### Switch
+```js
+
+switch (new Date().getDay()) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 6:
+        day = "Saturday";
+        break;
+}
+
+```
+
+### Loop 
+
+### for loop
+```js
+for (i = 0; i < cars.length; i++) { 
+    text += cars[i] + "<br>";
+}
+
+for (var i = 0; i < 10 && i % 2 === 0; i+=4) {
+console.log(i);
+}
+
+//It’s also possible to have multiple initializations and end expressions:
+for (var i = 0, j = 0; i < 3; i++, j+=2) {
+console.log(i, j);
+}
+```
+
+
+```js
+//The for ... in Loop
+
+var agents = {
+	'005': "Michael Harp",
+	'006': "John Smith",
+	'007': "James Bond"
+};
+for (key in agents) {
+	if ('007' === key) {
+		console.log('Bond, ' + agents[key] + 'has been found!');
+	} else {
+		console.log('Standard spy, ' + agents[key] + 'has been found');
+	}
+}
+```
+
+
+### while loop
+```js
+
+while (i < 10) {
+    text += "The number is " + i;
+    i++;
+}
+
+
+var cars = ["BMW", "Volvo", "Saab", "Ford"];
+var i = 0;
+var text = "";
+
+while (cars[i]) {
+    text += cars[i] + "<br>";
+    i++;
+}
+```
+
+### do while loop
+```js
+do {
+    text += "The number is " + i;
+    i++;
+}
+while (i < 10);
+```
+
