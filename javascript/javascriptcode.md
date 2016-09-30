@@ -1587,3 +1587,414 @@ for (i = 0; i < 10; i++) {
 }
 
 ```
+
+
+### Functions
+```js	
+
+//Function Declarations
+function myFunction(a, b) {
+    return a * b;
+}
+
+//Function Expressions
+var x = function (a, b) {return a * b};
+
+
+//Self-Invoking Functions
+(function () {
+    var x = "Hello!!";      // I will invoke myself
+})();
+
+
+//Functions Can Be Used as Values
+function myFunction(a, b) {
+    return a * b;
+}
+
+var x = myFunction(4, 3);
+
+
+//Invoking a Function with a Function Method
+function myFunction(a, b) {
+    return a * b;
+}
+myObject = myFunction.call(myObject, 10, 2);     // Will return 20
+
+
+function myFunction(a, b) {
+    return a * b;
+}
+myArray = [10, 2];
+myObject = myFunction.apply(myObject, myArray);  // Will also return 20
+
+
+//Sample:1
+//function declaration 
+function sayHello() {
+alert("Hello, world!");
+}
+
+sayHello();
+
+
+//function expression
+var add = function(num1, num2) {
+return num1 + num2;
+};
+
+
+
+//Sample:2
+function sayHello(msg) {
+alert(msg);
+}
+
+sayHello("Howdy, y'all!");
+
+
+//Sample:3
+function fullName() {
+	var firstName = "Hugo";
+	
+	function alertFullName() {
+		var lastName = "Reyes";
+		alert("Full name: " + firstName + " " + lastName);
+	}
+	
+	alertFullName();
+}
+
+fullName();
+
+//Sample:4
+function foo() {
+    return 42;
+}
+
+foo.bar = "hello world";
+
+typeof foo;         // "function"
+typeof foo();       // "number"
+typeof foo.bar;     // "string"
+
+
+
+
+//Sample:4
+// Declaring a global variable and giving it the value "a"
+var a = "a";
+function levelb() {
+	// Declaring a variable that levelb and children can see
+	var b = "b";
+	function levelc() {
+		// Declaring a variable only levelc and leveld can see
+		var c = "c";
+			function leveld() {
+			// Declaring a variable only leveld can see
+				var d = "d";
+				console.log("leveld", a, b, c, d);
+			}
+		// Running leveld() will output a, b, c and d
+		leveld();
+		console.log("levelc", a, b, c);
+	}
+	// Running levelc() will output a, b, and c
+	levelc();
+	console.log("levelb", a, b);
+}
+
+// Running levelb() will output a and b
+levelb();
+
+// Only the variable named "a" is available globally
+console.log("global", a);
+
+
+//Sample:5
+// declaration
+function sayHello1() {
+alert("Hello");
+}
+// expression
+var sayHello2 = function() {
+alert("Hello");
+};
+// constructor (not recommended)
+var sayHello3 = new Function("alert('Hello')");
+
+
+//Nested Functions
+function hypotenuse(a, b) {
+function square(x) { return x*x; }
+return Math.sqrt(square(a) + square(b));
+}
+
+//Function Invocation
+printprops({x:1});
+var total = distance(0,0,2,1) + distance(2,1,3,5);
+var probability = factorial(5)/factorial(13);
+
+
+
+//Functions As Values
+function square(x) { return x*x; }
+
+var s = square; // Now s refers to the same function that square does
+square(4); // => 16
+s(4); // => 16
+
+
+
+var o = {square: function(x) { return x*x; }}; // An object literal
+var y = o.square(16); // y equals 256
+
+
+
+//anonymous function
+(function() { // mymodule function rewritten as an unnamed expression
+// Module code goes here.
+}()); // end the function literal and invoke it now.
+
+
+
+
+
+//Sample:6
+//Arguments
+function person(firstName, lastName, age) {
+alert(firstName);
+alert(lastName);
+alert(age);
+}
+person("John", "Doe", 44);
+
+
+//Sample:6
+function howManyArgs() {
+alert(arguments.length);
+}
+howManyArgs(“string”, 45); //2
+howManyArgs(); //0
+howManyArgs(12); //1
+
+
+//Sample:6
+function doAdd() {
+if(arguments.length == 1) {
+alert(arguments[0] + 10);
+} else if (arguments.length == 2) {
+alert(arguments[0] + arguments[1]);
+}
+}
+doAdd(10); //20
+doAdd(30, 20); //50
+
+
+
+var checking, savings;
+// This is the definition of our Account class
+
+function Account(accountNumber) {
+	// This is the property we'll be storing the
+	// account number in.
+	this.accountNumber = accountNumber;
+	// This is the property we'll be tracking the
+	// account's funds in.
+	this.funds = 0;
+	// This is the setter method we'll be using to
+	// add funds to the account.
+	this.deposit = function(amount) {
+		if (amount === Number(amount)) {
+			this.funds += amount;
+		}
+	};
+	// This is the getter method that returns the
+	// account's balance.
+	this.balance = function() {
+		return this.funds;
+	};
+}
+
+// The "new Account()" constructor returns a new account  object complete with deposit and balance methods. We
+// store the account object in a variable called checking.
+checking = new Account("87654321");
+
+// Using the deposit method allows us to pass values to our account object.
+checking.deposit(12.35);
+checking.deposit(2.76);
+checking.deposit(74.01);
+
+// We now create a new account object and store that in a  variable called savings. It also has deposit and
+// balance methods, and is distinct from the "checking" account object.
+savings = new Account("12345678");
+savings.deposit(225.57);
+// Using the objects' balance method, we can ask each of them to report their balances.
+checking.balance(); // returns 89.12
+savings.balance(); // returns 225.57
+
+
+//constructor
+var foo, bar, baz;
+function Foo() {
+	this.ident = "foo";
+}
+
+foo = new Foo();
+foo.ident; // returns "foo"
+
+bar = new Foo();
+bar.ident; // returns "foo"
+bar.ident = "bar";
+bar.ident; // now returns "bar"
+
+baz = new bar.constructor();
+baz.ident; // returns "foo"
+
+
+"John".constructor                 // Returns function String()  { [native code] }
+(3.14).constructor                 // Returns function Number()  { [native code] }
+false.constructor                  // Returns function Boolean() { [native code] }
+[1,2,3,4].constructor              // Returns function Array()   { [native code] }
+{name:'John', age:34}.constructor  // Returns function Object()  { [native code] }
+new Date().constructor             // Returns function Date()    { [native code] }
+function () {}.constructor         // Returns function Function(){ [native code] }
+
+
+
+//Overloading
+function sayMessage(message) {
+console.log(message);
+}
+function sayMessage() {
+console.log("Default message");
+}
+sayMessage("Hello!"); // outputs "Default message"
+
+
+
+
+//length - If you ever need to know how many arguments a function is expecting, you can check with the length property:
+
+function foo(bar, baz) {
+}
+foo.length; // returns 2
+
+//EX:3
+//apply
+var person, lastName;
+lastName = "Reyes";
+
+person = function() {
+	return this.lastName;
+};
+
+person(); // returns "Reyes"
+person.apply({lastName: "Cooper"}); // returns "Cooper"
+
+
+//EX:3
+//apply
+
+var tax;
+tax = function(price, provincial, federal) {
+return price * provincial * federal;
+};
+tax.apply(null, [100, 1.05, 1.095]); // returns 114.975
+
+
+//call
+var tax;
+tax = function(price, provincial, federal) {
+return price * provincial * federal;
+};
+tax.call(null, 100, 1.05, 1.095); // returns 114.975
+
+
+//bind
+var hugo, person, names;
+person = function () {
+return this.lastName;
+};
+hugo = person.bind({lastName: "Reyes"});
+hugo(); // returns "Reyes"
+names = {
+lastName: "Cooper",
+hugo: hugo,
+person: person
+};
+names.hugo(); // returns "Reyes"
+names.person(); // returns "Cooper"
+
+//toString
+
+function foo() {
+return "foo";
+}
+
+foo.toString();
+
+
+
+
+
+function myFunction(p1, p2) {
+    return p1 * p2;              // The function returns the product of p1 and p2
+}
+
+var x = myFunction(4, 3);        // Function is called, return value will end up in x
+
+
+//Local JavaScript Variables
+
+//Sample:1
+
+
+// code here can not use carName
+
+function myFunction() {
+    var carName = "Volvo";
+
+    // code here can use carName
+
+}
+
+
+//Global JavaScript Variables
+//Sample:2
+
+var carName = " Volvo";
+
+// code here can use carName
+
+function myFunction() {
+
+    // code here can use	carName 
+
+}
+
+
+//Automatically Global
+//Sample:3
+
+// code here can use carName
+
+function myFunction() {
+    carName = "Volvo";
+
+    // code here can use carName
+}
+
+function myFunction(p1, p2) {
+    return p1 * p2;              // The function returns the product of p1 and p2
+}
+
+
+document.getElementById("demo").innerHTML = myFunction(4, 3);        // Function is called, return value will end up in x
+
+function myFunction(a, b) {
+    return a * b;                // Function returns the product of a and b
+}
+
+
+```
