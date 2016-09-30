@@ -186,6 +186,8 @@ Hello World!
 
 
 
+### Numbers
+```js	
 
 var intNum = 55; //integer
 
