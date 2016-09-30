@@ -1,10 +1,4 @@
-javascript
-
-/*-----------------------------------------------------------------------------------
-*
-*	Javascript master source code reference
-*
-*-----------------------------------------------------------------------------------*/
+# javascript
 
 //One Page Intro
 //http://hsablonniere.github.io/markleft/prezas/javascript-101.html#1.0	
@@ -26,20 +20,11 @@ multiline comments
 
 ```
 
-/*---------------------------------------------------------------------------------	
-Variable 
------------------------------------------------------------------------------------*/
-
+### Variable
+```js	
 var a = 10;	//local variable
 
 b = 10;		//global variable
-
-/*---------------------------------------------------------------------------------	
-Variable 
------------------------------------------------------------------------------------*/
-
-
-
 
 // declaration
 var task, complete;
@@ -53,7 +38,7 @@ var task = "Write the first chapter.";
 //One Statement, Many Variables
 var person = "John Doe", carName = "Volvo", price = 200;
 
-
+```
 
 
 
