@@ -97,6 +97,9 @@ var answer = "He is called 'Johnny'";
 var answer = 'He is called "Johnny"';
 ```
 
+```js	
+// Empty Object
+//Brackets. Braces. Parentheses.
 
 //Grouping statements
 var a = function(){
@@ -136,6 +139,13 @@ typeof undefined              // undefined
 typeof a;               		// "undefined"
 typeof null;               		// "object" -- weird, bug
 ```
+
+### JavaScript Arithmetic
+var x = 5 + 2 + 3;
+var x = "John" + " " + "Doe";
+var x = "5" + 2 + 3;	//523
+```
+
 
 ### Strings
 ```js	
@@ -2387,3 +2397,451 @@ false || true; // returns true
 ||		or			(x == 5 || y == 5) is false		
 !		not			!(x == y) is true
 ```
+
+
+## Type conversions
+
+### Comparing Different Types
+```js
+2 < 12		true		
+2 < "12"	true	
+2 < "John"	false	
+2 > "John"	false	
+2 == "John"	false	
+"2" < "12"	false	
+"2" > "12"	true	
+"2" == "12"	false	
+```
+
+```js
+//Explicit conversions::
+
+// to Number
+var a = Number("10");         // a => 10
+var b = Number(false);        // b =>  0
+var c = parseInt("10", 10);   // c => 10
+var c = parseInt("9a8", 10);   // c => 9
+var d = parseInt(10.2);       // d => 10
+var e = parseFloat("10.2");   // e => 10.2
+
+// to String
+var a = String(false);        // a => "false"
+var b = String(10);           // b => "10"
+var c = String(10.2);         // c => "10.2"
+var d = (10).toString();      // d => "10"
+
+// to Boolean
+var a = Boolean(10);          // a => true
+var b = Boolean(0);           // b => false
+var c = Boolean(0.3);         // c => true
+var d = Boolean("true");      // d => true
+
+//Implicit conversions::
+// to Number
+var a = +"10";            // a => 10
+var b = "10" >> 0;        // b => 10
+var c = "10" * 1;         // c => 10
+var d = ~~"10";           // d => 10
+var e = "2" * "5";        // e => 10 (both strings converts to number)
+
+// to String
+var a = 10 + "10";             // a => "1010"
+var b = "10" + "10";           // b => "1010"
+var c = 10 + " agents";        // c => "10 agents"
+var d = 10 + 10 + " agents";   // d => "20 agents"
+
+// to Boolean
+var a = !!'morpheus';     // a => true
+var b = !!'';             // b => false
+var c = !!'0';            // c => true
+var d = !!'1';            // d => true
+
+
+"37" - 7 // 30
+"37" + 7 // "377"
+"1.1" + "1.1" = "1.11.1"
+(+"1.1") + (+"1.1") = 2.2   
+// Note: the parentheses are added for clarity, not required.
+```
+
+```js
+//Automatic Type Conversion
+5 + null    // returns 5         because null is converted to 0
+"5" + null  // returns "5null"   because null is converted to "null"
+"5" + 2     // returns 52        because 2 is converted to "2"
+"5" - 2     // returns 3         because "5" is converted to 5
+"5" * "2"   // returns 10        because "5" and "2" are converted to 5 and 2
+
+```
+
+### Coercion 
+```js	
+//explicit coercion:
+var a = "42";
+var b = Number( a );
+a;              // "42"
+b;              // 42 -- the number!
+
+
+//implicit coercion:
+
+var a = "42";
+var b = a * 1;  // "42" implicitly coerced to 42 here
+a;              // "42"
+b;              // 42 -- the number!
+```
+
+
+
+
+## Scopes
+```js
+
+// Local JavaScript Variables
+// code here can not use carName
+
+function myFunction() {
+    var carName = "Volvo";
+
+    // code here can use carName
+
+}
+
+
+//Global JavaScript Variables
+var carName = " Volvo";
+
+// code here can use carName
+function myFunction() {
+    // code here can use	carName 
+}
+
+
+//Automatically Global
+myFunction();
+
+// code here can use carName 
+function myFunction() {
+    carName = "Volvo";
+}
+```
+
+### Variable Scope
+```js	
+//Ex:1
+function test(o) {
+	var i = 0; // i is defined throughout function
+	if (typeof o == "object") {
+		var j = 0; // j is defined everywhere, not just block
+	
+		for(var k=0; k < 10; k++) { // k is defined everywhere, not just loop
+			console.log(k); // print numbers 0 through 9
+		}
+		console.log(k); // k is still defined: prints 10
+	}
+	console.log(j); // j is defined, but may not be initialized
+}
+
+//Ex:1
+var scope = "global";
+function f() {
+	console.log(scope); // Prints "undefined", not "global"
+	var scope = "local"; // Variable initialized here, but defined everywhere
+	console.log(scope); // Prints "local"
+}
+
+//Ex:1
+function f() {
+	var scope; // Local variable is declared at the top of the function
+	console.log(scope); // It exists here, but still has "undefined" value
+	scope = "local"; // Now we initialize it and give it a value
+	console.log(scope); // And here it has the value we expect
+}
+```
+
+```js	
+
+var name = "Andy";             // not in a function => variable is global
+
+function foo() {
+  var lastName = "WACHOWSKI";   // inside a function => variable is local
+  return name + ' ' + lastname; // can access global variable "name"
+}
+foo();
+
+var a = lastName;           // ReferenceError lastName is not defined
+                            // can not access local variable "lastName"
+							
+//Ex:1
+var scope = "global"; // Declare a global variable
+function checkscope() {
+	var scope = "local"; // Declare a local variable with the same name
+	return scope; // Return the local value, not the global one
+}
+
+checkscope()
+
+
+//Ex:1
+scope = "global"; // Declare a global variable, even without var.
+function checkscope2() {
+	scope = "local"; // Oops! We just changed the global variable.
+	myscope = "local"; // This implicitly declares a new global variable.
+	return [scope, myscope]; // Return two values.
+}
+checkscope2() // => ["local", "local"]: has side effects!
+scope // => "local": global variable has changed.
+myscope // => "local": global namespace cluttered up.
+
+//Ex:1
+var scope = "global scope"; // A global variable
+function checkscope() {
+	var scope = "local scope"; // A local variable
+	
+	function nested() {
+		var scope = "nested scope"; // A nested scope of local variables
+		return scope; // Return the value in scope here
+	}
+	return nested();
+}
+checkscope() // => "nested scope"
+```
+
+
+
+
+
+### Pattern Matching
+```js	
+var text = "testing: 1, 2, 3"; // Sample text
+var pattern = /\d+/g // Matches all instances of one or more digits
+pattern.test(text) // => true: a match exists
+text.search(pattern) // => 9: position of first match
+text.match(pattern) // => ["1", "2", "3"]: array of all matches
+text.replace(pattern, "#"); // => "testing: #, #, #"
+text.split(/\D+/); // => ["","1","2","3"]: split on non-digits
+```	
+
+
+
+
+
+
+### Immediately Invoked Function Expressions (aka IIFE)
+
+```js	
+//Writing a Simple IIFE
+
+(function() {
+    var shout = "I AM ALIVE!!!";
+    alert(shout);
+})();
+
+
+
+//Writing an IIFE that Takes Arguments
+(function(first, last) {
+    alert("My name is " + last + ", " + first + " " + last + ".");
+ 
+})("James", "Bond");
+```
+
+### Constructors and Protot types
+```js	
+function Person(name) {
+	 this.name = name;
+	 this.sayName = function() {
+		console.log(this.name);
+	};
+}
+
+
+
+//Built-in Object Prototypes
+Array.prototype.sum = function() {
+return this.reduce(function(previous, current) {
+return previous + current;
+});
+};
+var numbers = [ 1, 2, 3, 4, 5, 6 ];
+var result = numbers.sum();
+console.log(result); // 21
+
+
+
+
+String.prototype.capitalize = function() {
+return this.charAt(0).toUpperCase() + this.substring(1);
+};
+var message = "hello world!";
+console.log(message.capitalize()); // "Hello world!"
+
+```
+
+
+
+
+### Try to Catch
+try {
+	var result = divideBy(7, 2);
+
+	console.log(result);
+} catch (e) {
+	console.log(e.message);
+} finally {
+	console.log('This will always execute');
+}
+
+
+openMyFile();
+try {
+  writeMyFile(theData); //This may throw a error
+} catch(e) {  
+  handleError(e); // If we got a error we handle it
+} finally {
+  closeMyFile(); // always close the resource
+}
+```
+
+### throw statement
+```js
+throw expression;
+throw "Error2";   // String type
+throw 42;         // Number type
+throw true;       // Boolean type
+throw {toString: function() { return "I'm an object!"; } };
+
+// Create an object type UserException
+function UserException(message) {
+  this.message = message;
+  this.name = "UserException";
+}
+
+// Make the exception convert to a pretty string when used as a string 
+// (e.g. by the error console)
+UserException.prototype.toString = function() {
+  return this.name + ': "' + this.message + '"';
+}
+
+// Create an instance of the object type and throw it
+throw new UserException("Value too high");
+
+
+
+//The throw Statement
+throw "Too big";    // throw a text
+throw 500;          // throw a number
+throw expression;
+
+function divideBy(numerator, denominator) {
+if (denominator === 0) {
+throw new Error('Denominator must be non zero');
+}
+return numerator / denominator;
+}
+```
+
+
+```js
+//JavaScript Errors - Throw and Try to Catch
+
+try {
+    Block of code to try
+}
+catch(err) {
+    Block of code to handle errors
+} 
+finally {
+    Block of code to be executed regardless of the try / catch result
+}
+
+
+//The throw Statement
+throw "Too big";    // throw a text
+throw 500;          // throw a number
+```
+
+
+
+
+### The debugger Keyword
+```js
+var x = 15 * 5;
+debugger;
+document.getElementbyId("demo").innerHTML = x;
+```
+
+
+
+### JavaScript Use Strict
+```js
+Using a variable (property or object) without declaring it, is not allowed:
+
+"use strict";
+x = 3.14;                 // This will cause an error (if x has not been declared)
+Deleting a variable, a function, or an argument, is not allowed.
+
+"use strict";
+x = 3.14;
+delete x;                 // This will cause an error
+Defining a property more than once, is not allowed:
+
+"use strict";
+var x = {p1:10, p1:20};   // This will cause an error
+Duplicating a parameter name is not allowed:
+
+"use strict";
+function x(p1, p1) {};    // This will cause an error
+Octal numeric literals and escape characters are not allowed:
+
+"use strict";
+var x = 010;             // This will cause an error
+var y = \010;            // This will cause an error
+Writing to a read-only property is not allowed:
+
+"use strict";
+var obj = {};
+obj.defineProperty(obj, "x", {value:0, writable:false});
+
+obj.x = 3.14;            // This will cause an error
+Writing to a get-only property is not allowed:
+
+"use strict";
+var obj = {get x() {return 0} };
+
+obj.x = 3.14;            // This will cause an error
+Deleting an undeletable property is not allowed:
+
+"use strict";
+delete Object.prototype; // This will cause an error
+The string "eval" cannot be used as a variable:
+
+"use strict";
+var eval = 3.14;         // This will cause an error
+The string "arguments" cannot be used as a variable:
+
+"use strict";
+var arguments = 3.14;    // This will cause an error
+The with statement is not allowed:
+
+"use strict";
+with (Math){x = cos(2)}; // This will cause an error
+For security reasons, eval() is not allowed to create variables in the scope from which it was called:
+
+"use strict";
+eval ("var x = 2");
+alert (x)                // This will cause an error
+```
+
+
+
+```js
+"John".constructor                 // Returns function String()  { [native code] }
+(3.14).constructor                 // Returns function Number()  { [native code] }
+false.constructor                  // Returns function Boolean() { [native code] }
+[1,2,3,4].constructor              // Returns function Array()   { [native code] }
+{name:'John', age:34}.constructor  // Returns function Object()  { [native code] }
+new Date().constructor             // Returns function Date()    { [native code] }
+function () {}.constructor         // Returns function Function(){ [native code] }
+```
+
