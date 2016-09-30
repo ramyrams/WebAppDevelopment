@@ -2456,7 +2456,7 @@ document.getElementbyId("demo").innerHTML = x;
 
 
 ### JavaScript Use Strict
-
+```js
 Using a variable (property or object) without declaring it, is not allowed:
 
 "use strict";
@@ -2674,10 +2674,11 @@ var y = x.getElementsByTagName("p");
 var x = document.getElementsByClassName("intro");
 
 var x = document.querySelectorAll("p.intro");
+```
 
-/*-----------------------------------------------------------------------------------
-Type conversions
------------------------------------------------------------------------------------*/
+
+### Type conversions
+```js
 //Explicit conversions::
 
 // to Number
@@ -2723,12 +2724,12 @@ var d = !!'1';            // d => true
 "1.1" + "1.1" = "1.11.1"
 (+"1.1") + (+"1.1") = 2.2   
 // Note: the parentheses are added for clarity, not required.
+```
 
 
 
-/*-----------------------------------------------------------------------------------
-Variable scope
------------------------------------------------------------------------------------*/
+### Variable scope
+```js
 var name = "Andy";             // not in a function => variable is global
 
 function foo() {
@@ -2963,9 +2964,9 @@ function myFunction() {
     // code here can use carName
 
 }
+```
 
-
-
+```js
 JavaScript String Methods:
 -------------------------
 var str = "Please locate where 'locate' occurs!";
@@ -3036,9 +3037,9 @@ txt.split("|");          // Split on pipe
 
 var txt = "Hello";       // String
 txt.split("");           // Split in characters
+```
 
-
-
+```js
 
 //Number
 
@@ -3932,7 +3933,7 @@ var x = document.getElementsByClassName("intro");
 var x = document.querySelectorAll("p.intro");
 
 
-
+```js
 
 
 
