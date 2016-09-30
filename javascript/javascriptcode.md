@@ -1,13 +1,3 @@
-# javascript
-
-//One Page Intro
-//http://hsablonniere.github.io/markleft/prezas/javascript-101.html#1.0	
-	
-//Exercises
-//http://www.w3resource.com/javascript-exercises/
-//http://www.ling.gu.se/~lager/teaching/dialogue_systems%20II/labs/javascript.html	
-	
-	
 ### Comments	
 ```js	
 // Single line comments
@@ -19,65 +9,6 @@ multiline comments
 /* You can't, however, /* nest comments */ SyntaxError */
 
 ```
-
-### Variable
-```js	
-var a = 10;	//local variable
-
-b = 10;		//global variable
-
-// declaration
-var task, complete;
-
-// initialization
-task = "Write the first chapter.";
-	
-// declaration & initialization
-var task = "Write the first chapter.";
-
-//One Statement, Many Variables
-var person = "John Doe", carName = "Volvo", price = 200;
-
-var x2 = "";            	// new primitive string
-var lastName = "Johnson";  	// String
-var x3 = 0;             	// new primitive number
-var x4 = false;         	// new primitive boolean
-var z = x + y;
-var a = 3 > 5;      //faluse
-var k = 3+3;
-var l = (5 > 3) && (2<4);  //true
-
-
-var cars = [];           					   // new Empty Array
-var cars = ["Saab", "Volvo", "BMW"];           // Array of string
-var numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];		//Array of numbers
-
-var x = {};  									// new Empty Object
-var x = {firstName:"John", lastName:"Doe"};    // Object
-
-var	x6 = /()/           // new regular expression object
-var x7 = function(){};  // new function object - empty function
-
-
-
-//A declaration can span multiple lines:
-var person = "John Doe",
-carName = "Volvo",
-price = 200;
-
-//Escape single quote and double quote
-var answer = "It's alright";
-var answer = "He is called 'Johnny'";
-var answer = 'He is called "Johnny"';
-
-
-// Specials
-var a = 10 / 0;           // => Infinity
-var b = -10 / 0;          // => -Infinity
-var c = Math.sqrt(-1);    // => NaN : Not a Number
-
-```
-
 
 ### All valid variable names 
 ```js	
@@ -91,12 +22,1043 @@ var __$abc;
 var OldSchoolNamingScheme;
 ```
 
+### Specials
+var a = 10 / 0;           // => Infinity
+var b = -10 / 0;          // => -Infinity
+var c = Math.sqrt(-1);    // => NaN : Not a Number
 
-//Constants
+### Constants
 const prefix = '212';
 
 
+//Escape single quote and double quote
+var answer = "It's alright";
+var answer = "He is called 'Johnny'";
+var answer = 'He is called "Johnny"';
+
+
+
+### Data Types
+```js
+var a = 10;		//local variable
+b = 10;			//global variable
+
+
+var x;               							//undefined
+var length = 16;                               	//Number
+var lastName = "Johnson";                      	//String
+var cars = ["Saab", "Volvo", "BMW"];           	//Array
+var x = {firstName:"John", lastName:"Doe"};    	//Object
+var y = false;									//Booleans
+var person = null;           					//null
+var	x6 = /()/           		// new regular expression object
+var x7 = function(){}; 		 // new function object - empty function
+
+
+// declaration
+var task, complete;
+
+// initialization
+task = "Write the first chapter.";
+	
+// declaration & initialization
+var task = "Write the first chapter.";
+
+//One Statement, Many Variables
+var person = "John Doe", carName = "Volvo", price = 200;
+
+//A declaration can span multiple lines:
+var person = "John Doe",
+carName = "Volvo",
+price = 200;
+
+var x = "16" + "Volvo";			//"16Volvo"
+var x = "Volvo" + 16 + 4;		//"Volvo164"
+var x = 16 + 4 + "Volvo";		//"20Volvo"
+var car = "";                	// The value is "", the typeof is "string"
+
+var x2 = "";            	// new primitive string
+var lastName = "Johnson";  	// String
+var x3 = 0;             	// new primitive number
+var x4 = false;         	// new primitive boolean
+var z = x + y;
+var a = 3 > 5;      //faluse
+var k = 3+3;
+var l = (5 > 3) && (2<4);  //true
+
+```
+
+
+
+
+### typeof Operator
 ```js	
+typeof "John"                // Returns "string" 
+typeof 3.14                  // Returns "number"
+typeof false                 // Returns "boolean"
+typeof [1,2,3,4]             // Returns "object" (not "array", see note below)
+typeof {name:'John', age:34} // Returns "object"
+typeof "John"                 // Returns string 
+typeof 3.14                   // Returns number
+typeof NaN                    // Returns number
+typeof false                  // Returns boolean
+typeof [1,2,3,4]              // Returns object
+typeof {name:'John', age:34}  // Returns object
+typeof new Date()             // Returns object
+typeof function () {}         // Returns function
+typeof myCar                  // Returns undefined (if myCar is not declared)
+typeof undefined              // undefined
+typeof a;               		// "undefined"
+typeof null;               		// "object" -- weird, bug
+```
+
+
+
+### Between Undefined and Null
+typeof undefined             // undefined
+typeof null                  // object
+null === undefined           // false
+null == undefined            // true
+
+
+### Functions
+```js	
+
+
+Function Declarations
+function myFunction(a, b) {
+    return a * b;
+}
+
+
+Function Expressions
+var x = function (a, b) {return a * b};
+
+
+//Self-Invoking Functions
+(function () {
+    var x = "Hello!!";      // I will invoke myself
+})();
+
+
+//Functions Can Be Used as Values
+
+function myFunction(a, b) {
+    return a * b;
+}
+
+var x = myFunction(4, 3);
+
+
+
+
+//Invoking a Function with a Function Method
+function myFunction(a, b) {
+    return a * b;
+}
+myObject = myFunction.call(myObject, 10, 2);     // Will return 20
+
+
+
+function myFunction(a, b) {
+    return a * b;
+}
+myArray = [10, 2];
+myObject = myFunction.apply(myObject, myArray);  // Will also return 20
+
+
+//Sample:1
+//function declaration 
+function sayHello() {
+alert("Hello, world!");
+}
+
+sayHello();
+
+
+//function expression
+var add = function(num1, num2) {
+return num1 + num2;
+};
+
+
+
+//Sample:2
+function sayHello(msg) {
+alert(msg);
+}
+
+sayHello("Howdy, y'all!");
+
+
+//Sample:3
+function fullName() {
+	var firstName = "Hugo";
+	
+	function alertFullName() {
+		var lastName = "Reyes";
+		alert("Full name: " + firstName + " " + lastName);
+	}
+	
+	alertFullName();
+}
+
+fullName();
+
+//Sample:4
+function foo() {
+    return 42;
+}
+
+foo.bar = "hello world";
+
+typeof foo;         // "function"
+typeof foo();       // "number"
+typeof foo.bar;     // "string"
+
+
+
+
+//Sample:4
+// Declaring a global variable and giving it the value "a"
+var a = "a";
+function levelb() {
+	// Declaring a variable that levelb and children can see
+	var b = "b";
+	function levelc() {
+		// Declaring a variable only levelc and leveld can see
+		var c = "c";
+			function leveld() {
+			// Declaring a variable only leveld can see
+				var d = "d";
+				console.log("leveld", a, b, c, d);
+			}
+		// Running leveld() will output a, b, c and d
+		leveld();
+		console.log("levelc", a, b, c);
+	}
+	// Running levelc() will output a, b, and c
+	levelc();
+	console.log("levelb", a, b);
+}
+
+// Running levelb() will output a and b
+levelb();
+
+// Only the variable named "a" is available globally
+console.log("global", a);
+
+
+//Sample:5
+// declaration
+function sayHello1() {
+alert("Hello");
+}
+// expression
+var sayHello2 = function() {
+alert("Hello");
+};
+// constructor (not recommended)
+var sayHello3 = new Function("alert('Hello')");
+
+
+//Nested Functions
+function hypotenuse(a, b) {
+function square(x) { return x*x; }
+return Math.sqrt(square(a) + square(b));
+}
+
+//Function Invocation
+printprops({x:1});
+var total = distance(0,0,2,1) + distance(2,1,3,5);
+var probability = factorial(5)/factorial(13);
+
+
+
+//Functions As Values
+function square(x) { return x*x; }
+
+var s = square; // Now s refers to the same function that square does
+square(4); // => 16
+s(4); // => 16
+
+
+
+var o = {square: function(x) { return x*x; }}; // An object literal
+var y = o.square(16); // y equals 256
+
+
+
+//anonymous function
+(function() { // mymodule function rewritten as an unnamed expression
+// Module code goes here.
+}()); // end the function literal and invoke it now.
+
+
+
+
+
+//Sample:6
+//Arguments
+function person(firstName, lastName, age) {
+alert(firstName);
+alert(lastName);
+alert(age);
+}
+person("John", "Doe", 44);
+
+
+//Sample:6
+function howManyArgs() {
+alert(arguments.length);
+}
+howManyArgs(“string”, 45); //2
+howManyArgs(); //0
+howManyArgs(12); //1
+
+
+//Sample:6
+function doAdd() {
+if(arguments.length == 1) {
+alert(arguments[0] + 10);
+} else if (arguments.length == 2) {
+alert(arguments[0] + arguments[1]);
+}
+}
+doAdd(10); //20
+doAdd(30, 20); //50
+
+
+
+var checking, savings;
+// This is the definition of our Account class
+
+function Account(accountNumber) {
+	// This is the property we'll be storing the
+	// account number in.
+	this.accountNumber = accountNumber;
+	// This is the property we'll be tracking the
+	// account's funds in.
+	this.funds = 0;
+	// This is the setter method we'll be using to
+	// add funds to the account.
+	this.deposit = function(amount) {
+		if (amount === Number(amount)) {
+			this.funds += amount;
+		}
+	};
+	// This is the getter method that returns the
+	// account's balance.
+	this.balance = function() {
+		return this.funds;
+	};
+}
+
+// The "new Account()" constructor returns a new account  object complete with deposit and balance methods. We
+// store the account object in a variable called checking.
+checking = new Account("87654321");
+
+// Using the deposit method allows us to pass values to our account object.
+checking.deposit(12.35);
+checking.deposit(2.76);
+checking.deposit(74.01);
+
+// We now create a new account object and store that in a  variable called savings. It also has deposit and
+// balance methods, and is distinct from the "checking" account object.
+savings = new Account("12345678");
+savings.deposit(225.57);
+// Using the objects' balance method, we can ask each of them to report their balances.
+checking.balance(); // returns 89.12
+savings.balance(); // returns 225.57
+
+
+//constructor
+var foo, bar, baz;
+function Foo() {
+	this.ident = "foo";
+}
+
+foo = new Foo();
+foo.ident; // returns "foo"
+
+bar = new Foo();
+bar.ident; // returns "foo"
+bar.ident = "bar";
+bar.ident; // now returns "bar"
+
+baz = new bar.constructor();
+baz.ident; // returns "foo"
+
+
+"John".constructor                 // Returns function String()  { [native code] }
+(3.14).constructor                 // Returns function Number()  { [native code] }
+false.constructor                  // Returns function Boolean() { [native code] }
+[1,2,3,4].constructor              // Returns function Array()   { [native code] }
+{name:'John', age:34}.constructor  // Returns function Object()  { [native code] }
+new Date().constructor             // Returns function Date()    { [native code] }
+function () {}.constructor         // Returns function Function(){ [native code] }
+
+
+
+//Overloading
+function sayMessage(message) {
+console.log(message);
+}
+function sayMessage() {
+console.log("Default message");
+}
+sayMessage("Hello!"); // outputs "Default message"
+
+
+
+
+//length - If you ever need to know how many arguments a function is expecting, you can check with the length property:
+
+function foo(bar, baz) {
+}
+foo.length; // returns 2
+
+//EX:3
+//apply
+var person, lastName;
+lastName = "Reyes";
+
+person = function() {
+	return this.lastName;
+};
+
+person(); // returns "Reyes"
+person.apply({lastName: "Cooper"}); // returns "Cooper"
+
+
+//EX:3
+//apply
+
+var tax;
+tax = function(price, provincial, federal) {
+return price * provincial * federal;
+};
+tax.apply(null, [100, 1.05, 1.095]); // returns 114.975
+
+
+//call
+var tax;
+tax = function(price, provincial, federal) {
+return price * provincial * federal;
+};
+tax.call(null, 100, 1.05, 1.095); // returns 114.975
+
+
+//bind
+var hugo, person, names;
+person = function () {
+return this.lastName;
+};
+hugo = person.bind({lastName: "Reyes"});
+hugo(); // returns "Reyes"
+names = {
+lastName: "Cooper",
+hugo: hugo,
+person: person
+};
+names.hugo(); // returns "Reyes"
+names.person(); // returns "Cooper"
+
+//toString
+
+function foo() {
+return "foo";
+}
+
+foo.toString();
+
+
+
+
+
+function myFunction(p1, p2) {
+    return p1 * p2;              // The function returns the product of p1 and p2
+}
+
+var x = myFunction(4, 3);        // Function is called, return value will end up in x
+
+
+//Local JavaScript Variables
+
+//Sample:1
+
+
+// code here can not use carName
+
+function myFunction() {
+    var carName = "Volvo";
+
+    // code here can use carName
+
+}
+
+
+//Global JavaScript Variables
+//Sample:2
+
+var carName = " Volvo";
+
+// code here can use carName
+
+function myFunction() {
+
+    // code here can use	carName 
+
+}
+
+
+//Automatically Global
+//Sample:3
+
+// code here can use carName
+
+function myFunction() {
+    carName = "Volvo";
+
+    // code here can use carName
+
+
+	
+}
+
+function myFunction(p1, p2) {
+    return p1 * p2;              // The function returns the product of p1 and p2
+}
+
+
+document.getElementById("demo").innerHTML = myFunction(4, 3);        // Function is called, return value will end up in x
+
+function myFunction(a, b) {
+    return a * b;                // Function returns the product of a and b
+}
+
+
+```js	
+
+
+
+### Type conversions
+```js
+//Explicit conversions::
+
+// to Number
+var a = Number("10");         // a => 10
+var b = Number(false);        // b =>  0
+var c = parseInt("10", 10);   // c => 10
+var c = parseInt("9a8", 10);   // c => 9
+var d = parseInt(10.2);       // d => 10
+var e = parseFloat("10.2");   // e => 10.2
+// to String
+var a = String(false);        // a => "false"
+var b = String(10);           // b => "10"
+var c = String(10.2);         // c => "10.2"
+var d = (10).toString();      // d => "10"
+// to Boolean
+var a = Boolean(10);          // a => true
+var b = Boolean(0);           // b => false
+var c = Boolean(0.3);         // c => true
+var d = Boolean("true");      // d => true
+
+//Implicit conversions::
+// to Number
+var a = +"10";            // a => 10
+var b = "10" >> 0;        // b => 10
+var c = "10" * 1;         // c => 10
+var d = ~~"10";           // d => 10
+var e = "2" * "5";        // e => 10 (both strings converts to number)
+// to String
+var a = 10 + "10";             // a => "1010"
+var b = "10" + "10";           // b => "1010"
+var c = 10 + " agents";        // c => "10 agents"
+var d = 10 + 10 + " agents";   // d => "20 agents"
+// to Boolean
+var a = !!'morpheus';     // a => true
+var b = !!'';             // b => false
+var c = !!'0';            // c => true
+var d = !!'1';            // d => true
+
+
+
+"37" - 7 // 30
+"37" + 7 // "377"
+"1.1" + "1.1" = "1.11.1"
+(+"1.1") + (+"1.1") = 2.2   
+// Note: the parentheses are added for clarity, not required.
+```
+
+
+
+### Coercion 
+```js	
+//explicit coercion:
+var a = "42";
+var b = Number( a );
+a;              // "42"
+b;              // 42 -- the number!
+
+
+//implicit coercion:
+
+var a = "42";
+var b = a * 1;  // "42" implicitly coerced to 42 here
+a;              // "42"
+b;              // 42 -- the number!
+```
+
+
+### Boolean Operators
+```js	
+alert(!false); //true
+alert(!”blue”); //false
+alert(!0); //true
+alert(!NaN); //true
+alert(!””); //true
+alert(!12345); //false
+alert(!!”blue”); //true
+alert(!!0); //false
+alert(!!NaN); //false
+alert(!!””); //false
+alert(!!12345); //true
+```
+
+
+### Scopes
+
+### Variable Scope
+```js	
+
+var name = "Andy";             // not in a function => variable is global
+
+function foo() {
+  var lastName = "WACHOWSKI";   // inside a function => variable is local
+  return name + ' ' + lastname; // can access global variable "name"
+}
+foo();
+
+var a = lastName;           // ReferenceError lastName is not defined
+                            // can not access local variable "lastName"
+							
+							
+
+							
+							
+							
+//Ex:1
+var scope = "global"; // Declare a global variable
+function checkscope() {
+var scope = "local"; // Declare a local variable with the same name
+return scope; // Return the local value, not the global one
+}
+checkscope()
+
+
+//Ex:1
+scope = "global"; // Declare a global variable, even without var.
+function checkscope2() {
+scope = "local"; // Oops! We just changed the global variable.
+myscope = "local"; // This implicitly declares a new global variable.
+return [scope, myscope]; // Return two values.
+}
+checkscope2() // => ["local", "local"]: has side effects!
+scope // => "local": global variable has changed.
+myscope // => "local": global namespace cluttered up.
+
+//Ex:1
+var scope = "global scope"; // A global variable
+function checkscope() {
+var scope = "local scope"; // A local variable
+function nested() {
+var scope = "nested scope"; // A nested scope of local variables
+return scope; // Return the value in scope here
+}
+return nested();
+}
+checkscope() // => "nested scope"
+```
+
+### Function Scope and Hoisting
+```js	
+//Ex:1
+function test(o) {
+var i = 0; // i is defined throughout function
+if (typeof o == "object") {
+var j = 0; // j is defined everywhere, not just block
+for(var k=0; k < 10; k++) { // k is defined everywhere, not just loop
+console.log(k); // print numbers 0 through 9
+}
+console.log(k); // k is still defined: prints 10
+}
+console.log(j); // j is defined, but may not be initialized
+}
+
+//Ex:1
+var scope = "global";
+function f() {
+console.log(scope); // Prints "undefined", not "global"
+var scope = "local"; // Variable initialized here, but defined everywhere
+console.log(scope); // Prints "local"
+}
+
+//Ex:1
+function f() {
+var scope; // Local variable is declared at the top of the function
+console.log(scope); // It exists here, but still has "undefined" value
+scope = "local"; // Now we initialize it and give it a value
+console.log(scope); // And here it has the value we expect
+}
+```
+
+
+### Pattern Matching
+```js	
+var text = "testing: 1, 2, 3"; // Sample text
+var pattern = /\d+/g // Matches all instances of one or more digits
+pattern.test(text) // => true: a match exists
+text.search(pattern) // => 9: position of first match
+text.match(pattern) // => ["1", "2", "3"]: array of all matches
+text.replace(pattern, "#"); // => "testing: #, #, #"
+text.split(/\D+/); // => ["","1","2","3"]: split on non-digits
+```	
+
+
+### Constants and Scoped Variables
+```js	
+const pi = 3.14; 	// Define a constant and give it a value.
+pi = 4; 			// Any future assignments to it are silently ignored.
+const pi = 4; 		// It is an error to redeclare a constant.
+var pi = 4; 		// This is also an error.
+```
+
+
+
+### Immediately Invoked Function Expressions (aka IIFE)
+
+```js	
+//Writing a Simple IIFE
+
+(function() {
+    var shout = "I AM ALIVE!!!";
+    alert(shout);
+})();
+
+
+
+//Writing an IIFE that Takes Arguments
+(function(first, last) {
+    alert("My name is " + last + ", " + first + " " + last + ".");
+ 
+})("James", "Bond");
+```
+
+
+```js	
+// Empty Object
+//Brackets. Braces. Parentheses.
+
+
+
+//JavaScript Arithmetic
+var x = 5 + 2 + 3;
+var x = "John" + " " + "Doe";
+var x = "5" + 2 + 3;	//523
+
+
+
+
+//Grouping statements
+var a = function(){
+	alert(“Statement 1”);
+	alert(“Statement 2”);
+};
+
+
+Brackets: []
+Hold arrays
+
+Braces:{}
+	Create Objects
+	group statement
+
+	
+Parantheses:()
+	supply parameters
+	group expressions
+	execute functions
+
+```
+
+
+
+### Objects
+```js	
+
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+
+var person = {
+    firstName:"John",
+    lastName:"Doe",
+    age:50,
+    eyeColor:"blue"
+};
+
+
+var person = new Object();
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 50;
+person.eyeColor = "blue";
+
+
+
+//Using an Object Constructor
+function person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+}
+var myFather = new person("John", "Doe", 50, "blue");
+var myMother = new person("Sally", "Rally", 48, "green");
+
+
+
+person.firstname + " is " + person.age + " years old.";
+
+
+person["firstname"] + " is " + person["age"] + " years old.";
+
+
+var person = {fname:"John", lname:"Doe", age:25}; 
+
+for (x in person) {
+    txt += person[x];
+}
+
+
+//Deleting Properties
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+delete person.age;   // or delete person["age"]; 
+
+
+name = person.fullName();
+
+
+name = person.fullName;
+
+
+
+//Adding New Methods
+function person(firstName, lastName, age, eyeColor) {
+    this.firstName = firstName;  
+    this.lastName = lastName;
+    this.age = age;
+    this.eyeColor = eyeColor;
+    this.changeName = function (name) {
+        this.lastName = name;
+    }
+}
+
+
+function person(first, last, age, eyecolor) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eyecolor;
+}
+person.prototype.nationality = "English";
+
+
+
+function person(first, last, age, eyecolor) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eyecolor;
+}
+person.prototype.name = function() {
+    return this.firstName + " " + this.lastName;
+};
+
+
+var myObject = new Object();
+
+//it is much better to do this:
+var myObject = {};
+
+var empty = {}; // An object with no properties
+var point = { x:0, y:0 }; // Two properties
+var point2 = { x:point.x, y:point.y+1 }; // More complex values
+var book = {
+"main title": "JavaScript", // Property names include spaces,
+'sub-title': "The Definitive Guide", // and hyphens, so use string literals
+"for": "all audiences", // for is a reserved word, so quote
+author: { // The value of this property is
+firstname: "David", // itself an object. Note that
+surname: "Flanagan" // these property names are unquoted.
+}
+};
+
+//Additionally, you can use a numeric or string literal for the name of a property or nest an object inside another. The following example uses these options.
+var car = { manyCars: {a: "Saab", "b": "Jeep"}, 7: "Mazda" };
+console.log(car.manyCars.b); // Jeep
+console.log(car[7]); // Mazda
+
+
+var foo = {a: "alpha", 2: "two"};
+console.log(foo.a);    // alpha
+console.log(foo[2]);   // two
+//console.log(foo.2);  // Error: missing ) after argument list
+//console.log(foo[a]); // Error: a is not defined
+console.log(foo["a"]); // alpha
+console.log(foo["2"]); // two
+
+
+//:EX:1
+var car = {type:"Fiat", model:500, color:"white"};
+
+//:EX:1
+var obj = {};
+obj["firstName"] = "Hugo";
+obj["lastName"] = "Reyes";
+
+//:EX:1
+var obj = {};
+obj.firstName = "Hugo";
+obj.lastName = "Reyes";
+
+//:EX:2
+//Reading from an Object
+var obj = {};
+obj.firstName = "Hugo";
+obj.lastName = "Reyes";
+alert("Hello, my name is " + obj.firstName + " " + obj.lastName + ".");
+
+//:EX:2
+//Unlike arrays, it’s not possible to read the contents of an object using a numeric index.
+var obj = {};
+obj.firstName = "Hugo";
+obj[0]; // returns undefined
+obj["firstName"]; // returns "Hugo"
+obj.firstName; // returns "Hugo"
+
+
+//:EX:2
+//Nested Objects
+
+var person;
+person = {
+name: {
+first: "Hugo",
+last: "Reyes"
+}
+};
+person.name.first; // returns "Hugo"
+person.name.last; // returns "Reyes"
+
+//:EX:2
+//Nested Objects - assign objects
+var person;
+person = {};
+person.name = {};
+person.name.first = "Hugo";
+person.name.last = "Reyes";
+
+
+//:EX:2
+//Note, however, that the following will fail to work:
+var person;
+person = {};
+person.name.first = "Hugo";
+
+
+//:EX:2
+//Namespacing through Nested Objects
+Project.Strings.Warnings.sessionExpired =  "Your session has expired."
+
+var Project = {
+	Strings: {
+		Warnings: {
+			overQuota: "You've exceeded your quota!",
+			outOfStock: "We're out of stock!"
+		}
+	}
+};
+
+//Looping over an Object
+var data, key;
+data = {
+	firstName: "James",
+	lastName: "Kirk",
+	occupation: "Captain"
+};
+
+for (key in data) {
+	alert(key + " is " + data[key]);
+}
+
+
+
+
+//:EX:2
+// Define Person constructor function in order to create custom Person() objects later.
+var Person = function (living, age, gender) {
+this.living = living;
+this.age = age;
+this.gender = gender;
+this.getGender = function () { return this.gender; };
+};
+
+// Instantiate a Person object and store it in the cody variable.
+var cody = new Person(true, 33, 'male');
+console.log(cody);
+
+
+//Property Access Expressions
+var o = {x:1,y:{z:3}}; // An example object
+var a = [o,4,[5,6]]; // An example array that contains the object
+o.x // => 1: property x of expression o
+o.y.z // => 3: property z of expression o.y
+o["x"] // => 1: property x of object o
+a[1] // => 4: element at index 1 of expression a
+a[2]["1"] // => 6: element at index 1 of expression a[2]
+a[0].x // => 1: property x of expression a[0]
+
+
+var person = {
+    firstName:"John",
+    lastName:"Doe",
+    age:50,
+    eyeColor:"blue"
+};
+
+person.lastName;
+person["lastName"];
+
+name = person.fullName();
+
+
+name = person.fullName;
+
+
+//Do Not Declare Strings, Numbers, and Booleans as Objects!
+var x = new String();        // Declares x as a String object
+var y = new Number();        // Declares y as a Number object
+var z = new Boolean();       //	Declares z as a Boolean object
+
+//Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed.
+
+```
+
+var x = {};  									// new Empty Object
+var x = {firstName:"John", lastName:"Doe"};    // Object
+
+
 //Array of objects
 var tasks;
 tasks = [
@@ -119,24 +1081,110 @@ tasks = [
 
 ```	
 
-	
-### typeof
+
+```js
+var person = {fname:"John", lname:"Doe", age:25}; 
+
+var text = "";
+var x;
+for (x in person) {
+    text += person[x];
+}
+
+
+var cars = ["BMW", "Volvo", "Saab", "Ford"];
+var i = 0;
+var text = "";
+
+for (;cars[i];) {
+    text += cars[i] + "<br>";
+    i++;
+}
+
+
+
+for (i = 0; i < 10; i++) {
+    if (i === 3) { break; }
+    text += "The number is " + i + "<br>";
+}
+
+
+
+
+
+### Constructors and Protot types
 ```js	
-typeof "John"                 // Returns string 
-typeof 3.14                   // Returns number
-typeof NaN                    // Returns number
-typeof false                  // Returns boolean
-typeof [1,2,3,4]              // Returns object
-typeof {name:'John', age:34}  // Returns object
-typeof new Date()             // Returns object
-typeof function () {}         // Returns function
-typeof myCar                  // Returns undefined (if myCar is not declared)
-typeof undefined              // undefined
-typeof a;               		// "undefined"
-typeof null;               		// "object" -- weird, bug
+function Person(name) {
+	 this.name = name;
+	 this.sayName = function() {
+		console.log(this.name);
+	};
+}
+
+
+
+//Built-in Object Prototypes
+Array.prototype.sum = function() {
+return this.reduce(function(previous, current) {
+return previous + current;
+});
+};
+var numbers = [ 1, 2, 3, 4, 5, 6 ];
+var result = numbers.sum();
+console.log(result); // 21
+
+
+
+
+String.prototype.capitalize = function() {
+return this.charAt(0).toUpperCase() + this.substring(1);
+};
+var message = "hello world!";
+console.log(message.capitalize()); // "Hello world!"
+
 ```
-		
-		
+
+
+### Scope
+
+// Local JavaScript Variables
+// code here can not use carName
+
+function myFunction() {
+    var carName = "Volvo";
+
+    // code here can use carName
+
+}
+
+
+//Global JavaScript Variables
+var carName = " Volvo";
+
+// code here can use carName
+function myFunction() {
+    // code here can use	carName 
+}
+
+
+//Automatically Global
+myFunction();
+
+// code here can use carName 
+function myFunction() {
+    carName = "Volvo";
+}
+
+
+### Events
+<button onclick='document.getElementById("demo").innerHTML=Date()'>The time is?</button>
+<button onclick="this.innerHTML=Date()">The time is?</button>
+<button onclick="displayDate()">The time is?</button>
+
+
+
+### Strings
+
 ### :string
 ```js	
 var s = "hello, world" // Start with some text.
@@ -239,8 +1287,6 @@ var res = str.valueOf();
 Hello World!
 ```
 
-
-### JavaScript String Methods:
 ```js	
 var str = "Please locate where 'locate' occurs!";
 var pos = str.indexOf("locate");
@@ -307,12 +1353,227 @@ txt.split("|");          // Split on pipe
 var txt = "Hello";       // String
 txt.split("");           // Split in characters
 
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate");
+
+var str = "Please locate where 'locate' occurs!";
+var pos = str.lastIndexOf("locate");
+
+var str = "Please locate where 'locate' occurs!";
+var pos = str.search("locate");
+
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(7,13);
+
+
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(-12,-6);
+var res = str.slice(7);
+var res = str.slice(-12);
+
+var str = "Apple, Banana, Kiwi";
+var res = str.substring(7,13);
+
+var str = "Apple, Banana, Kiwi";
+var res = str.substr(7,6);
+
+str = "Please visit Microsoft!";
+var n = str.replace("Microsoft","W3Schools");
+
+var text1 = "Hello World!";       // String
+var text2 = text1.toUpperCase();  // text2 is text1 converted to upper
+
+var text1 = "Hello World!";       // String
+var text2 = text1.toLowerCase();  // text2 is text1 converted to lower
+
+
+var text1 = "Hello";
+var text2 = "World";
+text3 = text1.concat("	",text2);
+
+
+var text = "Hello" + " " + "World!";
+var text = "Hello".concat(" ","World!");
+
+
+var str = "HELLO WORLD";
+str.charAt(0);            // returns H
+
+
+var str = "HELLO WORLD";
+
+str.charCodeAt(0);         //	returns 72
+
+
+var str = "HELLO WORLD";
+
+str[0];                   // returns H
+
+
+
+
+var txt = "a,b,c,d,e";   // String
+txt.split(",");          // Split on commas
+txt.split(" ");          // Split on spaces
+txt.split("|");          // Split on pipe
+
+
+
+var txt = "Hello";       // String
+txt.split("");           // Split in characters
+
 ```
 
 
-
-### Number
+### Numbers
 ```js	
+
+var x = 34.00;    						// A number with decimals
+var y = 34;       						// A number without decimals
+var x = 123e5;    						// 12300000
+var y = 123e-5;   						// 0.00123
+var x = 0.2 + 0.1;         				// x will be 0.30000000000000004
+var x = (0.2 * 10 + 0.1 * 10) / 10;		// x will be 0.3
+var x = 0xFF;             				// x will be 255   Hexadecimal
+var x =  2 / 0;          // x will be Infinity
+var y = -2 / 0;          // y will be -Infinity
+typeof Infinity;        // returns "number"
+typeof NaN;             // returns "number"
+var x = 100 / "Apple";  // x will be NaN (Not a Number)
+var x = 100 / "10";     // x will be 10
+
+
+var myNumber = 128;
+myNumber.toString(16);     // returns 80
+myNumber.toString(8);      // returns 200
+myNumber.toString(2);      // returns 10000000
+
+
+var x = 100 / "Apple";
+isNaN(x);               // returns true because x is Not a Number
+
+
+var x = NaN;
+var y = 5;
+var z = x + y;         // z will be NaN
+
+
+var x = NaN;
+var y = "5";
+var z = x + y;         // z will be NaN5
+
+
+
+var myNumber = 2;
+while (myNumber != Infinity) {          // Execute until Infinity
+    myNumber = myNumber * myNumber;
+}
+
+
+
+var x = 123;
+var y = new Number(123);
+
+// typeof x returns number
+// typeof y returns object
+
+
+
+var x = 500;             
+var y = new Number(500);
+
+// (x == y) is true because x and y have equal values
+
+
+
+var x = 500;             
+var y = new Number(500);
+
+// (x === y) is false because x and y have different types
+
+
+
+
+var x = new Number(500);             
+var y = new Number(500);
+
+// (x == y) is false because objects cannot be compared
+
+
+
+
+
+var x = 123;
+x.toString();            // returns 123 from variable x
+(123).toString();        // returns 123 from literal 123
+(100 + 23).toString();   // returns 123 from expression 100 + 23
+
+
+var x = 9.656;
+x.toExponential(2);     // returns 9.66e+0
+x.toExponential(4);     // returns 9.6560e+0
+x.toExponential(6);     // returns 9.656000e+0
+
+
+
+var x = 9.656;
+x.toFixed(0);           // returns 10
+x.toFixed(2);           // returns 9.66
+x.toFixed(4);           // returns 9.6560
+x.toFixed(6);           // returns 9.656000
+
+
+
+var x = 9.656;
+x.toPrecision();        // returns 9.656
+x.toPrecision(2);       // returns 9.7
+x.toPrecision(4);       // returns 9.656
+x.toPrecision(6);       // returns 9.65600
+
+
+
+x = true;
+Number(x);        // returns 1
+x = false;     
+Number(x);        // returns 0
+x = new Date();
+Number(x);        // returns 1404568027739
+x = "10"
+Number(x);        // returns 10
+x = "10 20"
+Number(x);        // returns NaN
+
+
+
+parseInt("10");         // returns 10
+parseInt("10.33");      // returns 10
+parseInt("10 20 30");   // returns 10
+parseInt("10 years");   // returns 10
+parseInt("years 10");   // returns NaN 
+
+
+parseFloat("10");        // returns 10
+parseFloat("10.33");     // returns 10.33
+parseFloat("10 20 30");  // returns 10
+parseFloat("10 years");  // returns 10
+parseFloat("years 10");  // returns NaN
+
+
+var x = 123;
+x.valueOf();            // returns 123 from variable x
+(123).valueOf();        // returns 123 from literal 123
+(100 + 23).valueOf();   // returns 123 from expression 100 + 23
+
+
+
+
+
+
+
+
+
+
+
 //Integers - Integers can be expressed in decimal (base 10), hexadecimal (base 16), octal (base 8) and binary (base 2).
 
 Decimal integer literal consists of a sequence of digits without a leading 0 (zero).
@@ -553,6 +1814,7 @@ x.valueOf();            // returns 123 from variable x
 (100 + 23).valueOf();   // returns 123 from expression 100 + 23
 ```
 
+
 ### Math
 ```js	
 Math.random();       // returns a random number
@@ -593,7 +1855,6 @@ Math.log(100)/Math.LN10 // Base 10 logarithm of 100
 Math.log(512)/Math.LN2 // Base 2 logarithm of 512
 Math.exp(3) // Math.E cubed
 ```
-
 
 ### Date
 ```js	
@@ -975,777 +2236,32 @@ a.indexOf(1) // => 1: a[1] is 1
 a.lastIndexOf(1) // => 3: a[3] is 1
 a.indexOf(3) // => -1: no element has value 3
 
-```
 
+var cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;
 
-### Object
-http://www.kirupa.com/html5/a_deeper_look_at_objects_in_javascript.htm
-```js	
-var myObject = new Object();
+var cars = [
+    "Saab",
+    "Volvo",
+    "BMW"
+];
 
-//it is much better to do this:
-var myObject = {};
 
-var empty = {}; // An object with no properties
-var point = { x:0, y:0 }; // Two properties
-var point2 = { x:point.x, y:point.y+1 }; // More complex values
-var book = {
-"main title": "JavaScript", // Property names include spaces,
-'sub-title': "The Definitive Guide", // and hyphens, so use string literals
-"for": "all audiences", // for is a reserved word, so quote
-author: { // The value of this property is
-firstname: "David", // itself an object. Note that
-surname: "Flanagan" // these property names are unquoted.
-}
-};
+var car1 = "Saab";
+var car2 = "Volvo";
+var car3 = "BMW";
 
-//Additionally, you can use a numeric or string literal for the name of a property or nest an object inside another. The following example uses these options.
-var car = { manyCars: {a: "Saab", "b": "Jeep"}, 7: "Mazda" };
-console.log(car.manyCars.b); // Jeep
-console.log(car[7]); // Mazda
 
+var cars = new Array("Saab", "Volvo", "BMW");
 
-var foo = {a: "alpha", 2: "two"};
-console.log(foo.a);    // alpha
-console.log(foo[2]);   // two
-//console.log(foo.2);  // Error: missing ) after argument list
-//console.log(foo[a]); // Error: a is not defined
-console.log(foo["a"]); // alpha
-console.log(foo["2"]); // two
 
 
-//:EX:1
-var car = {type:"Fiat", model:500, color:"white"};
+//You Can Have Different Objects in One Array
+myArray[0] = Date.now;
+myArray[1] = myFunction;
+myArray[2] = myCars;
 
-//:EX:1
-var obj = {};
-obj["firstName"] = "Hugo";
-obj["lastName"] = "Reyes";
 
-//:EX:1
-var obj = {};
-obj.firstName = "Hugo";
-obj.lastName = "Reyes";
-
-//:EX:2
-//Reading from an Object
-var obj = {};
-obj.firstName = "Hugo";
-obj.lastName = "Reyes";
-alert("Hello, my name is " + obj.firstName + " " + obj.lastName + ".");
-
-//:EX:2
-//Unlike arrays, it’s not possible to read the contents of an object using a numeric index.
-var obj = {};
-obj.firstName = "Hugo";
-obj[0]; // returns undefined
-obj["firstName"]; // returns "Hugo"
-obj.firstName; // returns "Hugo"
-
-
-//:EX:2
-//Nested Objects
-
-var person;
-person = {
-name: {
-first: "Hugo",
-last: "Reyes"
-}
-};
-person.name.first; // returns "Hugo"
-person.name.last; // returns "Reyes"
-
-//:EX:2
-//Nested Objects - assign objects
-var person;
-person = {};
-person.name = {};
-person.name.first = "Hugo";
-person.name.last = "Reyes";
-
-
-//:EX:2
-//Note, however, that the following will fail to work:
-var person;
-person = {};
-person.name.first = "Hugo";
-
-
-//:EX:2
-//Namespacing through Nested Objects
-Project.Strings.Warnings.sessionExpired =  "Your session has expired."
-
-var Project = {
-	Strings: {
-		Warnings: {
-			overQuota: "You've exceeded your quota!",
-			outOfStock: "We're out of stock!"
-		}
-	}
-};
-
-//Looping over an Object
-var data, key;
-data = {
-	firstName: "James",
-	lastName: "Kirk",
-	occupation: "Captain"
-};
-
-for (key in data) {
-	alert(key + " is " + data[key]);
-}
-
-
-
-
-//:EX:2
-// Define Person constructor function in order to create custom Person() objects later.
-var Person = function (living, age, gender) {
-this.living = living;
-this.age = age;
-this.gender = gender;
-this.getGender = function () { return this.gender; };
-};
-
-// Instantiate a Person object and store it in the cody variable.
-var cody = new Person(true, 33, 'male');
-console.log(cody);
-
-
-//Property Access Expressions
-var o = {x:1,y:{z:3}}; // An example object
-var a = [o,4,[5,6]]; // An example array that contains the object
-o.x // => 1: property x of expression o
-o.y.z // => 3: property z of expression o.y
-o["x"] // => 1: property x of object o
-a[1] // => 4: element at index 1 of expression a
-a[2]["1"] // => 6: element at index 1 of expression a[2]
-a[0].x // => 1: property x of expression a[0]
-
-
-var person = {
-    firstName:"John",
-    lastName:"Doe",
-    age:50,
-    eyeColor:"blue"
-};
-
-person.lastName;
-person["lastName"];
-
-name = person.fullName();
-
-
-name = person.fullName;
-
-
-//Do Not Declare Strings, Numbers, and Booleans as Objects!
-var x = new String();        // Declares x as a String object
-var y = new Number();        // Declares y as a Number object
-var z = new Boolean();       //	Declares z as a Boolean object
-
-//Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed.
-
-```
-
-
-### Constructors and Protot types
-```js	
-function Person(name) {
-	 this.name = name;
-	 this.sayName = function() {
-		console.log(this.name);
-	};
-}
-
-
-
-//Built-in Object Prototypes
-Array.prototype.sum = function() {
-return this.reduce(function(previous, current) {
-return previous + current;
-});
-};
-var numbers = [ 1, 2, 3, 4, 5, 6 ];
-var result = numbers.sum();
-console.log(result); // 21
-
-
-
-
-String.prototype.capitalize = function() {
-return this.charAt(0).toUpperCase() + this.substring(1);
-};
-var message = "hello world!";
-console.log(message.capitalize()); // "Hello world!"
-
-```
-
-
-
-### Function
-```js	
-//Sample:1
-//function declaration 
-function sayHello() {
-alert("Hello, world!");
-}
-
-sayHello();
-
-
-//function expression
-var add = function(num1, num2) {
-return num1 + num2;
-};
-
-
-
-//Sample:2
-function sayHello(msg) {
-alert(msg);
-}
-
-sayHello("Howdy, y'all!");
-
-
-//Sample:3
-function fullName() {
-	var firstName = "Hugo";
-	
-	function alertFullName() {
-		var lastName = "Reyes";
-		alert("Full name: " + firstName + " " + lastName);
-	}
-	
-	alertFullName();
-}
-
-fullName();
-
-//Sample:4
-function foo() {
-    return 42;
-}
-
-foo.bar = "hello world";
-
-typeof foo;         // "function"
-typeof foo();       // "number"
-typeof foo.bar;     // "string"
-
-
-
-
-//Sample:4
-// Declaring a global variable and giving it the value "a"
-var a = "a";
-function levelb() {
-	// Declaring a variable that levelb and children can see
-	var b = "b";
-	function levelc() {
-		// Declaring a variable only levelc and leveld can see
-		var c = "c";
-			function leveld() {
-			// Declaring a variable only leveld can see
-				var d = "d";
-				console.log("leveld", a, b, c, d);
-			}
-		// Running leveld() will output a, b, c and d
-		leveld();
-		console.log("levelc", a, b, c);
-	}
-	// Running levelc() will output a, b, and c
-	levelc();
-	console.log("levelb", a, b);
-}
-
-// Running levelb() will output a and b
-levelb();
-
-// Only the variable named "a" is available globally
-console.log("global", a);
-
-
-//Sample:5
-// declaration
-function sayHello1() {
-alert("Hello");
-}
-// expression
-var sayHello2 = function() {
-alert("Hello");
-};
-// constructor (not recommended)
-var sayHello3 = new Function("alert('Hello')");
-
-
-//Nested Functions
-function hypotenuse(a, b) {
-function square(x) { return x*x; }
-return Math.sqrt(square(a) + square(b));
-}
-
-//Function Invocation
-printprops({x:1});
-var total = distance(0,0,2,1) + distance(2,1,3,5);
-var probability = factorial(5)/factorial(13);
-
-
-
-//Functions As Values
-function square(x) { return x*x; }
-
-var s = square; // Now s refers to the same function that square does
-square(4); // => 16
-s(4); // => 16
-
-
-
-var o = {square: function(x) { return x*x; }}; // An object literal
-var y = o.square(16); // y equals 256
-
-
-
-//anonymous function
-(function() { // mymodule function rewritten as an unnamed expression
-// Module code goes here.
-}()); // end the function literal and invoke it now.
-
-
-
-
-
-//Sample:6
-//Arguments
-function person(firstName, lastName, age) {
-alert(firstName);
-alert(lastName);
-alert(age);
-}
-person("John", "Doe", 44);
-
-
-//Sample:6
-function howManyArgs() {
-alert(arguments.length);
-}
-howManyArgs(“string”, 45); //2
-howManyArgs(); //0
-howManyArgs(12); //1
-
-
-//Sample:6
-function doAdd() {
-if(arguments.length == 1) {
-alert(arguments[0] + 10);
-} else if (arguments.length == 2) {
-alert(arguments[0] + arguments[1]);
-}
-}
-doAdd(10); //20
-doAdd(30, 20); //50
-
-
-
-var checking, savings;
-// This is the definition of our Account class
-
-function Account(accountNumber) {
-	// This is the property we'll be storing the
-	// account number in.
-	this.accountNumber = accountNumber;
-	// This is the property we'll be tracking the
-	// account's funds in.
-	this.funds = 0;
-	// This is the setter method we'll be using to
-	// add funds to the account.
-	this.deposit = function(amount) {
-		if (amount === Number(amount)) {
-			this.funds += amount;
-		}
-	};
-	// This is the getter method that returns the
-	// account's balance.
-	this.balance = function() {
-		return this.funds;
-	};
-}
-
-// The "new Account()" constructor returns a new account  object complete with deposit and balance methods. We
-// store the account object in a variable called checking.
-checking = new Account("87654321");
-
-// Using the deposit method allows us to pass values to our account object.
-checking.deposit(12.35);
-checking.deposit(2.76);
-checking.deposit(74.01);
-
-// We now create a new account object and store that in a  variable called savings. It also has deposit and
-// balance methods, and is distinct from the "checking" account object.
-savings = new Account("12345678");
-savings.deposit(225.57);
-// Using the objects' balance method, we can ask each of them to report their balances.
-checking.balance(); // returns 89.12
-savings.balance(); // returns 225.57
-
-
-//constructor
-var foo, bar, baz;
-function Foo() {
-	this.ident = "foo";
-}
-
-foo = new Foo();
-foo.ident; // returns "foo"
-
-bar = new Foo();
-bar.ident; // returns "foo"
-bar.ident = "bar";
-bar.ident; // now returns "bar"
-
-baz = new bar.constructor();
-baz.ident; // returns "foo"
-
-
-
-//Overloading
-function sayMessage(message) {
-console.log(message);
-}
-function sayMessage() {
-console.log("Default message");
-}
-sayMessage("Hello!"); // outputs "Default message"
-
-
-
-
-//length - If you ever need to know how many arguments a function is expecting, you can check with the length property:
-
-function foo(bar, baz) {
-}
-foo.length; // returns 2
-
-//EX:3
-//apply
-var person, lastName;
-lastName = "Reyes";
-
-person = function() {
-	return this.lastName;
-};
-
-person(); // returns "Reyes"
-person.apply({lastName: "Cooper"}); // returns "Cooper"
-
-
-//EX:3
-//apply
-
-var tax;
-tax = function(price, provincial, federal) {
-return price * provincial * federal;
-};
-tax.apply(null, [100, 1.05, 1.095]); // returns 114.975
-
-
-//call
-var tax;
-tax = function(price, provincial, federal) {
-return price * provincial * federal;
-};
-tax.call(null, 100, 1.05, 1.095); // returns 114.975
-
-
-//bind
-var hugo, person, names;
-person = function () {
-return this.lastName;
-};
-hugo = person.bind({lastName: "Reyes"});
-hugo(); // returns "Reyes"
-names = {
-lastName: "Cooper",
-hugo: hugo,
-person: person
-};
-names.hugo(); // returns "Reyes"
-names.person(); // returns "Cooper"
-
-//toString
-
-function foo() {
-return "foo";
-}
-
-foo.toString();
-
-
-
-
-
-function myFunction(p1, p2) {
-    return p1 * p2;              // The function returns the product of p1 and p2
-}
-
-var x = myFunction(4, 3);        // Function is called, return value will end up in x
-
-
-//Local JavaScript Variables
-
-//Sample:1
-
-
-// code here can not use carName
-
-function myFunction() {
-    var carName = "Volvo";
-
-    // code here can use carName
-
-}
-
-
-//Global JavaScript Variables
-//Sample:2
-
-var carName = " Volvo";
-
-// code here can use carName
-
-function myFunction() {
-
-    // code here can use	carName 
-
-}
-
-
-//Automatically Global
-//Sample:3
-
-// code here can use carName
-
-function myFunction() {
-    carName = "Volvo";
-
-    // code here can use carName
-
-
-	
-}
-```js	
-
-### Coercion 
-```js	
-//explicit coercion:
-var a = "42";
-var b = Number( a );
-a;              // "42"
-b;              // 42 -- the number!
-
-
-//implicit coercion:
-
-var a = "42";
-var b = a * 1;  // "42" implicitly coerced to 42 here
-a;              // "42"
-b;              // 42 -- the number!
-```
-
-### Scopes
-
-
-
-/*------------------------------------------------------------------------------------------------------
-Immediately Invoked Function Expressions (aka IIFE)
-http://www.kirupa.com/html5/immediately_invoked_function_expressions_iife.htm
-------------------------------------------------------------------------------------------------------*/
-### Immediately Invoked Function Expressions (aka IIFE)
-
-```js	
-//Writing a Simple IIFE
-
-(function() {
-    var shout = "I AM ALIVE!!!";
-    alert(shout);
-})();
-
-
-
-//Writing an IIFE that Takes Arguments
-(function(first, last) {
-    alert("My name is " + last + ", " + first + " " + last + ".");
- 
-})("James", "Bond");
-```
-
-
-```js	
-// Empty Object
-//Brackets. Braces. Parentheses.
-
-
-
-//JavaScript Arithmetic
-var x = 5 + 2 + 3;
-var x = "John" + " " + "Doe";
-var x = "5" + 2 + 3;	//523
-
-
-
-
-//Grouping statements
-var a = function(){
-	alert(“Statement 1”);
-	alert(“Statement 2”);
-};
-
-
-Brackets: []
-Hold arrays
-
-Braces:{}
-	Create Objects
-	group statement
-
-	
-Parantheses:()
-	supply parameters
-	group expressions
-	execute functions
-
-```
-
-
-
-
-
-
-
-
-### Variable Scope
-```js	
-//Ex:1
-var scope = "global"; // Declare a global variable
-function checkscope() {
-var scope = "local"; // Declare a local variable with the same name
-return scope; // Return the local value, not the global one
-}
-checkscope()
-
-
-//Ex:1
-scope = "global"; // Declare a global variable, even without var.
-function checkscope2() {
-scope = "local"; // Oops! We just changed the global variable.
-myscope = "local"; // This implicitly declares a new global variable.
-return [scope, myscope]; // Return two values.
-}
-checkscope2() // => ["local", "local"]: has side effects!
-scope // => "local": global variable has changed.
-myscope // => "local": global namespace cluttered up.
-
-//Ex:1
-var scope = "global scope"; // A global variable
-function checkscope() {
-var scope = "local scope"; // A local variable
-function nested() {
-var scope = "nested scope"; // A nested scope of local variables
-return scope; // Return the value in scope here
-}
-return nested();
-}
-checkscope() // => "nested scope"
-```
-
-### Function Scope and Hoisting
-```js	
-//Ex:1
-function test(o) {
-var i = 0; // i is defined throughout function
-if (typeof o == "object") {
-var j = 0; // j is defined everywhere, not just block
-for(var k=0; k < 10; k++) { // k is defined everywhere, not just loop
-console.log(k); // print numbers 0 through 9
-}
-console.log(k); // k is still defined: prints 10
-}
-console.log(j); // j is defined, but may not be initialized
-}
-
-//Ex:1
-var scope = "global";
-function f() {
-console.log(scope); // Prints "undefined", not "global"
-var scope = "local"; // Variable initialized here, but defined everywhere
-console.log(scope); // Prints "local"
-}
-
-//Ex:1
-function f() {
-var scope; // Local variable is declared at the top of the function
-console.log(scope); // It exists here, but still has "undefined" value
-scope = "local"; // Now we initialize it and give it a value
-console.log(scope); // And here it has the value we expect
-}
-```
-
-
-
-
-### Pattern Matching
-```js	
-var text = "testing: 1, 2, 3"; // Sample text
-var pattern = /\d+/g // Matches all instances of one or more digits
-pattern.test(text) // => true: a match exists
-text.search(pattern) // => 9: position of first match
-text.match(pattern) // => ["1", "2", "3"]: array of all matches
-text.replace(pattern, "#"); // => "testing: #, #, #"
-text.split(/\D+/); // => ["","1","2","3"]: split on non-digits
-```	
-
-
-### Constants and Scoped Variables
-```js	
-const pi = 3.14; 	// Define a constant and give it a value.
-pi = 4; 			// Any future assignments to it are silently ignored.
-const pi = 4; 		// It is an error to redeclare a constant.
-var pi = 4; 		// This is also an error.
-```
-
-
-###  IF Condition
-```js	
-if (i > 25) {
-	alert(“Greater than 25.”);
-} else if (i < 0) {
-	alert(“Less than 0.”);
-} else {
-	alert(“Between 0 and 25, inclusive.”);
-}
-```
-
-
-
-### Boolean Operators
-```js	
-alert(!false); //true
-alert(!”blue”); //false
-alert(!0); //true
-alert(!NaN); //true
-alert(!””); //true
-alert(!12345); //false
-alert(!!”blue”); //true
-alert(!!0); //false
-alert(!!NaN); //false
-alert(!!””); //false
-alert(!!12345); //true
-```
-
-```js	
 
 var person = ["John", "Doe", 46];
 
@@ -1755,8 +2271,174 @@ var person = {firstName:"John", lastName:"Doe", age:46};
 var x = cars.length;         // The length property returns the number of elements in cars
 var y = cars.sort();         // The sort() method sort cars in alphabetical order
 
-//Mutator Methods
 
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.length;                       // the length of fruits is 4
+
+
+//Adding Array Elements
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Lemon");                // adds a new element (Lemon) to fruits
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[fruits.length] = "Lemon";     // adds a new element (Lemon) to fruits
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[10] = "Lemon";                // adds a new element (Lemon) to fruits
+
+
+var index;
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+for	(index = 0; index < fruits.length; index++) {
+    text += fruits[index];
+}
+
+
+
+var person = [];
+person[0] = "John";
+person[1] = "Doe";
+person[2] = 46;
+var x = person.length;         // person.length will return 3
+var y = person[0];             // person[0] will return "John"
+
+
+var person = [];
+person["firstName"] = "John";
+person["lastName"] = "Doe";
+person["age"] = 46;
+var x = person.length;         // person.length will return 0
+var y = person[0];             // person[0] will return undefined
+
+
+
+var points = new Array();         // Bad
+var points = [];                  // Good 
+
+
+var points = new Array(40, 100, 1, 5, 25, 10)  // Bad
+var points = [40, 100, 1, 5, 25, 10];          // Good
+
+
+var points = new Array(40, 100);  // Creates an array with two elements (40 and 100)
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+typeof fruits;             // typeof returns object
+
+
+
+function isArray(myArray) {
+    return myArray.constructor.toString().indexOf("Array") > -1;
+}
+
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.valueOf();
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+
+
+var fruits = ["Banana", "Orange","Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.join(" * ");
+
+//The pop() method removes the last element from an array:
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.pop();              // Removes the last element ("Mango") from fruits
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var x = fruits.pop();      // the value of x is "Mango"
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi");       //  Adds a new element ("Kiwi") to fruits
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var x = fruits.push("Kiwi");   //  the value of x is 5
+
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();            // Removes the first element "Banana" from fruits
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.unshift("Lemon");    // Adds a new element "Lemon" to fruits
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[0] = "Kiwi";        // Changes the first element of fruits to "Kiwi"
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[fruits.length] = "Kiwi";          // Appends "Kiwi" to fruit
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+delete fruits[0];           // Changes the first element in fruits to undefined
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi");
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(0, 1);        // Removes the first element of fruits
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();            // Sorts the elements of fruits
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();            // Sorts the elements of fruits 
+fruits.reverse();         // Reverses the order of the elements
+
+
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a-b});
+
+
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return b-a});
+
+
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return b-a});
+// now points[0] contains the highest value
+
+
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a-b});
+// now points[0] contains the lowest value
+
+
+
+var myGirls = ["Cecilie", "Lone"];
+var myBoys = ["Emil", "Tobias","Linus"];
+var myChildren = myGirls.concat(myBoys);     // Concatenates (joins) myGirls and myBoys
+
+
+var arr1 = ["Cecilie", "Lone"];
+var arr2 = ["Emil", "Tobias","Linus"];
+var arr3 = ["Robin", "Morgan"];
+var myChildren = arr1.concat(arr2, arr3);     // Concatenates arr1 with arr2 and arr3
+
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(1);
+
+```
+
+```js	
+var person = ["John", "Doe", 46];
+var person = {firstName:"John", lastName:"Doe", age:46};
+
+var x = cars.length;         // The length property returns the number of elements in cars
+var y = cars.sort();         // The sort() method sort cars in alphabetical order
+
+//Mutator Methods
 
 //Adding Array Elements
 //push - push will add an item to the end of the array and return the array’s new length:
@@ -2012,8 +2694,44 @@ var voteable = (age < 18) ? "Too young":"Old enough";
 
 
 //JavaScript Comparison and Logical Operators
+
+//Array! Array! Array!
+//One of the greatest love stories of all time is that between a data structure known as an array and the for loop:
+
+var myArray = ["one", "two", "three"];
+  
+for (var i = 0; i < myArray.length; i++) {
+    document.writeln(myArray[i]);
+}
+
+
+for (i = 0, len = cars.length, text = ""; i < len; i++) { 
+    text += cars[i] + "<br>";
+}
+
+
+var i = 2;
+var len = cars.length;
+var text = "";
+for (; i < len; i++) { 
+    text += cars[i] + "<br>";
+}
+
+
+
+//You Don't Have to Use Numbers. When filling out your for loop, you don't have to only use numbers:
+
+for (var i = "a"; i !="aaaaaaaa"; i += "a") {
+    document.writeln("hmm...");
+}
+
+
 ```
 
+
+
+Booleans
+### Comparisons
 
 ### Comparison Operators
 ```js	
@@ -2169,8 +2887,22 @@ false || true; // returns true
 "2" < "12"	false	
 "2" > "12"	true	
 "2" == "12"	false	
+```
 
 
+####  Conditions
+```js	
+//Conditional (Ternary) Operator
+var voteable = (age < 18) ? "Too young":"Old enough";
+
+
+if (i > 25) {
+	alert(“Greater than 25.”);
+} else if (i < 0) {
+	alert(“Less than 0.”);
+} else {
+	alert(“Between 0 and 25, inclusive.”);
+}
 
 
 age = Number(age);
@@ -2192,7 +2924,12 @@ if (time < 10) {
 }
 
 
+```
 
+
+
+### Switch
+```js
 
 switch (new Date().getDay()) {
     case 0:
@@ -2218,8 +2955,9 @@ switch (new Date().getDay()) {
         break;
 }
 
-```js
+```
 
+### Loop 
 
 ### for loop
 ```js
@@ -2235,68 +2973,10 @@ console.log(i);
 for (var i = 0, j = 0; i < 3; i++, j+=2) {
 console.log(i, j);
 }
-
-
-
-//Array! Array! Array!
-//One of the greatest love stories of all time is that between a data structure known as an array and the for loop:
-
-var myArray = ["one", "two", "three"];
-  
-for (var i = 0; i < myArray.length; i++) {
-    document.writeln(myArray[i]);
-}
-
-
-for (i = 0, len = cars.length, text = ""; i < len; i++) { 
-    text += cars[i] + "<br>";
-}
-
-
-var i = 2;
-var len = cars.length;
-var text = "";
-for (; i < len; i++) { 
-    text += cars[i] + "<br>";
-}
-
-
-
-//You Don't Have to Use Numbers. When filling out your for loop, you don't have to only use numbers:
-
-for (var i = "a"; i !="aaaaaaaa"; i += "a") {
-    document.writeln("hmm...");
-}
-
 ```
 
+
 ```js
-var person = {fname:"John", lname:"Doe", age:25}; 
-
-var text = "";
-var x;
-for (x in person) {
-    text += person[x];
-}
-
-
-var cars = ["BMW", "Volvo", "Saab", "Ford"];
-var i = 0;
-var text = "";
-
-for (;cars[i];) {
-    text += cars[i] + "<br>";
-    i++;
-}
-
-
-
-for (i = 0; i < 10; i++) {
-    if (i === 3) { break; }
-    text += "The number is " + i + "<br>";
-}
-
-
 //The for ... in Loop
 
 var agents = {
@@ -2342,41 +3022,6 @@ do {
 while (i < 10);
 ```
 
-
-
-
-
-
-
-```js
-
-
-
-
-"John".constructor                 // Returns function String()  { [native code] }
-(3.14).constructor                 // Returns function Number()  { [native code] }
-false.constructor                  // Returns function Boolean() { [native code] }
-[1,2,3,4].constructor              // Returns function Array()   { [native code] }
-{name:'John', age:34}.constructor  // Returns function Object()  { [native code] }
-new Date().constructor             // Returns function Date()    { [native code] }
-function () {}.constructor         // Returns function Function(){ [native code] }
-
-
-Number("3.14")    // returns 3.14
-Number(" ")       // returns 0 
-Number("")        // returns 0
-Number("99 88")   // returns NaN
-
-
-//Automatic Type Conversion
-5 + null    // returns 5         because null is converted to 0
-"5" + null  // returns "5null"   because null is converted to "null"
-"5" + 2     // returns 52        because 2 is converted to "2"
-"5" - 2     // returns 3         because "5" is converted to 5
-"5" * "2"   // returns 10        because "5" and "2" are converted to 5 and 2
-
-```
-//Automatic String Conversion
 
 
 ### Try to Catch
@@ -2438,6 +3083,27 @@ throw new Error('Denominator must be non zero');
 return numerator / denominator;
 }
 ```
+
+
+```js
+//JavaScript Errors - Throw and Try to Catch
+
+try {
+    Block of code to try
+}
+catch(err) {
+    Block of code to handle errors
+} 
+finally {
+    Block of code to be executed regardless of the try / catch result
+}
+
+
+//The throw Statement
+throw "Too big";    // throw a text
+throw 500;          // throw a number
+```
+
 
 
 
@@ -2513,1149 +3179,51 @@ For security reasons, eval() is not allowed to create variables in the scope fro
 "use strict";
 eval ("var x = 2");
 alert (x)                // This will cause an error
+```
 
 
 
-JavaScript Objects::
-var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+Break
+Type Conversion
+RegExp
+Errors
+Debugging
+Hoisting
+Strict Mode
+Style Guide
+Best Practices
+Mistakes
+Performance
+Reserved Words
+JSON
 
+JS Forms
+JS Forms
+Forms API
 
-var person = {
-    firstName:"John",
-    lastName:"Doe",
-    age:50,
-    eyeColor:"blue"
-};
+JS Objects
+Object Definitions
+Object Properties
+Object Methods
+Object Prototypes
 
+JS Functions
+Function Definitions
+Function Parameters
+Function Invocation
+Function Closures
 
-var person = new Object();
-person.firstName = "John";
-person.lastName = "Doe";
-person.age = 50;
-person.eyeColor = "blue";
-
-
-
-//Using an Object Constructor
-function person(first, last, age, eye) {
-    this.firstName = first;
-    this.lastName = last;
-    this.age = age;
-    this.eyeColor = eye;
-}
-var myFather = new person("John", "Doe", 50, "blue");
-var myMother = new person("Sally", "Rally", 48, "green");
-
-
-
-person.firstname + " is " + person.age + " years old.";
-
-
-person["firstname"] + " is " + person["age"] + " years old.";
-
-
-var person = {fname:"John", lname:"Doe", age:25}; 
-
-for (x in person) {
-    txt += person[x];
-}
-
-
-//Deleting Properties
-var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
-delete person.age;   // or delete person["age"]; 
-
-
-name = person.fullName();
-
-
-name = person.fullName;
-
-
-
-//Adding New Methods
-function person(firstName, lastName, age, eyeColor) {
-    this.firstName = firstName;  
-    this.lastName = lastName;
-    this.age = age;
-    this.eyeColor = eyeColor;
-    this.changeName = function (name) {
-        this.lastName = name;
-    }
-}
-
-
-function person(first, last, age, eyecolor) {
-    this.firstName = first;
-    this.lastName = last;
-    this.age = age;
-    this.eyeColor = eyecolor;
-}
-person.prototype.nationality = "English";
-
-
-
-function person(first, last, age, eyecolor) {
-    this.firstName = first;
-    this.lastName = last;
-    this.age = age;
-    this.eyeColor = eyecolor;
-}
-person.prototype.name = function() {
-    return this.firstName + " " + this.lastName;
-};
-
-
-
-//JavaScript Function Definitions
-
-Function Declarations
-function myFunction(a, b) {
-    return a * b;
-}
-
-
-Function Expressions
-var x = function (a, b) {return a * b};
-
-
-//Self-Invoking Functions
-(function () {
-    var x = "Hello!!";      // I will invoke myself
-})();
-
-
-//Functions Can Be Used as Values
-
-function myFunction(a, b) {
-    return a * b;
-}
-
-var x = myFunction(4, 3);
-
-
-
-
-//Invoking a Function with a Function Method
-function myFunction(a, b) {
-    return a * b;
-}
-myObject = myFunction.call(myObject, 10, 2);     // Will return 20
-
-
-
-
-
-function myFunction(a, b) {
-    return a * b;
-}
-myArray = [10, 2];
-myObject = myFunction.apply(myObject, myArray);  // Will also return 20
-
-//Difference Between Undefined and Null
-
-
-null === undefined           // false
-null == undefined            // true
-
-
-
-
-DOM::
-
+### JS HTML DOM
+```js
 document.getElementById("demo").innerHTML = "Hello World!";
-
-
 var x = document.getElementsByTagName("p");
-
 var x = document.getElementById("main");
 var y = x.getElementsByTagName("p");
-
 var x = document.getElementsByClassName("intro");
-
 var x = document.querySelectorAll("p.intro");
 ```
 
-
-### Type conversions
 ```js
-//Explicit conversions::
-
-// to Number
-var a = Number("10");         // a => 10
-var b = Number(false);        // b =>  0
-var c = parseInt("10", 10);   // c => 10
-var c = parseInt("9a8", 10);   // c => 9
-var d = parseInt(10.2);       // d => 10
-var e = parseFloat("10.2");   // e => 10.2
-// to String
-var a = String(false);        // a => "false"
-var b = String(10);           // b => "10"
-var c = String(10.2);         // c => "10.2"
-var d = (10).toString();      // d => "10"
-// to Boolean
-var a = Boolean(10);          // a => true
-var b = Boolean(0);           // b => false
-var c = Boolean(0.3);         // c => true
-var d = Boolean("true");      // d => true
-
-//Implicit conversions::
-// to Number
-var a = +"10";            // a => 10
-var b = "10" >> 0;        // b => 10
-var c = "10" * 1;         // c => 10
-var d = ~~"10";           // d => 10
-var e = "2" * "5";        // e => 10 (both strings converts to number)
-// to String
-var a = 10 + "10";             // a => "1010"
-var b = "10" + "10";           // b => "1010"
-var c = 10 + " agents";        // c => "10 agents"
-var d = 10 + 10 + " agents";   // d => "20 agents"
-// to Boolean
-var a = !!'morpheus';     // a => true
-var b = !!'';             // b => false
-var c = !!'0';            // c => true
-var d = !!'1';            // d => true
-
-
-
-"37" - 7 // 30
-"37" + 7 // "377"
-"1.1" + "1.1" = "1.11.1"
-(+"1.1") + (+"1.1") = 2.2   
-// Note: the parentheses are added for clarity, not required.
-```
-
-
-
-### Variable scope
-```js
-var name = "Andy";             // not in a function => variable is global
-
-function foo() {
-  var lastName = "WACHOWSKI";   // inside a function => variable is local
-  return name + ' ' + lastname; // can access global variable "name"
-}
-foo();
-
-var a = lastName;           // ReferenceError lastName is not defined
-                            // can not access local variable "lastName"
-							
-							
-
-
-
-
-: What needs to know
-	Declare an array
-	Print an array item
-	Assign array item to an veriable
-	What are the diffrent method to create array ([], new Array())
-	
-	
-	
-	
-
-: What needs to know
-	Declare an array
-	Print an array item
-	Assign array item to an veriable
-	What are the diffrent method to create array ([], new Array())
-
-
-// declaration
-var task, complete;
-
-// initialization
-task = "Write the first chapter.";
-complete = true;
-	
-	
-var length = 16;                               // Number
-var lastName = "Johnson";                      // String
-var cars = ["Saab", "Volvo", "BMW"];           // Array
-var cars = [];           					   // Empty Array
-var x = {firstName:"John", lastName:"Doe"};    // Object
-var x = {};  
-var z = x + y;
-
-
-// Empty Object
-//Brackets. Braces. Parentheses.
-//Array of numbers
-var numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-//Array of strings
-var stringArray = [“John”, “Paul”];
-
-//Empty array
-var emptyArray = [];
-
-
-//One Statement, Many Variables
-var person = "John Doe", carName = "Volvo", price = 200;
-
-//A declaration can span multiple lines:
-var person = "John Doe",
-carName = "Volvo",
-price = 200;
-
-var answer = "It's alright";
-var answer = "He is called 'Johnny'";
-var answer = 'He is called "Johnny"';
-
-var x1 = {};            // new object
-var x2 = "";            // new primitive string
-var x3 = 0;             // new primitive number
-var x4 = false;         // new primitive boolean
-var x5 = [];            // new array	object
-var	x6 = /()/           // new regexp object
-var x7 = function(){};  // new function object
-
-
-
-
-
-//JavaScript Arithmetic
-var x = 5 + 2 + 3;
-var x = "John" + " " + "Doe";
-var x = "5" + 2 + 3;	//523
-
-
-var length = 16;                               // Number
-var lastName = "Johnson";                      // String
-var cars = ["Saab", "Volvo", "BMW"];           // Array
-var x = {firstName:"John", lastName:"Doe"};    // Object
-
-
-
-
-
-	
-
-
-
-
-1. //Create a new object
-2. var myObj = {};
-3. //Grouping statements
-4. var a = function(){
-5. alert(“Statement 1”);
-6. alert(“Statement 2”);
-7. };
-
-
-Brackets: []
-Hold arrays
-
-Braces:{}
-	Create Objects
-	group statement
-
-	
-Parantheses:()
-	supply parameters
-	group expressions
-	execute functions
-
-
-
-
-
-
-
-
-
-
-
-
-typeof "John"                // Returns string 
-typeof 3.14                  // Returns number
-typeof false                 // Returns boolean
-typeof [1,2,3,4]             // Returns object
-typeof {name:'John', age:34} // Returns object
-
-//Difference Between Undefined and Null
-typeof undefined             // undefined
-typeof null                  // object
-null === undefined           // false
-null == undefined            // true
-
-
-
-function myFunction(p1, p2) {
-    return p1 * p2;              // The function returns the product of p1 and p2
-}
-
-var x = myFunction(4, 3);        // Function is called, return value will end up in x
-
-
-
-var car = {type:"Fiat", model:500, color:"white"};
-
-
-
-var person = {
-    firstName:"John",
-    lastName:"Doe",
-    age:50,
-    eyeColor:"blue"
-};
-
-
-
-person.lastName;
-person["lastName"];
-
-name = person.fullName();
-
-
-name = person.fullName;
-
-
-//Do Not Declare Strings, Numbers, and Booleans as Objects!
-var x = new String();        // Declares x as a String object
-var y = new Number();        // Declares y as a Number object
-var z = new Boolean();       //	Declares z as a Boolean object
-
-//Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed.
-
-
-
-
-
-//Local JavaScript Variables
-
-//Sample:1
-
-
-// code here can not use carName
-
-function myFunction() {
-    var carName = "Volvo";
-
-    // code here can use carName
-
-}
-
-
-//Global JavaScript Variables
-//Sample:2
-
-var carName = " Volvo";
-
-// code here can use carName
-
-function myFunction() {
-
-    // code here can use	carName 
-
-}
-
-
-//Automatically Global
-//Sample:3
-
-// code here can use carName
-
-function myFunction() {
-    carName = "Volvo";
-
-    // code here can use carName
-
-}
-```
-
-```js
-JavaScript String Methods:
--------------------------
-var str = "Please locate where 'locate' occurs!";
-var pos = str.indexOf("locate");
-
-var str = "Please locate where 'locate' occurs!";
-var pos = str.lastIndexOf("locate");
-
-var str = "Please locate where 'locate' occurs!";
-var pos = str.search("locate");
-
-var str = "Apple, Banana, Kiwi";
-var res = str.slice(7,13);
-
-
-var str = "Apple, Banana, Kiwi";
-var res = str.slice(-12,-6);
-var res = str.slice(7);
-var res = str.slice(-12);
-
-var str = "Apple, Banana, Kiwi";
-var res = str.substring(7,13);
-
-var str = "Apple, Banana, Kiwi";
-var res = str.substr(7,6);
-
-str = "Please visit Microsoft!";
-var n = str.replace("Microsoft","W3Schools");
-
-var text1 = "Hello World!";       // String
-var text2 = text1.toUpperCase();  // text2 is text1 converted to upper
-
-var text1 = "Hello World!";       // String
-var text2 = text1.toLowerCase();  // text2 is text1 converted to lower
-
-
-var text1 = "Hello";
-var text2 = "World";
-text3 = text1.concat("	",text2);
-
-
-var text = "Hello" + " " + "World!";
-var text = "Hello".concat(" ","World!");
-
-
-var str = "HELLO WORLD";
-str.charAt(0);            // returns H
-
-
-var str = "HELLO WORLD";
-
-str.charCodeAt(0);         //	returns 72
-
-
-var str = "HELLO WORLD";
-
-str[0];                   // returns H
-
-
-
-
-var txt = "a,b,c,d,e";   // String
-txt.split(",");          // Split on commas
-txt.split(" ");          // Split on spaces
-txt.split("|");          // Split on pipe
-
-
-
-var txt = "Hello";       // String
-txt.split("");           // Split in characters
-```
-
-```js
-
-//Number
-
-var x = 34.00;    						// A number with decimals
-var y = 34;       						// A number without decimals
-var x = 123e5;    						// 12300000
-var y = 123e-5;   						// 0.00123
-var x = 0.2 + 0.1;         				// x will be 0.30000000000000004
-var x = (0.2 * 10 + 0.1 * 10) / 10;		// x will be 0.3
-var x = 0xFF;             				// x will be 255   Hexadecimal
-var x =  2 / 0;          // x will be Infinity
-var y = -2 / 0;          // y will be -Infinity
-typeof Infinity;        // returns "number"
-typeof NaN;             // returns "number"
-var x = 100 / "Apple";  // x will be NaN (Not a Number)
-var x = 100 / "10";     // x will be 10
-
-
-var myNumber = 128;
-myNumber.toString(16);     // returns 80
-myNumber.toString(8);      // returns 200
-myNumber.toString(2);      // returns 10000000
-
-
-var x = 100 / "Apple";
-isNaN(x);               // returns true because x is Not a Number
-
-
-var x = NaN;
-var y = 5;
-var z = x + y;         // z will be NaN
-
-
-var x = NaN;
-var y = "5";
-var z = x + y;         // z will be NaN5
-
-
-
-var myNumber = 2;
-while (myNumber != Infinity) {          // Execute until Infinity
-    myNumber = myNumber * myNumber;
-}
-
-
-
-var x = 123;
-var y = new Number(123);
-
-// typeof x returns number
-// typeof y returns object
-
-
-
-var x = 500;             
-var y = new Number(500);
-
-// (x == y) is true because x and y have equal values
-
-
-
-var x = 500;             
-var y = new Number(500);
-
-// (x === y) is false because x and y have different types
-
-
-
-
-var x = new Number(500);             
-var y = new Number(500);
-
-// (x == y) is false because objects cannot be compared
-
-
-
-
-
-var x = 123;
-x.toString();            // returns 123 from variable x
-(123).toString();        // returns 123 from literal 123
-(100 + 23).toString();   // returns 123 from expression 100 + 23
-
-
-var x = 9.656;
-x.toExponential(2);     // returns 9.66e+0
-x.toExponential(4);     // returns 9.6560e+0
-x.toExponential(6);     // returns 9.656000e+0
-
-
-
-var x = 9.656;
-x.toFixed(0);           // returns 10
-x.toFixed(2);           // returns 9.66
-x.toFixed(4);           // returns 9.6560
-x.toFixed(6);           // returns 9.656000
-
-
-
-var x = 9.656;
-x.toPrecision();        // returns 9.656
-x.toPrecision(2);       // returns 9.7
-x.toPrecision(4);       // returns 9.656
-x.toPrecision(6);       // returns 9.65600
-
-
-
-x = true;
-Number(x);        // returns 1
-x = false;     
-Number(x);        // returns 0
-x = new Date();
-Number(x);        // returns 1404568027739
-x = "10"
-Number(x);        // returns 10
-x = "10 20"
-Number(x);        // returns NaN
-
-
-
-parseInt("10");         // returns 10
-parseInt("10.33");      // returns 10
-parseInt("10 20 30");   // returns 10
-parseInt("10 years");   // returns 10
-parseInt("years 10");   // returns NaN 
-
-
-parseFloat("10");        // returns 10
-parseFloat("10.33");     // returns 10.33
-parseFloat("10 20 30");  // returns 10
-parseFloat("10 years");  // returns 10
-parseFloat("years 10");  // returns NaN
-
-
-var x = 123;
-x.valueOf();            // returns 123 from variable x
-(123).valueOf();        // returns 123 from literal 123
-(100 + 23).valueOf();   // returns 123 from expression 100 + 23
-
-
-
-
-Math::
-
-Math.random();       // returns a random number
-Math.min(0, 150, 30, 20, -8, -200);      // returns -200
-Math.max(0, 150, 30, 20, -8, -200);      // returns 150
-Math.random();              // returns a random number
-Math.round(4.7);            // returns 5
-Math.round(4.4);            // returns 4
-Math.ceil(4.4);             // returns 5
-Math.floor(4.7);            // returns 4
-Math.floor(Math.random() * 11);   // returns a random number between 0 and 10
-
-Math.E          // returns Euler's number
-Math.PI         // returns PI
-Math.SQRT2      // returns the square root of 2
-Math.SQRT1_2    // returns the square root of 1/2
-Math.LN2        // returns the natural logarithm of 2
-Math.LN10       // returns the natural logarithm of 10
-Math.LOG2E      // returns base 2 logarithm of E
-Math.LOG10E     // returns base 10 logarithm of E
-
-
-
-Date:
-new Date()
-new Date(milliseconds)
-new Date(dateString)
-new Date(year, month, day, hours, minutes, seconds, milliseconds)
-
-
-
-var d = new Date("2015-03-25");
-var d = new Date("2015-03");
-var d = new Date("2015");
-var d = new Date("2015-03-25T12:00:00");
-var d = new Date("Mar 25 2015");
-var d = new Date("2015 Mar 25");
-var d = new Date("January 25 2015");
-var d = new Date("Jan 25 2015");
-var d = new Date("2015, JANUARY, 25");
-var d = new Date("03-25-2015");
-var d = new Date("2015/03/25");
-var d = new Date("Wed Mar 25 2015 09:56:24 GMT+0100 (W. Europe Standard Time)");
-var d = new Date("Fri Mar 25 2015 09:56:24 GMT+0100 (Tokyo Time)");
-
-
-var d = new Date();
-document.getElementById("demo").innerHTML = d.getTime();
-
-var d = new Date();
-document.getElementById("demo").innerHTML = d.getFullYear();
-
-var d = new Date();
-document.getElementById("demo").innerHTML = d.getDay();
-
-
-var d = new Date();
-var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-document.getElementById("demo").innerHTML = days[d.getDay()];
-
-var d = new Date();
-d.setFullYear(2020, 0, 14);
-document.getElementById("demo").innerHTML = d;
-
-
-var d = new Date();
-d.setDate(20);
-document.getElementById("demo").innerHTML = d;
-
-
-var d = new Date();
-d.setDate(d.getDate() + 50);
-document.getElementById("demo").innerHTML = d;
-
-
-var msec = Date.parse("March 21, 2012");
-document.getElementById("demo").innerHTML = msec;
-
-
-var msec = Date.parse("March 21, 2012");
-var d = new Date(msec);
-document.getElementById("demo").innerHTML = d;
-
-
-var today, someday, text;
-today = new Date();
-someday = new Date();
-someday.setFullYear(2100, 0, 14);
-
-if (someday > today) {
-    text = "Today is before January 14, 2100.";
-} else {
-    text = "Today is after January 14, 2100.";
-}
-document.getElementById("demo").innerHTML = text;
-
-
-//Array
-
-var cars = ["Saab", "Volvo", "BMW"];
-document.getElementById("demo").innerHTML = cars;
-
-var cars = [
-    "Saab",
-    "Volvo",
-    "BMW"
-];
-
-
-var car1 = "Saab";
-var car2 = "Volvo";
-var car3 = "BMW";
-
-
-var cars = new Array("Saab", "Volvo", "BMW");
-
-
-
-//You Can Have Different Objects in One Array
-myArray[0] = Date.now;
-myArray[1] = myFunction;
-myArray[2] = myCars;
-
-
-
-var person = ["John", "Doe", 46];
-
-var person = {firstName:"John", lastName:"Doe", age:46};
-
-
-var x = cars.length;         // The length property returns the number of elements in cars
-var y = cars.sort();         // The sort() method sort cars in alphabetical order
-
-
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.length;                       // the length of fruits is 4
-
-
-//Adding Array Elements
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.push("Lemon");                // adds a new element (Lemon) to fruits
-
-
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits[fruits.length] = "Lemon";     // adds a new element (Lemon) to fruits
-
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits[10] = "Lemon";                // adds a new element (Lemon) to fruits
-
-
-var index;
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-for	(index = 0; index < fruits.length; index++) {
-    text += fruits[index];
-}
-
-
-
-var person = [];
-person[0] = "John";
-person[1] = "Doe";
-person[2] = 46;
-var x = person.length;         // person.length will return 3
-var y = person[0];             // person[0] will return "John"
-
-
-var person = [];
-person["firstName"] = "John";
-person["lastName"] = "Doe";
-person["age"] = 46;
-var x = person.length;         // person.length will return 0
-var y = person[0];             // person[0] will return undefined
-
-
-
-var points = new Array();         // Bad
-var points = [];                  // Good 
-
-
-var points = new Array(40, 100, 1, 5, 25, 10)  // Bad
-var points = [40, 100, 1, 5, 25, 10];          // Good
-
-
-var points = new Array(40, 100);  // Creates an array with two elements (40 and 100)
-
-
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-
-typeof fruits;             // typeof returns object
-
-
-
-function isArray(myArray) {
-    return myArray.constructor.toString().indexOf("Array") > -1;
-}
-
-
-
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-document.getElementById("demo").innerHTML = fruits.valueOf();
-
-
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-document.getElementById("demo").innerHTML = fruits.toString();
-
-
-var fruits = ["Banana", "Orange","Apple", "Mango"];
-document.getElementById("demo").innerHTML = fruits.join(" * ");
-
-//The pop() method removes the last element from an array:
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.pop();              // Removes the last element ("Mango") from fruits
-
-
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-var x = fruits.pop();      // the value of x is "Mango"
-
-
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.push("Kiwi");       //  Adds a new element ("Kiwi") to fruits
-
-
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-var x = fruits.push("Kiwi");   //  the value of x is 5
-
-
-
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.shift();            // Removes the first element "Banana" from fruits
-
-
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.unshift("Lemon");    // Adds a new element "Lemon" to fruits
-
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits[0] = "Kiwi";        // Changes the first element of fruits to "Kiwi"
-
-
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits[fruits.length] = "Kiwi";          // Appends "Kiwi" to fruit
-
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-delete fruits[0];           // Changes the first element in fruits to undefined
-
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.splice(2, 0, "Lemon", "Kiwi");
-
-
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.splice(0, 1);        // Removes the first element of fruits
-
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.sort();            // Sorts the elements of fruits
-
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.sort();            // Sorts the elements of fruits 
-fruits.reverse();         // Reverses the order of the elements
-
-
-var points = [40, 100, 1, 5, 25, 10];
-points.sort(function(a, b){return a-b});
-
-
-var points = [40, 100, 1, 5, 25, 10];
-points.sort(function(a, b){return b-a});
-
-
-var points = [40, 100, 1, 5, 25, 10];
-points.sort(function(a, b){return b-a});
-// now points[0] contains the highest value
-
-
-var points = [40, 100, 1, 5, 25, 10];
-points.sort(function(a, b){return a-b});
-// now points[0] contains the lowest value
-
-
-
-var myGirls = ["Cecilie", "Lone"];
-var myBoys = ["Emil", "Tobias","Linus"];
-var myChildren = myGirls.concat(myBoys);     // Concatenates (joins) myGirls and myBoys
-
-
-var arr1 = ["Cecilie", "Lone"];
-var arr2 = ["Emil", "Tobias","Linus"];
-var arr3 = ["Robin", "Morgan"];
-var myChildren = arr1.concat(arr2, arr3);     // Concatenates arr1 with arr2 and arr3
-
-var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
-var citrus = fruits.slice(1);
-
-
-
-//Conditional (Ternary) Operator
-var voteable = (age < 18) ? "Too young":"Old enough";
-
-
-//JavaScript Comparison and Logical Operators
-
-
-//Comparison Operators
-
-
-Operator	Description					Comparing	Returns	
-==			equal to					x == 8		false	
-										x == 5		true	
-										x == "5"	true	
-===			equal value and equal type	x === 5		true	
-										x === "5"	false	
-!=			not equal					x != 8		true	
-!==			not equal value or not equal type	x !== "5"	true	
-x 												!== 5	false	
->			greater than						x > 8	false	
-<			less than							x < 8	true	
->=			greater than or equal to			x >= 8	false	
-<=			less than or equal to				x <= 8	true
-
-
-
-Logical Operators
-&&		and			(x < 10 && y > 1) is true		
-||		or			(x == 5 || y == 5) is false		
-!		not			!(x == y) is true
-
-
-
-
-//Comparing Different Types
-2 < 12		true		
-2 < "12"	true	
-2 < "John"	false	
-2 > "John"	false	
-2 == "John"	false	
-"2" < "12"	false	
-"2" > "12"	true	
-"2" == "12"	false	
-
-
-
-
-age = Number(age);
-if (isNaN(age)) {
-    voteable = "Error in input";
-} else {
-    voteable = (age < 18) ? "Too young" : "Old enough";
-}
-
-
-
-
-if (time < 10) {
-    greeting = "Good morning";
-} else if (time < 20) {
-    greeting = "Good day";
-} else {
-    greeting = "Good evening";
-}
-
-
-
-
-switch (new Date().getDay()) {
-    case 0:
-        day = "Sunday";
-        break;
-    case 1:
-        day = "Monday";
-        break;
-    case 2:
-        day = "Tuesday";
-        break;
-    case 3:
-        day = "Wednesday";
-        break;
-    case 4:
-        day = "Thursday";
-        break;
-    case 5:
-        day = "Friday";
-        break;
-    case 6:
-        day = "Saturday";
-        break;
-}
-
-
-
-
-for (i = 0; i < cars.length; i++) { 
-    text += cars[i] + "<br>";
-}
-
-
-for (i = 0, len = cars.length, text = ""; i < len; i++) { 
-    text += cars[i] + "<br>";
-}
-
-
-var i = 2;
-var len = cars.length;
-var text = "";
-for (; i < len; i++) { 
-    text += cars[i] + "<br>";
-}
-
-
-
-var person = {fname:"John", lname:"Doe", age:25}; 
-
-var text = "";
-var x;
-for (x in person) {
-    text += person[x];
-}
-
-
-
-while (i < 10) {
-    text += "The number is " + i;
-    i++;
-}
-
-
-do {
-    text += "The number is " + i;
-    i++;
-}
-while (i < 10);
-
-
-
-
-var cars = ["BMW", "Volvo", "Saab", "Ford"];
-var i = 0;
-var text = "";
-
-for (;cars[i];) {
-    text += cars[i] + "<br>";
-    i++;
-}
-
-
-
-var cars = ["BMW", "Volvo", "Saab", "Ford"];
-var i = 0;
-var text = "";
-
-while (cars[i]) {
-    text += cars[i] + "<br>";
-    i++;
-}
-
-
-
-for (i = 0; i < 10; i++) {
-    if (i === 3) { break; }
-    text += "The number is " + i + "<br>";
-}
-
-
-
-typeof "John"                 // Returns string 
-typeof 3.14                   // Returns number
-typeof NaN                    // Returns number
-typeof false                  // Returns boolean
-typeof [1,2,3,4]              // Returns object
-typeof {name:'John', age:34}  // Returns object
-typeof new Date()             // Returns object
-typeof function () {}         // Returns function
-typeof myCar                  // Returns undefined (if myCar is not declared)
-typeof null                   // Returns object
-
-
-
 "John".constructor                 // Returns function String()  { [native code] }
 (3.14).constructor                 // Returns function Number()  { [native code] }
 false.constructor                  // Returns function Boolean() { [native code] }
@@ -3663,14 +3231,9 @@ false.constructor                  // Returns function Boolean() { [native code]
 {name:'John', age:34}.constructor  // Returns function Object()  { [native code] }
 new Date().constructor             // Returns function Date()    { [native code] }
 function () {}.constructor         // Returns function Function(){ [native code] }
+```
 
-
-Number("3.14")    // returns 3.14
-Number(" ")       // returns 0 
-Number("")        // returns 0
-Number("99 88")   // returns NaN
-
-
+```js
 //Automatic Type Conversion
 5 + null    // returns 5         because null is converted to 0
 "5" + null  // returns "5null"   because null is converted to "null"
@@ -3678,262 +3241,17 @@ Number("99 88")   // returns NaN
 "5" - 2     // returns 3         because "5" is converted to 5
 "5" * "2"   // returns 10        because "5" and "2" are converted to 5 and 2
 
-
-//Automatic String Conversion
-
-
-
-
-//JavaScript Errors - Throw and Try to Catch
-
-try {
-    Block of code to try
-}
-catch(err) {
-    Block of code to handle errors
-} 
-finally {
-    Block of code to be executed regardless of the try / catch result
-}
-
-
-//The throw Statement
-throw "Too big";    // throw a text
-throw 500;          // throw a number
-
-
-
-
-The debugger Keyword
-ar x = 15 * 5;
-debugger;
-document.getElementbyId("demo").innerHTML = x;
-
-
-
-
-JavaScript Hoisting
-
-
-
-
-JavaScript Use Strict
-
-Using a variable (property or object) without declaring it, is not allowed:
-
-"use strict";
-x = 3.14;                 // This will cause an error (if x has not been declared)
-Deleting a variable, a function, or an argument, is not allowed.
-
-"use strict";
-x = 3.14;
-delete x;                 // This will cause an error
-Defining a property more than once, is not allowed:
-
-"use strict";
-var x = {p1:10, p1:20};   // This will cause an error
-Duplicating a parameter name is not allowed:
-
-"use strict";
-function x(p1, p1) {};    // This will cause an error
-Octal numeric literals and escape characters are not allowed:
-
-"use strict";
-var x = 010;             // This will cause an error
-var y = \010;            // This will cause an error
-Writing to a read-only property is not allowed:
-
-"use strict";
-var obj = {};
-obj.defineProperty(obj, "x", {value:0, writable:false});
-
-obj.x = 3.14;            // This will cause an error
-Writing to a get-only property is not allowed:
-
-"use strict";
-var obj = {get x() {return 0} };
-
-obj.x = 3.14;            // This will cause an error
-Deleting an undeletable property is not allowed:
-
-"use strict";
-delete Object.prototype; // This will cause an error
-The string "eval" cannot be used as a variable:
-
-"use strict";
-var eval = 3.14;         // This will cause an error
-The string "arguments" cannot be used as a variable:
-
-"use strict";
-var arguments = 3.14;    // This will cause an error
-The with statement is not allowed:
-
-"use strict";
-with (Math){x = cos(2)}; // This will cause an error
-For security reasons, eval() is not allowed to create variables in the scope from which it was called:
-
-"use strict";
-eval ("var x = 2");
-alert (x)                // This will cause an error
-
-
-
-JavaScript Objects::
-var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
-
-
-var person = {
-    firstName:"John",
-    lastName:"Doe",
-    age:50,
-    eyeColor:"blue"
-};
-
-
-var person = new Object();
-person.firstName = "John";
-person.lastName = "Doe";
-person.age = 50;
-person.eyeColor = "blue";
-
-
-
-//Using an Object Constructor
-function person(first, last, age, eye) {
-    this.firstName = first;
-    this.lastName = last;
-    this.age = age;
-    this.eyeColor = eye;
-}
-var myFather = new person("John", "Doe", 50, "blue");
-var myMother = new person("Sally", "Rally", 48, "green");
-
-
-
-person.firstname + " is " + person.age + " years old.";
-
-
-person["firstname"] + " is " + person["age"] + " years old.";
-
-
-var person = {fname:"John", lname:"Doe", age:25}; 
-
-for (x in person) {
-    txt += person[x];
-}
-
-
-//Deleting Properties
-var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
-delete person.age;   // or delete person["age"]; 
-
-
-name = person.fullName();
-
-
-name = person.fullName;
-
-
-
-//Adding New Methods
-function person(firstName, lastName, age, eyeColor) {
-    this.firstName = firstName;  
-    this.lastName = lastName;
-    this.age = age;
-    this.eyeColor = eyeColor;
-    this.changeName = function (name) {
-        this.lastName = name;
-    }
-}
-
-
-function person(first, last, age, eyecolor) {
-    this.firstName = first;
-    this.lastName = last;
-    this.age = age;
-    this.eyeColor = eyecolor;
-}
-person.prototype.nationality = "English";
-
-
-
-function person(first, last, age, eyecolor) {
-    this.firstName = first;
-    this.lastName = last;
-    this.age = age;
-    this.eyeColor = eyecolor;
-}
-person.prototype.name = function() {
-    return this.firstName + " " + this.lastName;
-};
-
-
-
-//JavaScript Function Definitions
-
-Function Declarations
-function myFunction(a, b) {
-    return a * b;
-}
-
-
-Function Expressions
-var x = function (a, b) {return a * b};
-
-
-//Self-Invoking Functions
-(function () {
-    var x = "Hello!!";      // I will invoke myself
-})();
-
-
-//Functions Can Be Used as Values
-
-function myFunction(a, b) {
-    return a * b;
-}
-
-var x = myFunction(4, 3);
-
-
-
-
-//Invoking a Function with a Function Method
-function myFunction(a, b) {
-    return a * b;
-}
-myObject = myFunction.call(myObject, 10, 2);     // Will return 20
-
-
-
-
-
-function myFunction(a, b) {
-    return a * b;
-}
-myArray = [10, 2];
-myObject = myFunction.apply(myObject, myArray);  // Will also return 20
-
-
-
-
-
-DOM::
-
-document.getElementById("demo").innerHTML = "Hello World!";
-
-
-var x = document.getElementsByTagName("p");
-
-var x = document.getElementById("main");
-var y = x.getElementsByTagName("p");
-
-var x = document.getElementsByClassName("intro");
-
-var x = document.querySelectorAll("p.intro");
-
+```
 
 ```js
+//Difference Between Undefined and Null
+null === undefined           // false
+null == undefined            // true
+```
 
-
-
+```js
+//JavaScript Arithmetic
+var x = 5 + 2 + 3;
+var x = "John" + " " + "Doe";
+var x = "5" + 2 + 3;	//523
+```
