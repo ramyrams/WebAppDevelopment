@@ -87,6 +87,22 @@ var answer = "He is called 'Johnny'";
 var answer = 'He is called "Johnny"';
 ```
 
+### typeof Operator
+```js	
+typeof "John"                // Returns "string" 
+typeof 3.14                  // Returns "number"
+typeof false                 // Returns "boolean"
+typeof [1,2,3,4]             // Returns "object" (not "array", see note below)
+typeof {name:'John', age:34} // Returns "object"
+typeof NaN                    // Returns number
+typeof false                  // Returns boolean
+typeof new Date()             // Returns object
+typeof function () {}         // Returns function
+typeof myCar                  // Returns undefined (if myCar is not declared)
+typeof undefined              // undefined
+typeof a;               		// "undefined"
+typeof null;               		// "object" -- weird, bug
+```
 
 ### Strings
 ```js	
@@ -1998,3 +2014,46 @@ function myFunction(a, b) {
 
 
 ```
+
+
+### Math
+```js	
+Math.random();       // returns a random number
+Math.min(0, 150, 30, 20, -8, -200);      // returns -200
+Math.max(0, 150, 30, 20, -8, -200);      // returns 150
+Math.random();              // returns a random number
+Math.round(4.7);            // returns 5
+Math.round(4.4);            // returns 4
+Math.ceil(4.4);             // returns 5
+Math.floor(4.7);            // returns 4
+Math.floor(Math.random() * 11);   // returns a random number between 0 and 10
+
+Math.E          // returns Euler's number
+Math.PI         // returns PI
+Math.SQRT2      // returns the square root of 2
+Math.SQRT1_2    // returns the square root of 1/2
+Math.LN2        // returns the natural logarithm of 2
+Math.LN10       // returns the natural logarithm of 10
+Math.LOG2E      // returns base 2 logarithm of E
+Math.LOG10E     // returns base 10 logarithm of E
+
+
+Math.pow(2,53) // => 9007199254740992: 2 to the power 53
+Math.round(.6) // => 1.0: round to the nearest integer
+Math.ceil(.6) // => 1.0: round up to an integer
+Math.floor(.6) // => 0.0: round down to an integer
+Math.abs(-5) // => 5: absolute value
+Math.max(x,y,z) // Return the largest argument
+Math.min(x,y,z) // Return the smallest argument
+Math.random() // Pseudo-random number x where 0 <= x < 1.0
+Math.PI // π: circumference of a circle / diameter
+Math.E // e: The base of the natural logarithm
+Math.sqrt(3) // The square root of 3
+Math.pow(3, 1/3) // The cube root of 3
+Math.sin(0) // Trigonometry: also Math.cos, Math.atan, etc.
+Math.log(10) // Natural logarithm of 10
+Math.log(100)/Math.LN10 // Base 10 logarithm of 100
+Math.log(512)/Math.LN2 // Base 2 logarithm of 512
+Math.exp(3) // Math.E cubed
+```
+
