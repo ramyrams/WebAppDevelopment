@@ -14,7 +14,7 @@ javascript
 //http://www.ling.gu.se/~lager/teaching/dialogue_systems%20II/labs/javascript.html	
 	
 	
-	
+### Comments	
 ```js	
 // Single line comments
 
