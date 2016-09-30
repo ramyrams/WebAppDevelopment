@@ -75,6 +75,12 @@ var b = -10 / 0;          // => -Infinity
 var c = Math.sqrt(-1);    // => NaN : Not a Number
 ```
 
+### Between Undefined and Null
+```js
+null === undefined           // false
+null == undefined            // true
+```
+
 ### Constants
 ```js
 const prefix = '212';
@@ -2194,3 +2200,167 @@ do {
 while (i < 10);
 ```
 
+
+
+## Operators
+
+
+### Boolean Operators
+```js	
+alert(!false); //true
+alert(!”blue”); //false
+alert(!0); //true
+alert(!NaN); //true
+alert(!””); //true
+alert(!12345); //false
+alert(!!”blue”); //true
+alert(!!0); //false
+alert(!!NaN); //false
+alert(!!””); //false
+alert(!!12345); //true
+```
+
+
+### Comparison Operators
+```js	
+Operator	Description							Comparing	Returns	
+==			equal to							x == 8		false	
+												x == 5		true	
+												x == "5"	true	
+===			equal value and equal type			x === 5		true	
+												x === "5"	false	
+!=			not equal							x != 8		true	
+!==			not equal value or not equal type	x !== "5"	true	
+x 												!== 5		false	
+>			greater than						x > 8		false	
+<			less than							x < 8		true	
+>=			greater than or equal to			x >= 8		false	
+<=			less than or equal to				x <= 8		true
+
+//Equal (==)
+1 == 1 		// returns true
+"1" == 1 	// returns true ("1" converts to 1)
+1 == true 	// returns true
+0 == false 	// returns true
+"" == 0 	// returns true ("" converts to 0)
+" " == 0 	// returns true (" " converts to 0)
+0 == 1 		// returns false
+1 == false 	// returns false
+0 == true 	// returns false
+var x, y; 	// declare x and y
+x = {}; 	// create an object and assign it to x
+y = x; 		// point y to x
+x == y; 	// returns true (refers to same object in memory)
+x == {}; 	// returns false (not the same object)
+
+//Not Equal (!=)
+1 != 1 // returns false
+"1" != 1 // returns false ("1" converts to 1)
+1 != true // returns false
+0 != false // returns false
+"" != 0 // returns false ("" converts to 0)
+" " != 0 // returns false (" " converts to 0)
+0 != 1 // returns true
+1 != false // returns true
+0 != true // returns true
+var x, y; // declare x and y
+x = {}; // create an object and assign it to x
+y = x; // point y to x
+x != y; // returns false (refers to same object in memory)
+x != {}; // returns true (not the same object)
+
+
+//Strict Equal (===)
+1 === 1 // returns true
+"1" === 1 // returns false ("1" is not converted)
+1 === true // returns false
+0 === false // returns false
+"" === 0 // returns false ("" is not converted)
+" " === 0 // returns false (" " is not converted)
+0 === 1 // returns false
+1 === false // returns false
+0 === true // returns false
+var x, y; // declare x and y
+x = {}; // create an object and assign it to x
+y = x; // point y to x
+x === y; // returns true (refers to same object in memory)
+x === {}; // returns false (not the same object)
+
+//Strict Not Equal (!==)
+1 !== 1 // returns false
+"1" !== 1 // returns true ("1" is not converted)
+1 !== true // returns true
+0 !== false // returns true
+"" !== 0 // returns true ("" is not converted)
+" " !== 0 // returns true (" " is not converted)
+0 !== 1 // returns true
+1 !== false // returns true
+0 !== true // returns true
+var x, y; // declare x and y
+x = {}; // create an object and assign it to x
+y = x; // point y to x
+x !== y; // returns false (refers to same object in memory)
+x !== {}; // returns true (not the same object)
+
+
+//Greater than (>)
+0 > 1 // returns false
+1 > 1 // returns false
+2 > 1 // returns true
+2 > "" // returns true ("" converts to 0)
+
+//Greater than or Equal to (>=)
+0 >= 1 // returns false
+1 >= 1 // returns true
+"1" >= 1 // returns true ("1" converts to 1)
+
+//Less than (<)
+0 < 1 // returns true
+1 < 1 // returns false
+2 < 1 // returns false
+2 < "" // returns false ("" converts to 0)
+
+//Less than or Equal to (<=)
+0 <= 1 // returns true
+1 <= 1 // returns true
+"1" <= 1 // returns true ("1" converts to 1)
+2 <= 1 // returns false
+"2" <= 1 // returns false ("2" converts to 2)
+
+//&& symbols (AND)
+true && true; // returns true
+true && false; // returns false
+false && true; // returns false
+0 && 1; // returns 0
+0 && 2; // returns 0
+1 && 0; // returns 0
+2 && 0; // returns 0
+"foo" && "bar" // returns "bar"
+
+
+//|| symbols (OR)
+true || true; // returns true
+true || false; // returns true
+false || true; // returns true
+0 || 1; // returns 1
+0 || 2; // returns 2
+1 || 0; // returns 1
+2 || 0; // returns 2
+"foo" || "bar"; // returns foo
+
+
+//!  symbols (NOT)
+!true; // returns false
+!false; // returns true
+!0; // returns true
+!1; // returns false
+!"foo"; // returns false
+
+```
+
+### Logical Operators
+```js
+&&		and			(x < 10 && y > 1) is true		
+||		or			(x == 5 || y == 5) is false		
+!		not			!(x == y) is true
+```
