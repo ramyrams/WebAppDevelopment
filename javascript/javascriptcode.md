@@ -97,6 +97,29 @@ var answer = "He is called 'Johnny'";
 var answer = 'He is called "Johnny"';
 ```
 
+
+//Grouping statements
+var a = function(){
+	alert(“Statement 1”);
+	alert(“Statement 2”);
+};
+
+
+Brackets: []
+Hold arrays
+
+Braces:{}
+	Create Objects
+	group statement
+
+	
+Parantheses:()
+	supply parameters
+	group expressions
+	execute functions
+
+```
+
 ### typeof Operator
 ```js	
 typeof "John"                // Returns "string" 
