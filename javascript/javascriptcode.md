@@ -38,21 +38,6 @@ var task = "Write the first chapter.";
 //One Statement, Many Variables
 var person = "John Doe", carName = "Volvo", price = 200;
 
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 var x2 = "";            	// new primitive string
 var lastName = "Johnson";  	// String
 var x3 = 0;             	// new primitive number
@@ -91,10 +76,11 @@ var a = 10 / 0;           // => Infinity
 var b = -10 / 0;          // => -Infinity
 var c = Math.sqrt(-1);    // => NaN : Not a Number
 
-/*---------------------------------------------------------------------------------	
-//All valid variable names 
------------------------------------------------------------------------------------*/
+```
 
+
+### All valid variable names 
+```js	
 var myText;
 var $;
 var r8;
@@ -103,13 +89,14 @@ var $field;
 var thisIsALongVariableName_butItCouldBeLonger;
 var __$abc;
 var OldSchoolNamingScheme;
+```
 
 
 //Constants
 const prefix = '212';
 
 
-
+```js	
 //Array of objects
 var tasks;
 tasks = [
@@ -130,11 +117,11 @@ tasks = [
 			}
 		];
 
+```	
 
-
-/*---------------------------------------------------------------------------------	
-typeof
------------------------------------------------------------------------------------*/
+	
+### typeof
+```js	
 typeof "John"                 // Returns string 
 typeof 3.14                   // Returns number
 typeof NaN                    // Returns number
@@ -147,12 +134,11 @@ typeof myCar                  // Returns undefined (if myCar is not declared)
 typeof undefined              // undefined
 typeof a;               		// "undefined"
 typeof null;               		// "object" -- weird, bug
-
+```
 		
 		
-/*---------------------------------------------------------------------------------	
-:string
------------------------------------------------------------------------------------*/
+### :string
+```js	
 var s = "hello, world" // Start with some text.
 s.length
 s[0] 						// => "h"
@@ -251,13 +237,11 @@ valueOf()
 var str = "Hello World!";
 var res = str.valueOf();
 Hello World!
+```
 
 
-
-/*---------------------------------------------------------------------------------	
-JavaScript String Methods:
------------------------------------------------------------------------------------*/
-
+### JavaScript String Methods:
+```js	
 var str = "Please locate where 'locate' occurs!";
 var pos = str.indexOf("locate");
 
@@ -323,14 +307,12 @@ txt.split("|");          // Split on pipe
 var txt = "Hello";       // String
 txt.split("");           // Split in characters
 
+```
 
 
 
-
-/*---------------------------------------------------------------------------------	
-:Number
------------------------------------------------------------------------------------*/
-
+### Number
+```js	
 //Integers - Integers can be expressed in decimal (base 10), hexadecimal (base 16), octal (base 8) and binary (base 2).
 
 Decimal integer literal consists of a sequence of digits without a leading 0 (zero).
@@ -569,12 +551,10 @@ var x = 123;
 x.valueOf();            // returns 123 from variable x
 (123).valueOf();        // returns 123 from literal 123
 (100 + 23).valueOf();   // returns 123 from expression 100 + 23
+```
 
-
-/*---------------------------------------------------------------------------------	
-Math
------------------------------------------------------------------------------------*/
-
+### Math
+```js	
 Math.random();       // returns a random number
 Math.min(0, 150, 30, 20, -8, -200);      // returns -200
 Math.max(0, 150, 30, 20, -8, -200);      // returns 150
@@ -612,15 +592,11 @@ Math.log(10) // Natural logarithm of 10
 Math.log(100)/Math.LN10 // Base 10 logarithm of 100
 Math.log(512)/Math.LN2 // Base 2 logarithm of 512
 Math.exp(3) // Math.E cubed
+```
 
 
-
-
-
-
-/*---------------------------------------------------------------------------------	
-Date
------------------------------------------------------------------------------------*/
+### Date
+```js	
 var then = new Date(2010, 0, 1); 				// The 1st day of the 1st month of 2010
 var later = new Date(2010, 0, 1, 17, 10, 30); 	// Same day, at 5:10:30pm, local time
 
@@ -703,12 +679,10 @@ if (someday > today) {
     text = "Today is after January 14, 2100.";
 }
 document.getElementById("demo").innerHTML = text;
+```
 
-
-/*---------------------------------------------------------------------------------	
-:Array
------------------------------------------------------------------------------------*/
-
+### Array
+```js	
 var a = [];                         // no elements
 var b = new Array();                // equivalent to a
 var c = [,,,,];                     // 4 elements, all undefined.
@@ -1001,18 +975,12 @@ a.indexOf(1) // => 1: a[1] is 1
 a.lastIndexOf(1) // => 3: a[3] is 1
 a.indexOf(3) // => -1: no element has value 3
 
+```
 
 
-
-
-
-
-
-/*---------------------------------------------------------------------------------	
-:Object
+### Object
 http://www.kirupa.com/html5/a_deeper_look_at_objects_in_javascript.htm
------------------------------------------------------------------------------------*/
-
+```js	
 var myObject = new Object();
 
 //it is much better to do this:
@@ -1180,12 +1148,11 @@ var z = new Boolean();       //	Declares z as a Boolean object
 
 //Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed.
 
+```
 
 
-
-/*---------------------------------------------------------------------------------	
-:Constructors and Protot types
------------------------------------------------------------------------------------*/
+### Constructors and Protot types
+```js	
 function Person(name) {
 	 this.name = name;
 	 this.sayName = function() {
@@ -1214,13 +1181,12 @@ return this.charAt(0).toUpperCase() + this.substring(1);
 var message = "hello world!";
 console.log(message.capitalize()); // "Hello world!"
 
+```
 
 
 
-
-/*---------------------------------------------------------------------------------	
-:Function
------------------------------------------------------------------------------------*/
+### Function
+```js	
 //Sample:1
 //function declaration 
 function sayHello() {
@@ -1570,11 +1536,10 @@ function myFunction() {
 
 	
 }
+```js	
 
-
-/*------------------------------------------------------------------------------------------------------
-:Coercion - 
-------------------------------------------------------------------------------------------------------*/
+### Coercion 
+```js	
 //explicit coercion:
 var a = "42";
 var b = Number( a );
@@ -1588,11 +1553,9 @@ var a = "42";
 var b = a * 1;  // "42" implicitly coerced to 42 here
 a;              // "42"
 b;              // 42 -- the number!
+```
 
-
-/*------------------------------------------------------------------------------------------------------
-:Scopes
-------------------------------------------------------------------------------------------------------*/
+### Scopes
 
 
 
@@ -1600,6 +1563,9 @@ b;              // 42 -- the number!
 Immediately Invoked Function Expressions (aka IIFE)
 http://www.kirupa.com/html5/immediately_invoked_function_expressions_iife.htm
 ------------------------------------------------------------------------------------------------------*/
+### Immediately Invoked Function Expressions (aka IIFE)
+
+```js	
 //Writing a Simple IIFE
 
 (function() {
@@ -1614,15 +1580,12 @@ http://www.kirupa.com/html5/immediately_invoked_function_expressions_iife.htm
     alert("My name is " + last + ", " + first + " " + last + ".");
  
 })("James", "Bond");
+```
 
 
-
-
+```js	
 // Empty Object
 //Brackets. Braces. Parentheses.
-
-
-
 
 
 
@@ -1631,13 +1594,6 @@ var x = 5 + 2 + 3;
 var x = "John" + " " + "Doe";
 var x = "5" + 2 + 3;	//523
 
-
-
-
-
-
-
-	
 
 
 
@@ -1661,6 +1617,7 @@ Parantheses:()
 	group expressions
 	execute functions
 
+```
 
 
 
@@ -1669,10 +1626,8 @@ Parantheses:()
 
 
 
-
-/*---------------------------------------------------------------------------------	
-Variable Scope
------------------------------------------------------------------------------------*/
+### Variable Scope
+```js	
 //Ex:1
 var scope = "global"; // Declare a global variable
 function checkscope() {
@@ -1704,11 +1659,10 @@ return scope; // Return the value in scope here
 return nested();
 }
 checkscope() // => "nested scope"
+```
 
-
-/*---------------------------------------------------------------------------------	
-Function Scope and Hoisting
------------------------------------------------------------------------------------*/
+### Function Scope and Hoisting
+```js	
 //Ex:1
 function test(o) {
 var i = 0; // i is defined throughout function
@@ -1737,14 +1691,13 @@ console.log(scope); // It exists here, but still has "undefined" value
 scope = "local"; // Now we initialize it and give it a value
 console.log(scope); // And here it has the value we expect
 }
+```
 
 
 
 
-
-/*---------------------------------------------------------------------------------	
-:Pattern Matching
------------------------------------------------------------------------------------*/
+### Pattern Matching
+```js	
 var text = "testing: 1, 2, 3"; // Sample text
 var pattern = /\d+/g // Matches all instances of one or more digits
 pattern.test(text) // => true: a match exists
@@ -1752,22 +1705,20 @@ text.search(pattern) // => 9: position of first match
 text.match(pattern) // => ["1", "2", "3"]: array of all matches
 text.replace(pattern, "#"); // => "testing: #, #, #"
 text.split(/\D+/); // => ["","1","2","3"]: split on non-digits
+```	
 
 
-
-/*---------------------------------------------------------------------------------	
-Constants and Scoped Variables
------------------------------------------------------------------------------------*/
+### Constants and Scoped Variables
+```js	
 const pi = 3.14; 	// Define a constant and give it a value.
 pi = 4; 			// Any future assignments to it are silently ignored.
 const pi = 4; 		// It is an error to redeclare a constant.
 var pi = 4; 		// This is also an error.
+```
 
 
-
-/*---------------------------------------------------------------------------------	
-IF Condition
------------------------------------------------------------------------------------*/
+###  IF Condition
+```js	
 if (i > 25) {
 	alert(“Greater than 25.”);
 } else if (i < 0) {
@@ -1775,13 +1726,12 @@ if (i > 25) {
 } else {
 	alert(“Between 0 and 25, inclusive.”);
 }
+```
 
 
 
-
-/*---------------------------------------------------------------------------------	
-Boolean Operators
------------------------------------------------------------------------------------*/
+### Boolean Operators
+```js	
 alert(!false); //true
 alert(!”blue”); //false
 alert(!0); //true
@@ -1793,13 +1743,9 @@ alert(!!0); //false
 alert(!!NaN); //false
 alert(!!””); //false
 alert(!!12345); //true
+```
 
-
-
-
-
-
-
+```js	
 
 var person = ["John", "Doe", 46];
 
@@ -2066,12 +2012,11 @@ var voteable = (age < 18) ? "Too young":"Old enough";
 
 
 //JavaScript Comparison and Logical Operators
+```
 
 
-/*---------------------------------------------------------------------------------	
-Comparison Operators
------------------------------------------------------------------------------------*/
-
+### Comparison Operators
+```js	
 Operator	Description							Comparing	Returns	
 ==			equal to							x == 8		false	
 												x == 5		true	
@@ -2205,19 +2150,17 @@ false || true; // returns true
 !1; // returns false
 !"foo"; // returns false
 
+```
 
-/*---------------------------------------------------------------------------------	
-Logical Operators
------------------------------------------------------------------------------------*/
+### Logical Operators
+```js
 &&		and			(x < 10 && y > 1) is true		
 ||		or			(x == 5 || y == 5) is false		
 !		not			!(x == y) is true
+```
 
-
-/*---------------------------------------------------------------------------------	
-Comparing Different Types
------------------------------------------------------------------------------------*/
-
+### Comparing Different Types
+```js
 2 < 12		true		
 2 < "12"	true	
 2 < "John"	false	
@@ -2275,12 +2218,11 @@ switch (new Date().getDay()) {
         break;
 }
 
+```js
 
 
-
-/*---------------------------------------------------------------------------------	
-:for loop
------------------------------------------------------------------------------------*/
+### for loop
+```js
 for (i = 0; i < cars.length; i++) { 
     text += cars[i] + "<br>";
 }
@@ -2326,8 +2268,9 @@ for (var i = "a"; i !="aaaaaaaa"; i += "a") {
     document.writeln("hmm...");
 }
 
+```
 
-
+```js
 var person = {fname:"John", lname:"Doe", age:25}; 
 
 var text = "";
@@ -2368,12 +2311,11 @@ for (key in agents) {
 		console.log('Standard spy, ' + agents[key] + 'has been found');
 	}
 }
+```
 
 
-
-/*---------------------------------------------------------------------------------	
-while loop
------------------------------------------------------------------------------------*/
+### while loop
+```js
 
 while (i < 10) {
     text += "The number is " + i;
@@ -2389,17 +2331,16 @@ while (cars[i]) {
     text += cars[i] + "<br>";
     i++;
 }
+```
 
-
-/*---------------------------------------------------------------------------------	
-do while loop
------------------------------------------------------------------------------------*/
-
+### do while loop
+```js
 do {
     text += "The number is " + i;
     i++;
 }
 while (i < 10);
+```
 
 
 
@@ -2407,7 +2348,7 @@ while (i < 10);
 
 
 
-
+```js
 
 
 
@@ -2434,13 +2375,11 @@ Number("99 88")   // returns NaN
 "5" - 2     // returns 3         because "5" is converted to 5
 "5" * "2"   // returns 10        because "5" and "2" are converted to 5 and 2
 
-
+```
 //Automatic String Conversion
 
 
-/*---------------------------------------------------------------------------------	
-//:Try to Catch
------------------------------------------------------------------------------------*/
+### Try to Catch
 try {
 	var result = divideBy(7, 2);
 
@@ -2460,11 +2399,10 @@ try {
 } finally {
   closeMyFile(); // always close the resource
 }
+```
 
-
-/*---------------------------------------------------------------------------------	
-//:throw statement
------------------------------------------------------------------------------------*/
+### throw statement
+```js
 throw expression;
 throw "Error2";   // String type
 throw 42;         // Number type
@@ -2499,24 +2437,25 @@ throw new Error('Denominator must be non zero');
 }
 return numerator / denominator;
 }
+```
 
 
 
-
-The debugger Keyword
-ar x = 15 * 5;
+### The debugger Keyword
+```js
+var x = 15 * 5;
 debugger;
 document.getElementbyId("demo").innerHTML = x;
+```
+
+
+
+### JavaScript Hoisting
 
 
 
 
-JavaScript Hoisting
-
-
-
-
-JavaScript Use Strict
+### JavaScript Use Strict
 
 Using a variable (property or object) without declaring it, is not allowed:
 
