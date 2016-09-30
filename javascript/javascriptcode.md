@@ -78,6 +78,10 @@ var c = Math.sqrt(-1);    // => NaN : Not a Number
 ### Constants
 ```js
 const prefix = '212';
+const pi = 3.14; 	// Define a constant and give it a value.
+pi = 4; 			// Any future assignments to it are silently ignored.
+const pi = 4; 		// It is an error to redeclare a constant.
+var pi = 4; 		// This is also an error.
 ```
 
 ### Escape single quote and double quote
