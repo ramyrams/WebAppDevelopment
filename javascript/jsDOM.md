@@ -20,7 +20,23 @@ var x = document.getElementById("main");
 var y = x.getElementsByTagName("p");
 var x = document.getElementsByClassName("intro");
 var x = document.querySelectorAll("p.intro");
+
+
+document.getElementById('intro').style.color = '#FF0000';
+
+var myDocument = document;
+var myIntro = myDocument.getElementById('intro');
+var myIntroStyles = myIntro.style;
+   
+// And now, we can set the color:
+myIntroStyles.color = '#FF0000';
 ```
+
+
+	
+
+
+
 
 
 ```html
