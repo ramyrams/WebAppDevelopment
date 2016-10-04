@@ -104,7 +104,7 @@ for (var i in divs) {
 
 
 
-
+### Update the content dynamically
 ```html
 <html>
 <body>
@@ -121,11 +121,9 @@ for (var i in divs) {
 <!DOCTYPE html>
 <html>
 <body>
-
-<script>
-document.write(Date());
-</script>
-
+	<script>
+		document.write(Date());
+	</script>
 </body>
 </html>
 ```
@@ -134,12 +132,11 @@ document.write(Date());
 ```html
 <html>
 <body>
+	<p id="p1">Hello World!</p>
 
-<p id="p1">Hello World!</p>
-
-<script>
-document.getElementById("p1").innerHTML = "New text!";
-</script>
+	<script>
+		document.getElementById("p1").innerHTML = "Updated Text!";
+	</script>
 
 </body>
 </html>
@@ -147,36 +144,35 @@ document.getElementById("p1").innerHTML = "New text!";
 
 ### Changing the Value of an Attribute
 ```html
-<!DOCTYPE html>
 <html>
 <body>
 
-<img id="myImage" src="smiley.gif">
+	<img id="myImage" src="http://www.freeiconspng.com/uploads/green-button-icon-png-33.png">
 
-<script>
-document.getElementById("myImage").src = "landscape.jpg";
-</script>
+	<script>
+	    document.getElementById("myImage").src = "http://www.thehindu.com/multimedia/dynamic/02620/13kigkk03-tinse_RA_2620048g.jpg";
+	</script>
 
 </body>
 </html>
+
 ```
 
 ### Changing HTML Style
 ```html
-<!DOCTYPE html>
 <html>
 <body>
 
-<p id="p1">Hello World!</p>
-<p id="p2">Hello World!</p>
+    <p id="p1">Hello World!</p>
+    <p id="p2">Hello World!</p>
 
-<script>
-document.getElementById("p2").style.color = "blue";
-document.getElementById("p2").style.fontFamily = "Arial";
-document.getElementById("p2").style.fontSize = "larger";
-</script>
+    <script>
+        document.getElementById("p2").style.color = "blue";
+        document.getElementById("p2").style.fontFamily = "Arial";
+        document.getElementById("p2").style.fontSize = "larger";
+    </script>
 
-<p>The paragraph above was changed by a script.</p>
+    <p>The paragraph above was changed by a script.</p>
 
 </body>
 </html>
