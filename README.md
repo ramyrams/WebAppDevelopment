@@ -76,3 +76,4 @@
 ![1](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/analysis-dom-css.png)
 
 ![1](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/waterfall-dom-css-js.png?hl=pl)
+![1](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/analysis-dom-css-nb-js-async.png?hl=pl)
