@@ -408,5 +408,5 @@
 ![1](http://javascript.info/files/tutorial/browser/JSTop.png)
 ![1](http://code-tricks.com/wp-content/uploads/2014/02/javaScript-DOM-vs-BOM.jpg)
 ![1](https://www.safaribooksonline.com/library/view/javascript-by-example/9780137084746/graphics/10fig01.jpg)
-![1](https://www.visibone.com/products/ebk12-13_850.jpg)
+![2](https://www.visibone.com/products/ebk12-13_850.jpg)
 
