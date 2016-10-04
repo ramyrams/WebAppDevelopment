@@ -73,6 +73,6 @@
 
 ![1](http://cdn2.hubspot.net/hub/208250/file-2451034899-jpg/Blog_Images/ContinuousTestingBlog1.jpg)
 
-
+![1](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/analysis-dom-css.png)
 
 
