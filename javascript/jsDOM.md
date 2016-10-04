@@ -559,5 +559,88 @@ document.getElementById("myDiv2").addEventListener("click", function() {
 </html>
 ```
 
+### Child Nodes and Node Values
+```html
+<html>
+<body>
+
+<div id="div1">
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+</div>
+
+<script>
+    var para = document.createElement("p");
+    var node = document.createTextNode("This is new.");
+    para.appendChild(node);
+
+    var element = document.getElementById("div1");
+    element.appendChild(para);
+</script>
+
+</body>
+</html>
+```
+
+### Creating new HTML Elements - insertBefore
+```html
+<html>
+<body>
+
+    <div id="div1">
+    <p id="p1">This is a paragraph.</p>
+    <p id="p2">This is another paragraph.</p>
+    </div>
+
+    <script>
+        var para = document.createElement("p");
+        var node = document.createTextNode("This is new.");
+        para.appendChild(node);
+
+        var element = document.getElementById("div1");
+        var child = document.getElementById("p1");
+        element.insertBefore(para, child);
+    </script>
+</body>
+</html>
+```
+
+###Removing Existing HTML Elements
+```html
+<html>
+<body>
+
+    <div id="div1">
+    <p id="p1">This is a paragraph.</p>
+    <p id="p2">This is another paragraph.</p>
+    </div>
+
+    <script>
+        var parent = document.getElementById("div1");
+        var child = document.getElementById("p1");
+        parent.removeChild(child);
+    </script>
+</body>
+</html>
+```
+
+###  Replacing HTML Elements 
+
+<div id="div1">
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+</div>
+
+<script>
+var para = document.createElement("p");
+var node = document.createTextNode("This is new.");
+para.appendChild(node);
+
+var parent = document.getElementById("div1");
+var child = document.getElementById("p1");
+parent.replaceChild(para,child);
+</script>
+
+
 
 ![1](https://s-media-cache-ak0.pinimg.com/originals/0c/06/80/0c06800a5268d4bd699b49f10806ac93.jpg)
