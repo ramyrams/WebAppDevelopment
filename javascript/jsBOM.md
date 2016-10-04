@@ -122,3 +122,23 @@ navigator.platform
 </script>
 ```
 
+### JS Popup Alert
+```js
+alert("I am an alert box!");
+alert("Hello\nHow are you?");
+
+var r = confirm("Press a button");
+if (r == true) {
+    x = "You pressed OK!";
+} else {
+    x = "You pressed Cancel!";
+}
+
+
+var person = prompt("Please enter your name", "Harry Potter");
+if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "Hello " + person + "! How are you today?";
+}
+```
+
