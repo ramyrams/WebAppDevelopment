@@ -19,6 +19,19 @@
 * [JSON - JavaScript Object Notation](http://json.com/)
 
 
+# Tools
+
+* [whats-my-browser-size](http://www.webpagefx.com/tools/whats-my-browser-size/)
+* [mincss - Clears the junk out of your CSS](https://www.peterbe.com/plog/mincss)
+
+## Color Picker
+* [Color Palette Thief](http://lokeshdhakar.com/projects/color-thief/)
+* [Color Picker](https://color.hailpixel.com/)
+
+## Web Basic Testing
+* [HTML validator](https://validator.w3.org/)
+
+
 ### Image Optimization
 * [Image Optimization with Cloudinary](https://davidwalsh.name/image-optimization-cloudinary)
 * [How to automatically create images for Responsive design](http://cloudinary.com/blog/how_to_automatically_create_images_for_responsive_design)
@@ -58,7 +71,7 @@
 * [Microservices Today](https://dzone.com/articles/microservices-today)
 * Automated web application testing - [https://www.youtube.com/watch?v=v5K_CNaGxrI]
 
-http://cdn2.hubspot.net/hub/208250/file-2451034899-jpg/Blog_Images/ContinuousTestingBlog1.jpg
+![1](http://cdn2.hubspot.net/hub/208250/file-2451034899-jpg/Blog_Images/ContinuousTestingBlog1.jpg)
 
 
 
