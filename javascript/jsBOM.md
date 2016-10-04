@@ -142,3 +142,40 @@ if (person != null) {
 }
 ```
 
+
+##JS Timing
+```js
+<button onclick="setTimeout(myFunction, 3000)">Try it</button>
+<script>
+function myFunction() {
+    alert('Hello');
+}
+</script>
+```
+
+```js
+<button onclick="myVar = setTimeout(myFunction, 3000)">Try it</button>
+<button onclick="clearTimeout(myVar)">Stop it</button>
+```
+
+```js
+var myVar = setInterval(myTimer, 1000);
+function myTimer() {
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+```
+
+```js
+<p id="demo"></p>
+
+<button onclick="clearInterval(myVar)">Stop time</button>
+
+<script>
+var myVar = setInterval(myTimer, 1000);
+function myTimer() {
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
+```
