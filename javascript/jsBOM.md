@@ -78,3 +78,26 @@ document.getElementById("demo").innerHTML = "Page protocol is " + window.locatio
 ```
 
 
+### JS History
+```js
+<html>
+<head>
+	<script>
+	function goForward() {
+		window.history.forward()
+	}
+	</script>
+</head>
+<body>
+
+	<input type="button" value="Forward" onclick="goForward()">
+
+</body>
+</html>
+```
+
+```js
+history.back() - same as clicking back in the browser
+history.forward() - same as clicking forward in the browser
+```
+
