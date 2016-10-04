@@ -231,3 +231,5 @@ function checkCookie() {
 ```
 
 ![1](http://images.cnblogs.com/cnblogs_com/daibao9922/bom.gif)
+![1](http://javascript.info/files/tutorial/browser/JSTop.png)
+
