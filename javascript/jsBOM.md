@@ -232,4 +232,5 @@ function checkCookie() {
 
 ![1](http://images.cnblogs.com/cnblogs_com/daibao9922/bom.gif)
 ![1](http://javascript.info/files/tutorial/browser/JSTop.png)
+![1](http://code-tricks.com/wp-content/uploads/2014/02/javaScript-DOM-vs-BOM.jpg)
 
