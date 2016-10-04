@@ -78,7 +78,7 @@ document.getElementById("demo").innerHTML = "Page protocol is " + window.locatio
 ```
 
 
-### JS History
+## JS History
 ```js
 <html>
 <head>
@@ -122,7 +122,7 @@ navigator.platform
 </script>
 ```
 
-### JS Popup Alert
+## JS Popup Alert
 ```js
 alert("I am an alert box!");
 alert("Hello\nHow are you?");
@@ -182,7 +182,7 @@ function myTimer() {
 
 
 
-### JS Cookies
+## JS Cookies
 ```js
 document.cookie = "username=John Doe";
 document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC";
