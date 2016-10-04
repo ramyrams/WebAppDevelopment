@@ -33,6 +33,72 @@ myIntroStyles.color = '#FF0000';
 ```
 
 
+###  Select single element
+```js
+var header = document.getElementById('header');
+var nav = document.querySelector('#main-nav');
+```
+
+### Select a collection of elements
+```js
+var inputs = document.getElementsByTagName('li');
+var radiosGroup = document.getElementsByName('genders');
+var header = document.querySelectorAll('#main-nav li');
+```
+
+### Using predefined collections of elements
+```js
+var links = document.links;
+var forms = document.forms;
+```
+
+
+### Using getElementsBy Methods
+```js
+var header = document.getElementById('header');
+var posts = document.getElementsByClassName('post-item');
+var sidebars = document.getElementsByTagName('sidebar');
+var gendersGroup = document.getElementsByName('genders');
+```
+
+### Using querySelector Methods
+```js
+//the element with id="header"
+var header = document.querySelector('#header');
+
+//li elements contained in element with id=main-nav
+var navItems = document.querySelectorAll('#main-nav li');
+```
+
+
+
+### Selecting Nested Elements
+```js
+var wrapper = document.getElementById('wrapper');
+
+// returns all div elements inside the element with id "wrapper"
+var divsInWrapper = wrapper.getElementsByTagName('div');
+```
+
+### NodeLists
+```js
+var divs = document.getElementsByTagName('div'),
+    queryDivs = document.querySelectorAll('div');
+for(var i = 0, length = divs.length; i < length; i += 1){
+   // do stuff with divs[i]…
+}
+
+
+
+console.log(Array.isArray(divs)); // false
+
+for (var i in divs) {
+   console.log('divs[' + i + '] = ' + divs[i]);
+}
+
+
+```
+
 	
 
 
