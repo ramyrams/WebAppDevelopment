@@ -158,6 +158,50 @@ for (var i in divs) {
 </html>
 ```
 
+
+```html
+<html>
+<body>
+
+	<p>Hello World!</p>
+
+	<div id="main">
+		<p>The DOM is very useful.</p>
+		<p>This example demonstrates the <b>getElementsByTagName</b> method</p>
+	</div>
+
+	<p id="demo"></p>
+	<script>
+		var x = document.getElementById("main");
+		var y = x.getElementsByTagName("p");
+		document.getElementById("demo").innerHTML = 'The first paragraph (index 0) inside "main" is: ' + y[0].innerHTML;
+	</script>
+
+</body>
+</html>
+```
+
+```html
+<html>
+<body>
+
+	<p>Hello World!</p>
+
+	<p class="intro">The DOM is very useful.</p>
+	<p class="intro">This example demonstrates the <b>getElementsByClassName</b> method.</p>
+
+	<p id="demo"></p>
+
+	<script>
+	var x = document.getElementsByClassName("intro");
+	document.getElementById("demo").innerHTML = 
+	'The first paragraph (index 0) with class="intro": ' + x[0].innerHTML;
+	</script>
+
+</body>
+</html>
+```
+
 ### Changing the Value of an Attribute
 ```html
 <html>
@@ -321,48 +365,6 @@ function changeText(id) {
 
 
 
-```html
-<html>
-<body>
-
-	<p>Hello World!</p>
-
-	<div id="main">
-		<p>The DOM is very useful.</p>
-		<p>This example demonstrates the <b>getElementsByTagName</b> method</p>
-	</div>
-
-	<p id="demo"></p>
-	<script>
-		var x = document.getElementById("main");
-		var y = x.getElementsByTagName("p");
-		document.getElementById("demo").innerHTML = 'The first paragraph (index 0) inside "main" is: ' + y[0].innerHTML;
-	</script>
-
-</body>
-</html>
-```
-
-```html
-<html>
-<body>
-
-	<p>Hello World!</p>
-
-	<p class="intro">The DOM is very useful.</p>
-	<p class="intro">This example demonstrates the <b>getElementsByClassName</b> method.</p>
-
-	<p id="demo"></p>
-
-	<script>
-	var x = document.getElementsByClassName("intro");
-	document.getElementById("demo").innerHTML = 
-	'The first paragraph (index 0) with class="intro": ' + x[0].innerHTML;
-	</script>
-
-</body>
-</html>
-```
 
 
 ### Finding HTML Elements by HTML Object Collections
