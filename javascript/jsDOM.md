@@ -142,6 +142,22 @@ for (var i in divs) {
 </html>
 ```
 
+### document.getElementById
+```html
+<html>
+<body>
+	<p id="intro">Hello World!</p>
+	<p>This example demonstrates the <b>getElementById</b> method!</p>
+
+	<p id="demo"></p>
+	<script>
+		var myElement = document.getElementById("intro");
+		document.getElementById("demo").innerHTML = "The text from the intro paragraph is " + myElement.innerHTML;
+	</script>
+</body>
+</html>
+```
+
 ### Changing the Value of an Attribute
 ```html
 <html>
@@ -184,64 +200,60 @@ for (var i in divs) {
 <!DOCTYPE html>
 <html>
 <body>
+	<h1 id="id1">My Heading 1</h1>
 
-<h1 id="id1">My Heading 1</h1>
-
-<button type="button" 
-onclick="document.getElementById('id1').style.color = 'red'">
-Click Me!</button>
-
+	<button type="button" onclick="document.getElementById('id1').style.color = 'red'">Click Me!</button>
 </body>
 </html>
 ```
 
 ### Create the Animation Using JavaScript
 ```html
-<!DOCTYPE html>
 <html>
-<style>
-#container {
-  width: 400px;
-  height: 400px;
-  position: relative;
-  background: yellow;
-}
-#animate {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  background-color: red;
-}
-</style>
+    <style>
+        #container {
+          width: 400px;
+          height: 400px;
+          position: relative;
+          background: yellow;
+        }
+
+        #animate {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          background-color: red;
+        }
+    </style>
 <body>
 
-<p>
-<button onclick="myMove()">Click Me</button>
-</p>
+    <p> <button onclick="myMove()">Click Me</button> </p>
 
-<div id ="container">
-<div id ="animate"></div>
-</div>
+    <div id ="container">
+    <div id ="animate"></div>
+    </div>
 
-<script>
-function myMove() {
-  var elem = document.getElementById("animate");
-  var pos = 0;
-  var id = setInterval(frame, 5);
-  function frame() {
-    if (pos == 350) {
-      clearInterval(id);
-    } else {
-      pos++;
-      elem.style.top = pos + 'px';
-      elem.style.left = pos + 'px';
-    }
-  }
-}
-</script>
+    <script>
+        function myMove() {
+            var elem = document.getElementById("animate");
+            var pos = 0;
+            var id = setInterval(frame, 5);
+
+            function frame() {
+                if (pos == 350) {
+                    clearInterval(id);
+                } else {
+                    pos++;
+                    elem.style.top = pos + 'px';
+                    elem.style.left = pos + 'px';
+                }
+            }
+        }
+    </script>
 
 </body>
 </html>
+
 ```
 
 ### JavaScript HTML DOM Events
@@ -263,67 +275,51 @@ function changeText(id) {
 
 ### Assign Events Using the HTML DOM
 ```html
-<!DOCTYPE html>
 <html>
 <body>
 
-<p>Click "Try it" to execute the displayDate() function.</p>
+    <p>Click "Try it" to execute the displayDate() function.</p>
 
-<button id="myBtn">Try it</button>
+    <button id="myBtn">Try it</button>
 
-<p id="demo"></p>
+    <p id="demo"></p>
 
-<script>
-document.getElementById("myBtn").onclick = displayDate;
+    <script>
+        document.getElementById("myBtn").onclick = displayDate;
 
-function displayDate() {
-    document.getElementById("demo").innerHTML = Date();
-}
-</script>
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+    </script>
 
 </body>
 </html>
 ```
 
-### The onchange Event
-```html
-<!DOCTYPE html>
-<html>
-<body>
-
-<div onmouseover="mOver(this)" onmouseout="mOut(this)"
-style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
-Mouse Over Me</div>
-
-<script>
-function mOver(obj) {
-    obj.innerHTML = "Thank You"
-}
-
-function mOut(obj) {
-    obj.innerHTML = "Mouse Over Me"
-}
-</script>
-
-</body>
-</html>
-```
-
-### document.getElementById
+### Two Events
 ```html
 <html>
 <body>
-	<p id="intro">Hello World!</p>
-	<p>This example demonstrates the <b>getElementById</b> method!</p>
 
-	<p id="demo"></p>
+	<div onmouseover="mOver(this)" onmouseout="mOut(this)"
+	style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+	Mouse Over Me</div>
+
 	<script>
-		var myElement = document.getElementById("intro");
-		document.getElementById("demo").innerHTML = "The text from the intro paragraph is " + myElement.innerHTML;
+	function mOver(obj) {
+	    obj.innerHTML = "Thank You"
+	}
+
+	function mOut(obj) {
+	    obj.innerHTML = "Mouse Over Me"
+	}
 	</script>
+
 </body>
 </html>
 ```
+
+
 
 ```html
 <html>
