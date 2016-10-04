@@ -101,3 +101,24 @@ history.back() - same as clicking back in the browser
 history.forward() - same as clicking forward in the browser
 ```
 
+
+## JS Navigator
+```js
+navigator.appName
+navigator.appCodeName
+navigator.platform
+
+<p id="demo"></p>
+
+<script>
+	document.getElementById("demo").innerHTML = "Cookies Enabled is " + navigator.cookieEnabled;
+	document.getElementById("demo").innerHTML = navigator.userAgent;
+	document.getElementById("demo").innerHTML = navigator.platform;
+	document.getElementById("demo").innerHTML = navigator.language;
+	document.getElementById("demo").innerHTML = navigator.javaEnabled();
+	document.getElementById("demo").innerHTML = navigator.appVersion;
+	document.getElementById("demo").innerHTML = navigator.product;
+	document.getElementById("demo").innerHTML = "Name is " + navigator.appName + ". Code name is " + navigator.appCodeName;
+</script>
+```
+
