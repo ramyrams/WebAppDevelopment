@@ -238,6 +238,7 @@ for (var i in divs) {
 </html>
 ```
 
+## Using Events
 
 ### Using Events
 ```html
@@ -247,6 +248,23 @@ for (var i in divs) {
 	<h1 id="id1">My Heading 1</h1>
 
 	<button type="button" onclick="document.getElementById('id1').style.color = 'red'">Click Me!</button>
+</body>
+</html>
+```
+
+### JavaScript HTML DOM Events
+```html
+<html>
+<body>
+
+	<h1 onclick="changeText(this)">Click on this text!</h1>
+
+	<script>
+	function changeText(id) { 
+	    id.innerHTML = "Ooops!";
+	}
+	</script>
+
 </body>
 </html>
 ```
@@ -300,22 +318,7 @@ for (var i in divs) {
 
 ```
 
-### JavaScript HTML DOM Events
-```html
-<html>
-<body>
 
-<h1 onclick="changeText(this)">Click on this text!</h1>
-
-<script>
-function changeText(id) { 
-    id.innerHTML = "Ooops!";
-}
-</script>
-
-</body>
-</html>
-```
 
 ### Assign Events Using the HTML DOM
 ```html
@@ -369,57 +372,57 @@ function changeText(id) {
 
 ### Finding HTML Elements by HTML Object Collections
 ```html
-<!DOCTYPE html>
 <html>
 <body>
 
-<form id="frm1" action="form_action.asp">
-  First name: <input type="text" name="fname" value="Donald"><br>
-  Last name: <input type="text" name="lname" value="Duck"><br><br>
-  <input type="submit" value="Submit">
-</form>
+    <form id="frm1" action="form_action.asp">
+      First name: <input type="text" name="fname" value="Donald"><br>
+      Last name: <input type="text" name="lname" value="Duck"><br><br>
 
-<p>Click "Try it" to display the value of each element in the form.</p>
+      <input type="submit" value="Submit">
+    </form>
 
-<button onclick="myFunction()">Try it</button>
+    <p>Click "Try it" to display the value of each element in the form.</p>
 
-<p id="demo"></p>
+    <button onclick="myFunction()">Try it</button>
 
-<script>
-function myFunction() {
-    var x = document.forms["frm1"];
-    var text = "";
-    var i;
-    for (i = 0; i < x.length ;i++) {
-        text += x.elements[i].value + "<br>";
-    }
-    document.getElementById("demo").innerHTML = text;
-}
-</script>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var x = document.forms["frm1"];
+            var text = "";
+            var i;
+            for (i = 0; i < x.length ; i++) {
+                text += x.elements[i].value + "<br>";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
 
 </body>
 </html>
+
 ```
 
 ### JavaScript HTML DOM EventListener
 ```html
-<!DOCTYPE html>
 <html>
 <body>
 
-<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+    <p>This example uses the addEventListener() method to attach a click event to a button.</p>
 
-<button id="myBtn">Try it</button>
+    <button id="myBtn">Try it</button>
 
-<p id="demo"></p>
+    <p id="demo"></p>
 
-<script>
-document.getElementById("myBtn").addEventListener("click", displayDate);
+    <script>
+        document.getElementById("myBtn").addEventListener("click", displayDate);
 
-function displayDate() {
-    document.getElementById("demo").innerHTML = Date();
-}
-</script>
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+    </script>
 
 </body>
 </html>
@@ -427,21 +430,20 @@ function displayDate() {
 
 ### Add an Event Handler to an Element
 ```html
-<!DOCTYPE html>
 <html>
 <body>
 
-<p>This example uses the addEventListener() method to execute a function when a user clicks on a button.</p>
+	<p>This example uses the addEventListener() method to execute a function when a user clicks on a button.</p>
 
-<button id="myBtn">Try it</button>
+	<button id="myBtn">Try it</button>
 
-<script>
-document.getElementById("myBtn").addEventListener("click", myFunction);
+	<script>
+	document.getElementById("myBtn").addEventListener("click", myFunction);
 
-function myFunction() {
-    alert ("Hello World!");
-}
-</script>
+	function myFunction() {
+	    alert ("Hello World!");
+	}
+	</script>
 
 </body>
 </html>
@@ -449,16 +451,15 @@ function myFunction() {
 
 ### Event Bubbling or Event Capturing?
 ```html
-<!DOCTYPE html>
 <html>
 <head>
-<style>
-div {
-    background-color: coral;
-    border: 1px solid;
-    padding: 50px;
-}
-</style>
+	<style>
+	div {
+	    background-color: coral;
+	    border: 1px solid;
+	    padding: 50px;
+	}
+	</style>
 </head>
 <body>
 
@@ -496,20 +497,19 @@ document.getElementById("myDiv2").addEventListener("click", function() {
 
 ### DOM Root Nodes
 ```html
-<!DOCTYPE html>
 <html>
 <body>
 
-<p>Hello World!</p>
+	<p>Hello World!</p>
 
-<div>
-<p>The DOM is very useful!</p>
-<p>This example demonstrates the <b>document.body</b> property.</p>
-</div>
+	<div>
+		<p>The DOM is very useful!</p>
+		<p>This example demonstrates the <b>document.body</b> property.</p>
+	</div>
 
-<script>
-alert(document.body.innerHTML);
-</script>
+	<script>
+		alert(document.body.innerHTML);
+	</script>
 
 </body>
 </html>
@@ -517,24 +517,23 @@ alert(document.body.innerHTML);
 
 ### Creating new HTML Elements 
 ```html
-<!DOCTYPE html>
 <html>
 <body>
 
-<div id="div1">
-<p id="p1">This is a paragraph.</p>
-<p id="p2">This is another paragraph.</p>
-</div>
+	<div id="div1">
+		<p id="p1">This is a paragraph.</p>
+		<p id="p2">This is another paragraph.</p>
+	</div>
 
-<script>
-var para = document.createElement("p");
-var node = document.createTextNode("This is new.");
-para.appendChild(node);
+	<script>
+		var para = document.createElement("p");
+		var node = document.createTextNode("This is new.");
+		para.appendChild(node);
 
-var element = document.getElementById("div1");
-var child = document.getElementById("p1");
-element.insertBefore(para,child);
-</script>
+		var element = document.getElementById("div1");
+		var child = document.getElementById("p1");
+		element.insertBefore(para,child);
+	</script>
 
 </body>
 </html>
@@ -542,20 +541,19 @@ element.insertBefore(para,child);
 
 ### Removing Existing HTML Elements
 ```html
-<!DOCTYPE html>
 <html>
 <body>
 
-<div id="div1">
-<p id="p1">This is a paragraph.</p>
-<p id="p2">This is another paragraph.</p>
-</div>
+	<div id="div1">
+		<p id="p1">This is a paragraph.</p>
+		<p id="p2">This is another paragraph.</p>
+	</div>
 
-<script>
-var parent = document.getElementById("div1");
-var child = document.getElementById("p1");
-parent.removeChild(child);
-</script>
+	<script>
+		var parent = document.getElementById("div1");
+		var child = document.getElementById("p1");
+		parent.removeChild(child);
+	</script>
 
 </body>
 </html>
