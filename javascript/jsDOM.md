@@ -970,5 +970,5 @@ parent.replaceChild(para,child);
 ```
 
 ![1](https://s-media-cache-ak0.pinimg.com/originals/0c/06/80/0c06800a5268d4bd699b49f10806ac93.jpg)
-![1](https://code.snipcademy.com/code/img/tutorials/javascript/bom/bom.svg)
+![2](https://code.snipcademy.com/code/img/tutorials/javascript/bom/bom.svg)
 
