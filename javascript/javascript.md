@@ -1,13 +1,19 @@
 
 * [The State Of JavaScript](http://stateofjs.com/2016/introduction/)
 
-JS
+# JS
 * [Parallel Processing in JS](https://advancedweb.hu/2016/08/09/parallel-processing-in-js/)
 * [How to Use Map, Filter, & Reduce in JavaScript](http://code.tutsplus.com/tutorials/how-to-use-map-filter-reduce-in-javascript--cms-26209)
 * [jstips](http://www.jstips.co/)
 * [Examples of how to do query, style, dom, ajax, event etc like jQuery with plain javascript.](https://github.com/oneuijs/You-Dont-Need-jQuery)
 * [The Basics of JavaScript DOM Manipulation](http://callmenick.com/post/basics-javascript-dom-manipulation)
 http://code-tricks.com/javascripts-dom-vs-bom/
+
+
+# JS Concepts
+* [A quick guide to JavaScript Promises](https://www.twilio.com/blog/2016/10/guide-to-javascript-promises.html)
+
+
 
 # JS Awesome
 * [A collection of awesome browser-side JavaScript libraries, resources and shiny things.](https://github.com/sorrycc/awesome-javascript)
