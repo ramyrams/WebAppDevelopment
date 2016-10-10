@@ -987,6 +987,48 @@ parent.replaceChild(para,child);
         </div>
     </fieldset>
 
+	 <fieldset> <legend>Form Object</legend>
+        <div>
+    
+        <form id="frm1" action="form_action.asp" method="post" accept-charset="ISO-8859-1" target="_self">
+            First name: <input type="text" name="fname"><br>
+            Last name: <input type="text" name="lname"><br><br>
+            <input type="button" onclick="mySubmit()" value="Submit">
+            <input type="button" onclick="myreset()" value="Reset">
+            <button onclick="myFunction()">Try it</button>
+        </form>
+
+        <p id="txtvalues"></p>
+
+        <script>
+            console.log(document.getElementById("frm1").acceptCharset);
+            console.log(document.getElementById("frm1").action);
+            console.log(document.getElementById("frm1").enctype);
+            console.log(document.getElementById("frm1").length);
+            console.log(document.getElementById("frm1").method);
+            console.log(document.getElementById("frm1").id);
+            console.log(document.getElementById("frm1").target);
+
+            function mySubmit() {
+                document.getElementById("frm1").submit();
+            }
+
+            function myreset() {
+                document.getElementById("frm1").reset();
+            }
+
+            function myFunction() {
+                var x = document.getElementById("frm1");
+                var text = "";
+                var i;
+                for (i = 0; i < x.length ;i++) {
+                    text += x.elements[i].value + "<br>";
+                }
+                document.getElementById("txtvalues").innerHTML = text;
+            }
+        </script>
+        </div>
+    </fieldset>
 
 </body>
 </html>
