@@ -986,7 +986,8 @@ parent.replaceChild(para,child);
             <p id="result1"></p>
         </div>
     </fieldset>
-
+    
+ 	<!--Form Object-->
 	 <fieldset> <legend>Form Object</legend>
         <div>
     
@@ -1029,6 +1030,70 @@ parent.replaceChild(para,child);
         </script>
         </div>
     </fieldset>
+    
+     <!--Select Object-->
+    <fieldset> <legend>Select Object</legend>
+        <div>
+            <form>
+                <select id="mySelect">
+                  <option>Apple</option>
+                  <option>Pear</option>
+                  <option>Banana</option>
+                  <option>Orange</option>
+                </select>
+                <br><br>
+                <input type="button" onclick="disable()" value="Disable list">
+                <input type="button" onclick="enable()" value="Enable list">
+                <input type="button" onclick="changeSize()" value="Change size">
+                <input type="button" onclick="selectMultiple()" value="Select multiple">
+                <input type="button" onclick="getOptions()" value="Output all options">
+                <input type="button" onclick="changeText()" value="Set text of selected option">
+                <input type="button" onclick="removeOption()" value="Remove the selected option">
+            </form>
+
+        </div>
+    </fieldset>
+
+    <script>
+        document.getElementById("mySelect").form.id;
+        document.getElementById("mySelect").length;
+        function disable() {
+            document.getElementById("mySelect").disabled = true;
+        }
+        function enable() {
+            document.getElementById("mySelect").disabled = false;
+        }
+        function changeSize() {
+            document.getElementById("mySelect").size = 4;
+        }
+        function selectMultiple() {
+            document.getElementById("mySelect").size = 4;
+            document.getElementById("mySelect").multiple = true;
+        }
+        function getOption() {
+            var obj = document.getElementById("mySelect");
+            console.log(obj.options[obj.selectedIndex].text);
+            console.log(obj.options[obj.selectedIndex].selectedIndex);
+        }
+        function getOptions() {
+            var x = document.getElementById("mySelect");
+            var txt = "";
+            var i;
+            for (i = 0; i < x.length; i++) {
+                txt = txt + " " + x.options[i].text;
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }
+
+        function changeText() {
+            x = document.getElementById("mySelect");
+            x.options[x.selectedIndex].text = "Melon";
+        }
+        function removeOption() {
+            var x = document.getElementById("mySelect");
+            x.remove(x.selectedIndex);
+        }
+    </script>
 
 </body>
 </html>
