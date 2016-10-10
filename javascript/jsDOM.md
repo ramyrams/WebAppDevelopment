@@ -65,8 +65,21 @@ var header = document.querySelector('#header');
 //li elements contained in element with id=main-nav
 var navItems = document.querySelectorAll('#main-nav li');
 ```
+### Get value from input element
+```js
+<div>
+    <input id="txtname" type="text" size="10" /><br />
+</div>
 
-
+<button onclick="echovalue()">Alert</button>
+<p id="P2"></p>
+<script>
+    function echovalue() {
+	var x = document.getElementById("txtname").value;
+	alert(x);
+    }
+</script>
+```
 
 ### Selecting Nested Elements
 ```js
