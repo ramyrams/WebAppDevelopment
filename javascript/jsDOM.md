@@ -11,6 +11,10 @@
 * DOM Nodes
 * DOM Nodelist
 
+* vents & EventListener]()
+* [Nodes & Nodelist]()
+
+
 
 ### Using getElementsBy Methods
 ```js
