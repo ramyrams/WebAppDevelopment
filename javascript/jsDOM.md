@@ -646,7 +646,7 @@ parent.replaceChild(para,child);
 ## DOM Sample
 ```html
 <!DOCTYPE html>
-<html">
+<html>
 <head>
     <base id="htmldom" target="_self" href="http://www.w3schools.com/jsref/">
     <title></title>
@@ -781,7 +781,7 @@ parent.replaceChild(para,child);
                 document.getElementById("FirstA").innerHTML = document.anchors[0].innerHTML;
             </script>
 
-            <p><a id="myAnchor"  type="text/html" target="_self" rel="nofollow" hreflang="en-us" href="http://www.w3schools.com/">W3Schools</a></p>
+            <p><a id="myAnchor" href="http://www.google.com/" type="text/html" target="_self" rel="nofollow" hreflang="en-us" >google link</a></p>
 
             <p id="Ahref"></p>
             <p id="Ahreflang"></p>
@@ -792,11 +792,12 @@ parent.replaceChild(para,child);
 
             <script>
                 document.getElementById("Aid").innerHTML = document.getElementById("myAnchor").id;
+		document.getElementById("Ahref").innerHTML = document.getElementById("myAnchor").href;
 		document.getElementById("Atype").innerHTML = document.getElementById("myAnchor").type;
 		document.getElementById("Atarget").innerHTML = document.getElementById("w3s").target;
 		document.getElementById("Arel").innerHTML = document.getElementById("myAnchor").rel;
 		document.getElementById("Ahreflang").innerHTML = document.getElementById("myAnchor").hreflang;
-		document.getElementById("Ahref").innerHTML = document.getElementById("myAnchor").href;
+		
             </script>
 
         </div>
@@ -804,14 +805,17 @@ parent.replaceChild(para,child);
 
 
 
-    <!--The Links Collection-->
+    <!--The Links Collection -->
+    <!-- get js, css links from the head tag -->
     <fieldset> <legend>Links Object</legend>
         <div>
+	    	<p id="totallinks"></p>
+		<p id="firstlink"></p>
             <script>
                 //Display the number of links in a document
-                document.getElementById("demo").innerHTML = "Number of links: " + document.links.length;
+                document.getElementById("totallinks").innerHTML = "Number of links: " + document.links.length;
                 //Display the href attribute of the first link in a document
-                document.getElementById("demo").innerHTML = "The href of the first link is " + document.links[0].href;
+                document.getElementById("firstlink").innerHTML = "The href of the first link is " + document.links[0].href;
             </script>
         </div>
      </fieldset>
