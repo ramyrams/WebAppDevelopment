@@ -1,26 +1,30 @@
-DOM Intro
-DOM Methods
-DOM Document
-DOM Elements
-DOM HTML
-DOM CSS
-DOM Animations
-DOM Events
-DOM EventListener
-DOM Navigation
-DOM Nodes
-DOM Nodelist
+* DOM Intro
+* DOM Methods
+* DOM Document
+* DOM Elements
+* DOM HTML
+* DOM CSS
+* DOM Animations
+* DOM Events
+* DOM EventListener
+* DOM Navigation
+* DOM Nodes
+* DOM Nodelist
 
+
+### Using getElementsBy Methods
+```js
+var header = document.getElementById('header');
+var posts = document.getElementsByClassName('post-item');
+var sidebars = document.getElementsByTagName('sidebar');
+var gendersGroup = document.getElementsByName('genders');
+```
 
 ### JS HTML DOM
 ```js
 document.getElementById("demo").innerHTML = "Hello World!";
-var x = document.getElementsByTagName("p");
-var x = document.getElementById("main");
-var y = x.getElementsByTagName("p");
-var x = document.getElementsByClassName("intro");
-var x = document.querySelectorAll("p.intro");
 
+var x = document.querySelectorAll("p.intro");
 
 document.getElementById('intro').style.color = '#FF0000';
 
@@ -31,7 +35,6 @@ var myIntroStyles = myIntro.style;
 // And now, we can set the color:
 myIntroStyles.color = '#FF0000';
 ```
-
 
 ###  Select single element
 ```js
@@ -53,13 +56,6 @@ var forms = document.forms;
 ```
 
 
-### Using getElementsBy Methods
-```js
-var header = document.getElementById('header');
-var posts = document.getElementsByClassName('post-item');
-var sidebars = document.getElementsByTagName('sidebar');
-var gendersGroup = document.getElementsByName('genders');
-```
 
 ### Using querySelector Methods
 ```js
@@ -89,20 +85,13 @@ for(var i = 0, length = divs.length; i < length; i += 1){
 }
 
 
-
 console.log(Array.isArray(divs)); // false
 
 for (var i in divs) {
    console.log('divs[' + i + '] = ' + divs[i]);
 }
 
-
 ```
-
-	
-
-
-
 
 ### Update the content dynamically
 ```html
@@ -118,7 +107,6 @@ for (var i in divs) {
 
 ### Changing the HTML Output Stream
 ```html
-<!DOCTYPE html>
 <html>
 <body>
 	<script>
@@ -605,7 +593,7 @@ document.getElementById("myDiv2").addEventListener("click", function() {
 </html>
 ```
 
-###Removing Existing HTML Elements
+### Removing Existing HTML Elements
 ```html
 <html>
 <body>
