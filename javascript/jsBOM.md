@@ -1,5 +1,13 @@
 ## Browser Object Model
 
+* BOM Location
+* BOM History
+* BOM Navigator
+* BOM Popup Alert
+* BOM Timing
+* BOM Cookies
+
+
 
 ```js
 <!DOCTYPE html>
