@@ -11,8 +11,9 @@
 * DOM Nodes
 * DOM Nodelist
 
-* vents & EventListener]()
+* [Events & EventListener]()
 * [Nodes & Nodelist]()
+* Animations
 
 
 
