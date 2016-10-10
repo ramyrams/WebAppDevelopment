@@ -767,9 +767,9 @@ parent.replaceChild(para,child);
     <!--The Anchors Collection-->
     <fieldset> <legend>Anchors Object</legend>
         <div>
-            <a name="html" href="http://www.google.com">Google </a><br>
-            <a name="css" href="http://www.msn.com">MSN</a><br>
-            <a name="xml" href="http://www.youtube.com">Youtube</a><br>
+            <a id="google" href="http://www.google.com">Google </a><br>
+            <a id="msn" href="http://www.msn.com">MSN</a><br>
+            <a id="youtube" href="http://www.youtube.com">Youtube</a><br>
 
             <p id="NoOfA"></p>
             <p id="FirstA"></p>
@@ -791,12 +791,12 @@ parent.replaceChild(para,child);
             <p id="Atype"></p>
 
             <script>
-                document.getElementById("Ahref").innerHTML = document.getElementById("myAnchor").href;
-                document.getElementById("Ahreflang").innerHTML = document.getElementById("myAnchor").hreflang;
                 document.getElementById("Aid").innerHTML = document.getElementById("myAnchor").id;
-                document.getElementById("Arel").innerHTML = document.getElementById("myAnchor").rel;
-                document.getElementById("Atarget").innerHTML = document.getElementById("w3s").target;
-                document.getElementById("Atype").innerHTML = document.getElementById("myAnchor").type;
+		document.getElementById("Atype").innerHTML = document.getElementById("myAnchor").type;
+		document.getElementById("Atarget").innerHTML = document.getElementById("w3s").target;
+		document.getElementById("Arel").innerHTML = document.getElementById("myAnchor").rel;
+		document.getElementById("Ahreflang").innerHTML = document.getElementById("myAnchor").hreflang;
+		document.getElementById("Ahref").innerHTML = document.getElementById("myAnchor").href;
             </script>
 
         </div>
