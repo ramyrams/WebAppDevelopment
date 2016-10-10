@@ -1099,6 +1099,211 @@ parent.replaceChild(para,child);
 </html>
 ```
 
+## DOM Events
+```html
+<!--Example1: onclick event and inline script-->
+<h1 onclick="this.innerHTML='Ooops!'">Click on this text!</h1>
+
+<!--Example2: onclick event and function script and display time-->
+<h1 onclick="changeText(this)">Click on this text!</h1>
+<p id="displayDate"></p>
+<script>
+    function changeText(id) {
+        id.innerHTML = "Ooops!";
+        document.getElementById("displayDate").innerHTML = Date();
+    }
+</script>
+
+<!--Example3: onchange event and update case-->
+Enter your name and exit: <input type="text" id="fname" onchange="myFunction()">
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+    }
+</script>
+
+
+    <!--Example3: onmouseover and onmouseout Events-->
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:red;width:120px;height:20px;padding:40px;">Mouse Over Me</div>
+<script>
+    function mOver(obj) {
+        obj.innerHTML = "Thank You"
+    }
+
+    function mOut(obj) {
+        obj.innerHTML = "Mouse Over Me"
+    }
+</script>
+
+
+<!--Example4: onmousedown, onmouseup and onclick Events-->
+<div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color:#D94A38;width:90px;height:20px;padding:40px;">Click Me</div>
+
+<script>
+    function mDown(obj) {
+        obj.style.backgroundColor = "#1ec5e5";
+        obj.innerHTML = "Release Me";
+    }
+
+    function mUp(obj) {
+        obj.style.backgroundColor = "#D94A38";
+        obj.innerHTML = "Thank You";
+    }
+</script>
+
+
+<!--# EventListener-->
+
+    <!--Add a named event--> 
+<button id="myBtn">Display Date</button>
+<p id="P1"></p>
+
+<script>
+    document.getElementById("myBtn").addEventListener("click", displayDate);
+
+    function displayDate() {
+        document.getElementById("P1").innerHTML = Date();
+    }
+</script>
+
+
+<!--Add a ananomouse event--> 
+<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+<button id="Button1">Try it</button>
+
+<script>
+    document.getElementById("myBtn").addEventListener("click", function () {
+        alert("Hello World!");
+    });
+</script>
+
+<!--add two click events to the same button.-->
+<p>This example uses the addEventListener() method to add two click events to the same button.</p>
+
+<button id="Button2">Try it</button>
+
+<script>
+    var x = document.getElementById("myBtn");
+    x.addEventListener("click", myFunction);
+    x.addEventListener("click", someOtherFunction);
+
+    function myFunction() {
+        alert("Hello World!");
+    }
+
+    function someOtherFunction() {
+        alert("This function was also executed!");
+    }
+</script>
+
+
+
+<p>This example uses the addEventListener() method to add many events on the same button.</p>
+
+<button id="Button3">Try it</button>
+
+<p id="demo1"></p>
+
+<script>
+    var x = document.getElementById("myBtn");
+    x.addEventListener("mouseover", myFunction);
+    x.addEventListener("click", mySecondFunction);
+    x.addEventListener("mouseout", myThirdFunction);
+
+    function myFunction() {
+        document.getElementById("demo1").innerHTML += "Moused over!<br>";
+    }
+
+    function mySecondFunction() {
+        document.getElementById("demo1").innerHTML += "Clicked!<br>";
+    }
+
+    function myThirdFunction() {
+        document.getElementById("demo1").innerHTML += "Moused out!<br>";
+    }
+</script>
+
+
+<!--Passing Parameter-->
+<p>Click the button to perform a calculation.</p>
+
+<button id="Button4">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+    var p1 = 5;
+    var p2 = 7;
+
+    document.getElementById("myBtn").addEventListener("click", function () {
+        myFunction(p1, p2);
+    });
+
+    function myFunction(a, b) {
+        var result = a * b;
+        document.getElementById("demo").innerHTML = result;
+    }
+</script>
+
+
+<!--bubbling and capturing--> 
+<div "style=background-color: coral;border: 1px solid;padding: 50px;" id="myDiv">
+    <p id="myP">Click this paragraph, I am Bubbling.</p>
+</div><br>
+
+<div  "style=background-color: coral;border: 1px solid;padding: 50px;" id="myDiv2">
+    <p id="myP2">Click this paragraph, I am Capturing.</p>
+</div>
+
+<script>
+    document.getElementById("myP").addEventListener("click", function () {
+        alert("You clicked the P element!");
+    }, false);
+
+    document.getElementById("myP2").addEventListener("click", function () {
+        alert("You clicked the P element!");
+    }, true);
+
+    document.getElementById("myDiv").addEventListener("click", function () {
+        alert("You clicked the DIV element!");
+    }, false);
+
+    document.getElementById("myDiv2").addEventListener("click", function () {
+        alert("You clicked the DIV element!");
+    }, true);
+</script>
+
+<!--Remove Event-->
+<div "style=background-color: coral;border: 1px solid;padding: 50px;" id="Div1">
+    <p id="P2">Click this paragraph, I am Bubbling.</p>
+</div><br>
+
+<div  "style=background-color: coral;border: 1px solid;padding: 50px;" id="Div2">
+    <p id="P3">Click this paragraph, I am Capturing.</p>
+</div>
+
+<script>
+    document.getElementById("myP").addEventListener("click", function () {
+        alert("You clicked the P element!");
+    }, false);
+
+    document.getElementById("myP2").addEventListener("click", function () {
+        alert("You clicked the P element!");
+    }, true);
+
+    document.getElementById("myDiv").addEventListener("click", function () {
+        alert("You clicked the DIV element!");
+    }, false);
+
+    document.getElementById("myDiv2").addEventListener("click", function () {
+        alert("You clicked the DIV element!");
+    }, true);
+</script>
+```
+
+
 ![1](https://s-media-cache-ak0.pinimg.com/originals/0c/06/80/0c06800a5268d4bd699b49f10806ac93.jpg)
 ![2](https://code.snipcademy.com/code/img/tutorials/javascript/bom/bom.svg)
 
