@@ -1,28 +1,18 @@
-* DOM Intro
-* DOM Methods
-* DOM Document
-* DOM Elements
-* DOM HTML
-* DOM CSS
-* DOM Animations
-* DOM Events
-* DOM EventListener
-* DOM Navigation
-* DOM Nodes
-* DOM Nodelist
+## DOM
 
+* [Document]()
+* [Elements]()
+* [HTML & CSS Sytle]()
 * [Events & EventListener]()
-* [Nodes & Nodelist]()
-* Animations
-
-
+* [Navigation, Nodes & Nodelist]()
+* [Animations]()
 
 ### Using getElementsBy Methods
 ```js
-var header = document.getElementById('header');
-var posts = document.getElementsByClassName('post-item');
-var sidebars = document.getElementsByTagName('sidebar');
-var gendersGroup = document.getElementsByName('genders');
+	var header = document.getElementById('header');
+	var posts = document.getElementsByClassName('post-item');
+	var sidebars = document.getElementsByTagName('sidebar');
+	var gendersGroup = document.getElementsByName('genders');
 ```
 
 ### JS HTML DOM
@@ -1281,31 +1271,25 @@ Enter your name and exit: <input type="text" id="fname" onchange="myFunction()">
 </script>
 
 <!--Remove Event-->
-<div "style=background-color: coral;border: 1px solid;padding: 50px;" id="Div1">
-    <p id="P2">Click this paragraph, I am Bubbling.</p>
-</div><br>
-
-<div  "style=background-color: coral;border: 1px solid;padding: 50px;" id="Div2">
-    <p id="P3">Click this paragraph, I am Capturing.</p>
+<div id="myDIV">This div element has an onmousemove event handler that displays a random number every time you move your mouse inside this orange field.
+  <p>Click the button to remove the DIV's event handler.</p>
+  <button onclick="removeHandler()" id="myBtn">Try it</button>
 </div>
 
+<p id="demo"></p>
+
 <script>
-    document.getElementById("myP").addEventListener("click", function () {
-        alert("You clicked the P element!");
-    }, false);
+document.getElementById("myDIV").addEventListener("mousemove", myFunction);
 
-    document.getElementById("myP2").addEventListener("click", function () {
-        alert("You clicked the P element!");
-    }, true);
+function myFunction() {
+    document.getElementById("demo").innerHTML = Math.random();
+}
 
-    document.getElementById("myDiv").addEventListener("click", function () {
-        alert("You clicked the DIV element!");
-    }, false);
-
-    document.getElementById("myDiv2").addEventListener("click", function () {
-        alert("You clicked the DIV element!");
-    }, true);
+function removeHandler() {
+    document.getElementById("myDIV").removeEventListener("mousemove", myFunction);
+}
 </script>
+
 ```
 
 # DOM Animation
@@ -1356,6 +1340,82 @@ function myMove() {
 </body>
 </html>
 ```
+
+
+# Nodes
+```html
+
+<script>
+    var myText = document.getElementById("intro").childNodes[0].nodeValue;
+    myText = document.getElementById("intro").firstChild.nodeValue;
+    alert(document.body.innerHTML);
+    alert(document.documentElement.innerHTML);
+    document.getElementById("demo").innerHTML = myText;
+</script>
+
+
+    <!--Creating New HTML Elements (Nodes)-->
+    <div id="div3">
+    <p id="p4">This is a paragraph.</p>
+    <p id="p5">This is another paragraph.</p>
+    </div>
+
+    <script>
+        var para = document.createElement("p");
+        var node = document.createTextNode("This is new.");
+        para.appendChild(node);
+        var element = document.getElementById("div1");
+        element.appendChild(para);
+    </script>
+
+
+    <!--Creating--> new HTML Elements - insertBefore()
+    <div id="div4">
+    <p id="p6">This is a paragraph.</p>
+    <p id="p7">This is another paragraph.</p>
+    </div>
+
+    <script>
+        var para = document.createElement("p");
+        var node = document.createTextNode("This is new.");
+        para.appendChild(node);
+
+        var element = document.getElementById("div1");
+        var child = document.getElementById("p1");
+        element.insertBefore(para, child);
+
+        //Removing Existing HTML Elements
+        //parent.removeChild(child);
+
+
+        //Replacing HTML Elements 
+        //parent.replaceChild(para, child);
+
+        //HTML DOM Node List Length
+        var myNodelist = document.getElementsByTagName("p");
+        document.getElementById("demo").innerHTML = myNodelist.length;
+
+    </script>
+
+    <!--Loop Nodes-->
+    <p>This is a p element</p>
+    <p>This is also a p element.</p>
+    <p>This is also a p element - Click the button to change the background color of all p elements in this document.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <script>
+        function myFunction() {
+            var myNodelist = document.getElementsByTagName("p");
+            var i;
+            for (i = 0; i < myNodelist.length; i++) {
+                myNodelist[i].style.backgroundColor = "red";
+            }
+        }
+    </script>
+
+```
+
 
 ![1](https://s-media-cache-ak0.pinimg.com/originals/0c/06/80/0c06800a5268d4bd699b49f10806ac93.jpg)
 ![2](https://code.snipcademy.com/code/img/tutorials/javascript/bom/bom.svg)
