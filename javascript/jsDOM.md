@@ -764,6 +764,24 @@ parent.replaceChild(para,child);
         </div>
     </fieldset>
 
+    <!--The Button Collection-->
+    <fieldset> <legend>Button Object</legend>
+        <div>
+    
+            <form id="form1">
+               <input type="button" id="btn01" value="OK">
+                <button id="Button1" name="subject" type="submit" value="HTML">HTML123</button>
+            </form>
+             <script>
+                 document.getElementById("btn01").disabled = true;
+                 console.log(document.getElementById("Button1").name);
+                 console.log(document.getElementById("Button1").type);
+                 console.log(document.getElementById("Button1").value);
+                 console.log(document.getElementById("Button1").innerHTML);
+                 console.log(document.getElementById("Button1").form.id);
+            </script>
+        </div>
+    </fieldset>
   
     <!--The Anchors Collection-->
     <fieldset> <legend>Anchors Object</legend>
