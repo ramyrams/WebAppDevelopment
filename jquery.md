@@ -7,6 +7,27 @@
 * [jQuery](https://github.com/ramyrams/FrontendDevelopment/blob/master/jquery.md) 
 * [10 jQuery Form Validation Plugins](https://www.sitepoint.com/10-jquery-form-validation-plugins/)
 
+
+http://jqfundamentals.com/chapter/events
+https://learn.jquery.com/using-jquery-core/
+https://www.tutorialspoint.com/jquery/jquery-attributes.htm
+
+http://www.jquery-tutorial.net/effects/sliding-elements/
+http://tutorials.jenkov.com/jquery/index.html
+
+https://www.sitepoint.com/modern-css-buttons/
+
+http://www.javatpoint.com/jquery-tutorial
+http://www.csharpstar.com/star-pattern-programs-in-csharp/
+
+http://www.tutorialrepublic.com/jquery-tutorial/
+
+https://www.thinkful.com/learn/intro-to-jquery/
+
+http://learn.shayhowe.com/advanced-html-css/jquery/
+
+
+
 ## Cheatsheet
 https://frontendmasters.com/learningjquery/femasters/jQuery-1.6-Cheatsheet.pdf
 
