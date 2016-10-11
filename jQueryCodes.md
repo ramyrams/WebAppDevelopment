@@ -64,6 +64,65 @@
 
 
 
+$(selector)
+
+//by tag
+$("div") //document.querySelectorAll("div");
+
+//by class
+$(".menu-item") 
+//document.querySelectorAll(".menu-item");
+
+//by id
+$("#navigation")
+
+//by combination of selectors
+$("ul.menu li")
+
+$("#divTest1").text("Hello, world!");
+
+// select the item
+$("#something").hide();
+$(".widgets").fade(1);
+
+
+## Adding Elements
+$("<ul><li>Hello</li></ul>").appendTo("body");
+$("body").prepend("<h1>header</h1>");
+
+// Removing elements
+$('p').remove();
+
+
+## jQuery Events
+
+function onButtonClick(){
+  $(".selected").removeClass("selected");
+  $(this).addClass("selected");
+}
+
+$("a.button").on("click", onButtonClick);
+
+
+
+function onListItemClick(){
+  $(".selected").removeClass("selected");
+  $(this).addClass("selected");
+}
+
+$("ul").on("click", "li", onListItemClick);
+
+
+
+## jQuery Chaining
+$('<button>')
+  .addClass('btn-success')
+  .html('Click me for success')
+  .on('click', onSuccessButtonClick)
+  .appendTo(document.body);
+
+
+
 
 var listItems = jQuery( 'li' ); or $( 'li' );
 
