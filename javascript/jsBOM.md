@@ -167,6 +167,12 @@
             document.getElementById("screen_availHeight").innerHTML = "Available screen height is " + screen.availHeight;
             document.getElementById("screen_colorDepth").innerHTML = "Screen color depth is " + screen.colorDepth;
             document.getElementById("screen_pixelDepth").innerHTML = "Screen pixel depth is " + screen.pixelDepth;
+            document.getElementById("ow").innerHTML = window.outerWidth; 
+            document.getElementById("oh").innerHTML = window.outerHeight; 
+            document.getElementById("iw").innerHTML = window.innerHeight; 
+            document.getElementById("ih").innerHTML = window.innerHeight; 
+            document.getElementById("sw").innerHTML = window.screen.width; 
+            document.getElementById("sh").innerHTML = window.screen.height; 
         </script>
 
     </fieldset>
