@@ -695,6 +695,16 @@ parent.replaceChild(para,child);
                 //Display the full URL of a document
                 document.getElementById("URL").innerHTML = document.URL
 
+		//Metadata	
+		document.write("charsetSet: " + document.characterSet + "<br>");
+		document.write("charset: " + document.charset + "<br>");
+		document.write("compactMode: " + document.compatMode + "<br>");
+		document.write("defaultCharset: " + document.defaultCharset + "<br>");
+		document.write("dir: " + document.dir + "<br>");
+		document.write("lastModified: " + document.lastModified + "<br>");
+		document.write("referrer: " + document.referrer + "<br>");
+		document.write("title: " + document.title + "<br>");
+		document.write("location: " + document.location + "<br>");
             </script>
         </div>
     </fieldset>
