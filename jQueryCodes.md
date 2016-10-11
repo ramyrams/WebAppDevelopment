@@ -1,4 +1,69 @@
 
+* jQuery Basics
+ * What’s $, anyway?
+ * $ vs $()
+ * document ready
+ * Get some elements
+ * Other ways to create a jQuery object
+ * Creating new elements
+ * Testing a selection
+ * Chaining
+* jQuery Core 
+ * CSS, Styling, & Dimensions
+ * Data Methods
+ * Utility Methods
+ * Attributes
+ * Selecting Elements
+ * Working with Selections
+ * Manipulating Elements
+ * The jQuery Object
+* Traversing 
+ * Filtering selections
+ * Finding elements relative to a selection
+ * Getting back to your original selection
+* Manipulating
+ * Altering elements
+ * Changing form values
+ * Getting information from elements
+ * Placing elements in the document
+ * Copying elements
+ * Removing elements
+* Events & Event Delegation
+ * jQuery Event Basics
+ * Event Helpers
+ * Introducing Events
+ * Handling Events
+ * Inside the Event Handling Function
+ * Understanding Event Delegation
+ * Triggering Event Handlers
+ * History of jQuery Events
+ * Introducing Custom Events
+ * jQuery Event Extensions
+ * Namespaced events
+ * Binding multiple events at once
+ * Passing named functions as event handlers
+ * The event object
+ * Inside the event handler
+ * Preventing the default action
+ * Event bubbling
+ * Event delegation
+* Effects
+ * Built-in effects
+ * Managing animations
+* AJAX & Deferreds
+ * $.ajax
+ * jQuery’s Ajax-Related Methods
+ * Ajax and Forms
+ * Working with JSONP
+ * Ajax Events
+* Plugins
+ * Finding & Evaluating Plugins
+ * How to Create a Basic Plugin
+ * Advanced Plugin Concepts
+ * Writing Stateful Plugins with the jQuery UI Widget Factory
+
+
+
 
 var listItems = jQuery( 'li' ); or $( 'li' );
 
