@@ -151,7 +151,7 @@ $('<button>')
   .appendTo(document.body);
 ```
 
-
+```js
 
 var listItems = jQuery( 'li' ); or $( 'li' );
 
@@ -174,11 +174,12 @@ $( document ).ready(function() {
 $(function() {
   console.log( 'ready!' );
 });
-
+```
 
 
 
 ## Other ways to create a jQuery object
+```js
 // create a jQuery object from a DOM element
 $( document.body.children[0] );
 
@@ -192,9 +193,10 @@ $( 'li', firstBodyChild );
 // make a selection within a previous selection
 var paragraph = $( 'p' );
 $( 'a', paragraph );
-
+```
 
 ### Did my selection get anything?
+```js
 if ( $( '#nonexistent' ) ) {
   // Wrong! This code will always run!
 }
@@ -203,14 +205,17 @@ if ( $( '#nonexistent' ).length > 0 ) {
   // Correct! This code will only run if there's an element in your page
   // with an ID of 'nonexistent'
 }
-
+```
 
 ### Getting single elements from a selection
+```js
 var listItems = $( 'li' );
 var rawListItem = listItems[0]; // or listItems.get( 0 )
 var html = rawListItem.innerHTML;
+```
 
 ### Creating new elements
+```js
 $( '<p>' ); // creates a new <p> element with no content
 $( '<p>Hello!</p>' ); // creates a new <p> element with content
 $( '<p class="greet">Hello!</p>' ); // creates a new <p> with content and class
@@ -219,13 +224,16 @@ $( '<p>', {
   html: 'Hello!',
   'class': 'greet'
 });
+```
 
 ###v Testing a selection
+```js
 $( 'li' ).eq( 0 ).is( '.special' ); // false
 $( 'li' ).eq( 1 ).is( '.special' ); // true
-
+```
 
 ## Chaining
+```js
 $( 'li' )
   .click(function() {
     $( this ).addClass( 'clicked' );
@@ -244,7 +252,7 @@ listItems
   });
 
 spans.attr( 'title', 'Hover over me' );
-
+```
 
 
 ### Filtering selections
@@ -259,8 +267,10 @@ var notSpecial = listItems.not( '.special' );
 
 // filter the selection to only items that contain a span
 var hasSpans = listItems.has( 'span' );
+```
 
 ### Finding elements relative to a selection
+```js
 // get the first list item on the page
 var listItem = $( 'li' ).first(); // also: .last()
 
@@ -311,15 +321,13 @@ if ( $( "div.foo" ).length ) {
 }
 
 
-
+```js
 // Refining selections.
 $( "div.foo" ).has( "p" );         // div.foo elements that contain <p> tags
 $( "h1" ).not( ".bar" );           // h1 elements that don't have a class of bar
 $( "ul li" ).filter( ".current" ); // unordered list items with class of current
 $( "ul li" ).first();              // just the first unordered list item
 $( "ul li" ).eq( 5 );              // the sixth
-
-
 
 
 Selecting Elements by ID
@@ -353,14 +361,11 @@ $( "div:gt(2)" );
 // All currently animated divs.
 $( "div:animated" );
 
-
+```
 
 
 # Traversing
-
-
-
-
+```html
 <div class="grandparent">
     <div class="parent">
         <div class="child">
@@ -370,9 +375,10 @@ $( "div:animated" );
     <div class="surrogateParent1"></div>
     <div class="surrogateParent2"></div>
 </div>
+```
 
 ## Parents
-
+```js
 // Selecting an element's direct parent:
  
 // returns [ div.child ]
@@ -399,9 +405,10 @@ $( "span.subchild" ).closest( "div" );
  
 // returns [ div.child ] as the selector is also included in the search:
 $( "div.child" ).closest( "div" );
-
+```
 
 ## Children
+```js
 // Selecting an element's direct children:
  
 // returns [ div.parent, div.surrogateParent1, div.surrogateParent2 ]
@@ -411,12 +418,13 @@ $( "div.grandparent" ).children( "div" );
  
 // returns [ div.child, div.parent, div.surrogateParent1, div.surrogateParent2 ]
 $( "div.grandparent" ).find( "div" );
-
+```
 
 
 
 
 ## Siblings
+```js
 // Selecting a next sibling of the selectors:
  
 // returns [ div.surrogateParent1 ]
@@ -448,14 +456,14 @@ $( "div.surrogateParent2" ).prevAll().first();
  
 // returns [ div.parent ]
 $( "div.surrogateParent2" ).prevAll().last();
-
+```
 
 
 
 
 
 ## CSS, Styling, & Dimensions
-
+```js
 // Getting CSS properties.
 $( "h1" ).css( "fontSize" ); // Returns a string such as "19px".
 $( "h1" ).css( "font-size" ); // Also works.
@@ -468,9 +476,10 @@ $( "h1" ).css({
     fontSize: "100px",
     color: "red"
 });
-
+```
 
 ## link Using CSS Classes for Styling
+```js
 // Working with classes.
  
 var h1 = $( "h1" );
@@ -482,6 +491,7 @@ h1.toggleClass( "big" );
 if ( h1.hasClass( "big" ) ) {
     ...
 }
+```
 
 ## Dimensions
 ```js
