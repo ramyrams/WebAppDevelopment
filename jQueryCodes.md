@@ -62,8 +62,8 @@
  * Advanced Plugin Concepts
  * Writing Stateful Plugins with the jQuery UI Widget Factory
 
-
-
+## Get some elements
+```js
 $(selector)
 
 //by tag
@@ -81,51 +81,79 @@ $("ul.menu li")
 
 $("#divTest1").text("Hello, world!");
 
+$( '#header' ); // select the element with an ID of 'header'
+$( 'li' );      // select all list items on the page
+$( 'ul li' );   // select list items that are in unordered lists
+$( '.person' ); // select all elements with a class of 'person'
+
 // select the item
 $("#something").hide();
 $(".widgets").fade(1);
+```
 
+
+## Windw and Document Ready
+```js
+$( document ).ready(function() {
+        console.log( "document loaded" );
+    });
+ 
+    $( window ).load(function() {
+        console.log( "window loaded" );
+    });
+```
+
+```js
+function readyFn( jQuery ) {
+    // Code to run when the document is ready.
+}
+ 
+$( document ).ready( readyFn );
+// or:
+$( window ).load( readyFn );
+```
 
 ## Adding Elements
+```js
 $("<ul><li>Hello</li></ul>").appendTo("body");
 $("body").prepend("<h1>header</h1>");
 
 // Removing elements
 $('p').remove();
-
+```
 
 ## jQuery Events
-
+```js
 function onButtonClick(){
   $(".selected").removeClass("selected");
   $(this).addClass("selected");
 }
 
 $("a.button").on("click", onButtonClick);
+```
 
-
-
+```js
 function onListItemClick(){
   $(".selected").removeClass("selected");
   $(this).addClass("selected");
 }
 
 $("ul").on("click", "li", onListItemClick);
-
+```
 
 
 ## jQuery Chaining
+```js
 $('<button>')
   .addClass('btn-success')
   .html('Click me for success')
   .on('click', onSuccessButtonClick)
   .appendTo(document.body);
-
+```
 
 
 
 var listItems = jQuery( 'li' ); or $( 'li' );
-
 
 // Expose jQuery to the global object
 window.jQuery = window.$ = jQuery;
@@ -147,11 +175,7 @@ $(function() {
   console.log( 'ready!' );
 });
 
-## Get some elements
-$( '#header' ); // select the element with an ID of 'header'
-$( 'li' );      // select all list items on the page
-$( 'ul li' );   // select list items that are in unordered lists
-$( '.person' ); // select all elements with a class of 'person'
+
 
 
 ## Other ways to create a jQuery object
@@ -224,6 +248,7 @@ spans.attr( 'title', 'Hover over me' );
 
 
 ### Filtering selections
+```js
 var listItems = $( 'li' );
 
 // filter the selection to only items with a class of 'special'
@@ -259,30 +284,12 @@ var modules = listItem.parents( '.module' );
 
 // find the closest ancestor of the list item that has a class of "module"
 var module = listItem.closest( '.module' );
-
+```
 
 http://cdn.lucemorker.com/blog/wp-content/uploads/2014/02/table.jpg
 
 
 
-$( document ).ready(function() {
-        console.log( "document loaded" );
-    });
- 
-    $( window ).load(function() {
-        console.log( "window loaded" );
-    });
-
-
-
- 
-function readyFn( jQuery ) {
-    // Code to run when the document is ready.
-}
- 
-$( document ).ready( readyFn );
-// or:
-$( window ).load( readyFn );
 
 
 
