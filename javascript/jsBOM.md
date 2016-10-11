@@ -7,6 +7,7 @@
 * BOM Timing
 * BOM Cookies
 
+* [JavaScript’s DOM Vs BOM](http://code-tricks.com/javascripts-dom-vs-bom/)
 
 
 ```js
