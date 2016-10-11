@@ -7,6 +7,8 @@
 * [jQuery](https://github.com/ramyrams/FrontendDevelopment/blob/master/jquery.md) 
 * [10 jQuery Form Validation Plugins](https://www.sitepoint.com/10-jquery-form-validation-plugins/)
 
+## Cheatsheet
+https://frontendmasters.com/learningjquery/femasters/jQuery-1.6-Cheatsheet.pdf
 
 ## jQuery Awesome 
 * [Awesome jQuery](https://github.com/peterkokot/awesome-jquery
