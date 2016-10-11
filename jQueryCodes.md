@@ -452,10 +452,27 @@ $.type( new Date() ); // "date"
 
 
 
+## Imperative Data-Binding with jQuery
 
+<!-- jQuery Markup -->
+<div>
+    <input id="name" type="text" />
+    <span id="greeting">Hello</span>
+</div>
 
+// jQuery
+//look up the input element
+var name = $('#name');
 
+//look up the output element
+var greeting = $('#greeting');
 
+//listen for keyboard events
+name.keyup(function() {
 
+  //update the output element with the new input
+  greeting.text('Hello ' + name.val());
+
+});
 
 
