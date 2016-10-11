@@ -140,3 +140,322 @@ var module = listItem.closest( '.module' );
 http://cdn.lucemorker.com/blog/wp-content/uploads/2014/02/table.jpg
 
 
+
+$( document ).ready(function() {
+        console.log( "document loaded" );
+    });
+ 
+    $( window ).load(function() {
+        console.log( "window loaded" );
+    });
+
+
+
+ 
+function readyFn( jQuery ) {
+    // Code to run when the document is ready.
+}
+ 
+$( document ).ready( readyFn );
+// or:
+$( window ).load( readyFn );
+
+
+
+Attributes.attr() method
+$( "a" ).attr( "href", "allMyHrefsAreTheSameNow.html" );
+ 
+$( "a" ).attr({
+    title: "all titles are the same too!",
+    href: "somethingNew.html"
+});
+
+
+var url = $( "a" ).attr( "href" );
+
+
+// Testing whether a selection contains elements.
+if ( $( "div.foo" ).length ) {
+    ...
+}
+
+
+
+// Refining selections.
+$( "div.foo" ).has( "p" );         // div.foo elements that contain <p> tags
+$( "h1" ).not( ".bar" );           // h1 elements that don't have a class of bar
+$( "ul li" ).filter( ".current" ); // unordered list items with class of current
+$( "ul li" ).first();              // just the first unordered list item
+$( "ul li" ).eq( 5 );              // the sixth
+
+
+
+
+Selecting Elements by ID
+$( "#myId" ); // Note IDs must be unique per page.
+
+Selecting Elements by Class Name
+
+$( ".myClass" );
+
+Selecting Elements by Attribute
+$( "input[name='first_name']" );
+
+Selecting Elements by Compound CSS Selector
+$( "#contents ul.people li" );
+
+Selecting Elements with a Comma-separated List of Selectors
+$( "div.myClass, ul.people" );
+
+
+//link Pseudo-Selectors
+$( "a.external:first" );
+$( "tr:odd" );
+ 
+// Select all input-like elements in a form (more on this below).
+$( "#myForm :input" );
+$( "div:visible" );
+ 
+// All except the first three divs.
+$( "div:gt(2)" );
+ 
+// All currently animated divs.
+$( "div:animated" );
+
+
+
+
+# Traversing
+
+
+
+
+<div class="grandparent">
+    <div class="parent">
+        <div class="child">
+            <span class="subchild"></span>
+        </div>
+    </div>
+    <div class="surrogateParent1"></div>
+    <div class="surrogateParent2"></div>
+</div>
+
+## Parents
+
+// Selecting an element's direct parent:
+ 
+// returns [ div.child ]
+$( "span.subchild" ).parent();
+ 
+// Selecting all the parents of an element that match a given selector:
+ 
+// returns [ div.parent ]
+$( "span.subchild" ).parents( "div.parent" );
+ 
+// returns [ div.child, div.parent, div.grandparent ]
+$( "span.subchild" ).parents();
+ 
+// Selecting all the parents of an element up to, but *not including* the selector:
+ 
+// returns [ div.child, div.parent ]
+$( "span.subchild" ).parentsUntil( "div.grandparent" );
+ 
+// Selecting the closest parent, note that only one parent will be selected
+// and that the initial element itself is included in the search:
+ 
+// returns [ div.child ]
+$( "span.subchild" ).closest( "div" );
+ 
+// returns [ div.child ] as the selector is also included in the search:
+$( "div.child" ).closest( "div" );
+
+
+## Children
+// Selecting an element's direct children:
+ 
+// returns [ div.parent, div.surrogateParent1, div.surrogateParent2 ]
+$( "div.grandparent" ).children( "div" );
+ 
+// Finding all elements within a selection that match the selector:
+ 
+// returns [ div.child, div.parent, div.surrogateParent1, div.surrogateParent2 ]
+$( "div.grandparent" ).find( "div" );
+
+
+
+
+
+## Siblings
+// Selecting a next sibling of the selectors:
+ 
+// returns [ div.surrogateParent1 ]
+$( "div.parent" ).next();
+ 
+// Selecting a prev sibling of the selectors:
+ 
+// returns [] as No sibling exists before div.parent
+$( "div.parent" ).prev();
+ 
+// Selecting all the next siblings of the selector:
+ 
+// returns [ div.surrogateParent1, div.surrogateParent2 ]
+$( "div.parent" ).nextAll();
+ 
+// returns [ div.surrogateParent1 ]
+$( "div.parent" ).nextAll().first();
+ 
+// returns [ div.surrogateParent2 ]
+$( "div.parent" ).nextAll().last();
+ 
+// Selecting all the previous siblings of the selector:
+ 
+// returns [ div.surrogateParent1, div.parent ]
+$( "div.surrogateParent2" ).prevAll();
+ 
+// returns [ div.surrogateParent1 ]
+$( "div.surrogateParent2" ).prevAll().first();
+ 
+// returns [ div.parent ]
+$( "div.surrogateParent2" ).prevAll().last();
+
+
+
+
+
+
+## CSS, Styling, & Dimensions
+
+// Getting CSS properties.
+$( "h1" ).css( "fontSize" ); // Returns a string such as "19px".
+$( "h1" ).css( "font-size" ); // Also works.
+
+// Setting CSS properties.
+$( "h1" ).css( "fontSize", "100px" ); // Setting an individual property.
+
+// Setting multiple properties.
+$( "h1" ).css({
+    fontSize: "100px",
+    color: "red"
+});
+
+
+## link Using CSS Classes for Styling
+// Working with classes.
+ 
+var h1 = $( "h1" );
+ 
+h1.addClass( "big" );
+h1.removeClass( "big" );
+h1.toggleClass( "big" );
+ 
+if ( h1.hasClass( "big" ) ) {
+    ...
+}
+
+## Dimensions
+// Basic dimensions methods.
+ 
+// Sets the width of all <h1> elements.
+$( "h1" ).width( "50px" );
+ 
+// Gets the width of the first <h1> element.
+$( "h1" ).width();
+ 
+// Sets the height of all <h1> elements.
+$( "h1" ).height( "50px" );
+ 
+// Gets the height of the first <h1> element.
+$( "h1" ).height();
+ 
+ 
+// Returns an object containing position information for
+// the first <h1> relative to its "offset (positioned) parent".
+$( "h1" ).position();
+
+
+# Data Methods
+
+// Storing and retrieving data related to an element.
+$( "#myDiv" ).data( "keyName", { foo: "bar" } );
+$( "#myDiv" ).data( "keyName" ); // Returns { foo: "bar" }
+
+
+
+// Storing a relationship between elements using .data()
+ 
+$( "#myList li" ).each(function() {
+ 
+    var li = $( this );
+    var div = li.find( "div.content" );
+ 
+    li.data( "contentDiv", div );
+ 
+});
+ 
+// Later, we don't have to find the div again;
+// we can just read it from the list item's data
+var firstLi = $( "#myList li:first" );
+ 
+firstLi.data( "contentDiv" ).html( "new content" );
+
+
+# Utility Methods
+// Returns "lots of extra whitespace"
+$.trim( "    lots of extra whitespace    " );
+
+//$.each()
+$.each([ "foo", "bar", "baz" ], function( idx, val ) {
+    console.log( "element " + idx + " is " + val );
+});
+ 
+$.each({ foo: "bar", baz: "bim" }, function( k, v ) {
+    console.log( k + " : " + v );
+});
+
+
+//$.inArray()
+var myArray = [ 1, 2, 3, 5 ];
+ 
+if ( $.inArray( 4, myArray ) !== -1 ) {
+    console.log( "found it!" );
+}
+
+
+//$.extend()
+var firstObject = { foo: "bar", a: "b" };
+var secondObject = { foo: "baz" };
+ 
+var newObject = $.extend( firstObject, secondObject );
+ 
+console.log( firstObject.foo ); // "baz"
+console.log( newObject.foo ); // "baz"
+
+## Testing Type
+
+$.isArray([]); // true
+$.isFunction(function() {}); // true
+$.isNumeric(3.14); // true
+$.type( true ); // "boolean"
+$.type( 3 ); // "number"
+$.type( "test" ); // "string"
+$.type( function() {} ); // "function"
+ 
+$.type( new Boolean() ); // "boolean"
+$.type( new Number(3) ); // "number"
+$.type( new String('test') ); // "string"
+$.type( new Function() ); // "function"
+ 
+$.type( [] ); // "array"
+$.type( null ); // "null"
+$.type( /test/ ); // "regexp"
+$.type( new Date() ); // "date"
+
+
+
+
+
+
+
+
+
+
