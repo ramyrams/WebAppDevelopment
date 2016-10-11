@@ -484,8 +484,7 @@ if ( h1.hasClass( "big" ) ) {
 }
 
 ## Dimensions
-// Basic dimensions methods.
- 
+```js
 // Sets the width of all <h1> elements.
 $( "h1" ).width( "50px" );
  
@@ -498,19 +497,16 @@ $( "h1" ).height( "50px" );
 // Gets the height of the first <h1> element.
 $( "h1" ).height();
  
- 
 // Returns an object containing position information for
 // the first <h1> relative to its "offset (positioned) parent".
 $( "h1" ).position();
-
+```
 
 # Data Methods
-
+```js
 // Storing and retrieving data related to an element.
 $( "#myDiv" ).data( "keyName", { foo: "bar" } );
 $( "#myDiv" ).data( "keyName" ); // Returns { foo: "bar" }
-
-
 
 // Storing a relationship between elements using .data()
  
@@ -528,9 +524,10 @@ $( "#myList li" ).each(function() {
 var firstLi = $( "#myList li:first" );
  
 firstLi.data( "contentDiv" ).html( "new content" );
-
+```
 
 # Utility Methods
+```js
 // Returns "lots of extra whitespace"
 $.trim( "    lots of extra whitespace    " );
 
@@ -560,9 +557,10 @@ var newObject = $.extend( firstObject, secondObject );
  
 console.log( firstObject.foo ); // "baz"
 console.log( newObject.foo ); // "baz"
+```
 
 ## Testing Type
-
+```js
 $.isArray([]); // true
 $.isFunction(function() {}); // true
 $.isNumeric(3.14); // true
@@ -580,11 +578,10 @@ $.type( [] ); // "array"
 $.type( null ); // "null"
 $.type( /test/ ); // "regexp"
 $.type( new Date() ); // "date"
-
-
+```
 
 ## Imperative Data-Binding with jQuery
-
+```js
 <!-- jQuery Markup -->
 <div>
     <input id="name" type="text" />
@@ -605,5 +602,6 @@ name.keyup(function() {
   greeting.text('Hello ' + name.val());
 
 });
+```
 
 
