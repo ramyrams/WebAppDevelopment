@@ -1,14 +1,12 @@
-
 * jQuery Basics
  * What’s $, anyway?
- * $ vs $()
  * document ready
  * Get some elements
  * Other ways to create a jQuery object
  * Creating new elements
  * Testing a selection
  * Chaining
-* jQuery Core 
+* Selectors & Attributes
  * CSS, Styling, & Dimensions
  * Data Methods
  * Utility Methods
@@ -17,6 +15,7 @@
  * Working with Selections
  * Manipulating Elements
  * The jQuery Object
+* CSS Styleing 
 * Traversing 
  * Filtering selections
  * Finding elements relative to a selection
@@ -47,20 +46,27 @@
  * Preventing the default action
  * Event bubbling
  * Event delegation
-* Effects
- * Built-in effects
- * Managing animations
 * AJAX & Deferreds
  * $.ajax
  * jQuery’s Ajax-Related Methods
  * Ajax and Forms
  * Working with JSONP
  * Ajax Events
+* Effects
+ * Built-in effects
+ * Managing animations
 * Plugins
  * Finding & Evaluating Plugins
  * How to Create a Basic Plugin
  * Advanced Plugin Concepts
  * Writing Stateful Plugins with the jQuery UI Widget Factory
+
+ 
+# What’s $, anyway?
+* The $() factory function
+* The factory function $() is a synonym of jQuery() function
+* Replace $ sign by jQuery name and you can use function jQuery() instead of $() in case of any conflict with other library.
+
 
 ## Get some elements
 ```js
@@ -91,8 +97,24 @@ $("#something").hide();
 $(".widgets").fade(1);
 ```
 
+## Other ways to create a jQuery object
+```js
+// create a jQuery object from a DOM element
+$( document.body.children[0] );
 
-## Windw and Document Ready
+// create a jQuery object from a list of DOM elements
+$( [ window, document ] );
+
+// make a selection in the context of a DOM element
+var firstBodyChild = document.body.children[0];
+$( 'li', firstBodyChild );
+
+// make a selection within a previous selection
+var paragraph = $( 'p' );
+$( 'a', paragraph );
+```
+
+## Window and Document Ready
 ```js
 $( document ).ready(function() {
         console.log( "document loaded" );
@@ -113,87 +135,7 @@ $( document ).ready( readyFn );
 $( window ).load( readyFn );
 ```
 
-## Adding Elements
-```js
-$("<ul><li>Hello</li></ul>").appendTo("body");
-$("body").prepend("<h1>header</h1>");
 
-// Removing elements
-$('p').remove();
-```
-
-## jQuery Events
-```js
-function onButtonClick(){
-  $(".selected").removeClass("selected");
-  $(this).addClass("selected");
-}
-
-$("a.button").on("click", onButtonClick);
-```
-
-```js
-function onListItemClick(){
-  $(".selected").removeClass("selected");
-  $(this).addClass("selected");
-}
-
-$("ul").on("click", "li", onListItemClick);
-```
-
-
-## jQuery Chaining
-```js
-$('<button>')
-  .addClass('btn-success')
-  .html('Click me for success')
-  .on('click', onSuccessButtonClick)
-  .appendTo(document.body);
-```
-
-```js
-
-var listItems = jQuery( 'li' ); or $( 'li' );
-
-// Expose jQuery to the global object
-window.jQuery = window.$ = jQuery;
-
-
-$.support property for information on what the current browser environment supports,
-$.ajax method to make an AJAX request.
-
-
-
-$("span.bold").css("font-weight", "bold");
-
-
-$( document ).ready(function() {
-  console.log( 'ready!' );
-});
-
-$(function() {
-  console.log( 'ready!' );
-});
-```
-
-
-
-## Other ways to create a jQuery object
-```js
-// create a jQuery object from a DOM element
-$( document.body.children[0] );
-
-// create a jQuery object from a list of DOM elements
-$( [ window, document ] );
-
-// make a selection in the context of a DOM element
-var firstBodyChild = document.body.children[0];
-$( 'li', firstBodyChild );
-
-// make a selection within a previous selection
-var paragraph = $( 'p' );
-$( 'a', paragraph );
-```
 
 ### Did my selection get anything?
 ```js
@@ -252,7 +194,75 @@ listItems
   });
 
 spans.attr( 'title', 'Hover over me' );
+
+
+$('<button>')
+  .addClass('btn-success')
+  .html('Click me for success')
+  .on('click', onSuccessButtonClick)
+  .appendTo(document.body);
 ```
+
+
+## Adding Elements
+```js
+$("<ul><li>Hello</li></ul>").appendTo("body");
+$("body").prepend("<h1>header</h1>");
+
+// Removing elements
+$('p').remove();
+```
+
+## jQuery Events
+```js
+function onButtonClick(){
+  $(".selected").removeClass("selected");
+  $(this).addClass("selected");
+}
+
+$("a.button").on("click", onButtonClick);
+```
+
+```js
+function onListItemClick(){
+  $(".selected").removeClass("selected");
+  $(this).addClass("selected");
+}
+
+$("ul").on("click", "li", onListItemClick);
+```
+
+
+
+
+```js
+
+var listItems = jQuery( 'li' ); or $( 'li' );
+
+// Expose jQuery to the global object
+window.jQuery = window.$ = jQuery;
+
+
+$.support property for information on what the current browser environment supports,
+$.ajax method to make an AJAX request.
+
+
+
+$("span.bold").css("font-weight", "bold");
+
+
+$( document ).ready(function() {
+  console.log( 'ready!' );
+});
+
+$(function() {
+  console.log( 'ready!' );
+});
+```
+
+
+
+
 
 
 ### Filtering selections
