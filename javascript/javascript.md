@@ -1,6 +1,20 @@
 
 * [The State Of JavaScript](http://stateofjs.com/2016/introduction/)
 
+* [Learn javascript in one picture.](https://github.com/coodict/javascript-in-one-pic)
+* [JavaScript Promises 101](https://bitsofco.de/javascript-promises-101/)
+* [GitBook teaching programming basics with Javascript](https://github.com/GitbookIO/javascript)
+* [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+* [Awesome JavaScript](https://github.com/sorrycc/awesome-javascript)
+* [Essential JavaScript website.](https://github.com/ericelliott/essential-javascript-links)
+* [A collection of documentation about the most quirky parts of the JavaScript language](https://github.com/BonsaiDen/JavaScript-Garden)
+* [Source code for the Fullstack JavaScript book](https://github.com/azat-co/fullstack-javascript)
+* [A book series on JavaScript](https://github.com/getify/You-Dont-Know-JS)
+* [Examples of how to  do query, style, dom, ajax, event etc like jQuery with plain JS](https://github.com/oneuijs/You-Dont-Need-jQuery)
+* [Some basic javascript coding challenges](https://github.com/kolodny/exercises)
+
+
+
 # JS
 * [Parallel Processing in JS](https://advancedweb.hu/2016/08/09/parallel-processing-in-js/)
 * [How to Use Map, Filter, & Reduce in JavaScript](http://code.tutsplus.com/tutorials/how-to-use-map-filter-reduce-in-javascript--cms-26209)
