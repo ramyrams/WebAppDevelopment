@@ -1,5 +1,10 @@
 # Web Application Development
 
+# What Every Front-End Developer Needs to Know
+
+
+
+
 * [Web Concepts](https://github.com/ramyrams/WebAppDevelopment/blob/master/WebBasicConcepts.md)
 
 # Web Platform's Features
