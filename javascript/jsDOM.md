@@ -1081,7 +1081,7 @@ parent.replaceChild(para,child);
         function getOption() {
             var obj = document.getElementById("mySelect");
             console.log(obj.options[obj.selectedIndex].text);
-            console.log(obj.options[obj.selectedIndex].selectedIndex);
+            console.log(obj.selectedIndex);
         }
         function getOptions() {
             var x = document.getElementById("mySelect");
