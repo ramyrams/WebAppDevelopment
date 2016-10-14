@@ -1,11 +1,8 @@
 # Web Application Development
 
 # What Every Front-End Developer Needs to Know
-
-
-
-
 * [Web Concepts](https://github.com/ramyrams/WebAppDevelopment/blob/master/WebBasicConcepts.md)
+* [UI Jargon](http://jargon.js.org/)
 
 # Web Platform's Features
 * [Web Platform's Features](https://paulirish.github.io/web-feature-availability/)
