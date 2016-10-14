@@ -8,3 +8,8 @@
 
 13 jQuery SelectBox/Drop-down Plugins
 https://www.sitepoint.com/13-jquery-selectboxdrop-down-plugins/
+
+
+
+How to Manage Your JavaScript Application State with MobX
+https://www.sitepoint.com/manage-javascript-application-state-mobx/?
