@@ -96,10 +96,17 @@
 * [How CSS Positioning Works-Demo](http://demo.tutorialzine.com/2010/06/microtut-how-css-position-works/demo.html)
 * [Detailed css Positioning](http://learn.shayhowe.com/advanced-html-css/detailed-css-positioning/)
 
-# CSS Effects
+# CSS Effects & Filters
 * [Original Hover Effects](http://tympanus.net/Tutorials/OriginalHoverEffects/index5.html)
 * [CSS Effects Demo](http://1stwebdesigner.com/css-effects/)
-* [](https://www.html5rocks.com/en/tutorials/filters/understanding-css/)
+* [Understanding Filter](https://www.html5rocks.com/en/tutorials/filters/understanding-css/)
+* [Filter](https://css-tricks.com/almanac/properties/f/filter/)
+
+## Tools
+* [cssfilters](http://www.cssfilters.co/)
+* [CSSgram](http://una.im/CSSgram/)
+
+
 
 # Flexbox
 * [Flexbox Interactive Demo](http://flexboxin5.com/)
@@ -153,10 +160,11 @@ PESTICIDE](http://pesticide.io/)
 # CSS Demo
 * CSS Sytles Demo = http://www.tulane.edu/~gnorth/2015Fall/CPST-2400-10/demo/demo_css.htm
 
+# Examples
+* [Stunning Examples of CSS Loaders](http://www.catswhocode.com/blog/stunning-examples-of-css-loaders)
+
+
 # URL
 * [9 Underutilized Features in CSS](https://medium.com/@iamjordanlittle/9-underutilized-features-in-css-90ced6ddbfe7#.frwrl0csx)
-
-
-
 * [Almost complete guide to flexbox (without flexbox)](https://kyusuf.com/post/almost-complete-guide-to-flexbox-without-flexbox)
 
