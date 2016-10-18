@@ -1428,14 +1428,16 @@ function myMove() {
     </script>
 
 ```
-
-
-![1](https://s-media-cache-ak0.pinimg.com/originals/0c/06/80/0c06800a5268d4bd699b49f10806ac93.jpg)
-![2](https://code.snipcademy.com/code/img/tutorials/javascript/bom/bom.svg)
+![1](https://supercompiler.files.wordpress.com/2013/05/19.jpg)
 .![1](http://javascript.info/files/tutorial/browser/dom/simpledom.png)
 ![1](http://javascript.info/files/tutorial/browser/dom/simpledom2.png)
 ![1](http://javascript.info/files/tutorial/browser/dom/simpledom2_white.png)
 ![1](http://javascript.info/files/tutorial/browser/dom/documentElement.png)
 ![1](http://javascript.info/files/tutorial/browser/dom/children.png)
 ![1](http://javascript.info/files/tutorial/browser/dom/siblings.png)
+![1](https://s-media-cache-ak0.pinimg.com/originals/0c/06/80/0c06800a5268d4bd699b49f10806ac93.jpg)
+
+
+
+
 
