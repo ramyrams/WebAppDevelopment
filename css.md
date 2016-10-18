@@ -70,6 +70,7 @@
 * [Complex Selectors](http://learn.shayhowe.com/advanced-html-css/complex-selectors/)
 * [CSS Diner - Where we feast on CSS Selectors!](https://flukeout.github.io/)
 * [Detailed Positioning](https://code.tutsplus.com/tutorials/css-refreshers-borders--net-24655)
+* [CSS Selectors: Just the Tricky Bits](https://designshack.net/articles/css/css-selectors-just-the-tricky-bits/)
 
 # Pseudo Selectors
 * [Style Form Elements With Pseudo Selectors](http://tutorialzine.com/2015/07/quick-tip-style-form-elements-with-pseudo-selectors/)
@@ -148,6 +149,8 @@
 PESTICIDE](http://pesticide.io/)
 * [Debugging CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Debugging_CSS)
 * [Debugging CSS](https://benfrain.com/debugging-css/)
+* [HTML and CSS Debugging Tools](https://designshack.net/articles/html/html-and-css-debugging-tools/)
+
 
 # CSS Tips
 * [20 Useful CSS Tips For Beginners](http://www.hongkiat.com/blog/20-useful-css-tips-for-beginners/)
@@ -168,4 +171,9 @@ PESTICIDE](http://pesticide.io/)
 # URL
 * [9 Underutilized Features in CSS](https://medium.com/@iamjordanlittle/9-underutilized-features-in-css-90ced6ddbfe7#.frwrl0csx)
 * [Almost complete guide to flexbox (without flexbox)](https://kyusuf.com/post/almost-complete-guide-to-flexbox-without-flexbox)
+
+
+* [18 CSS Compression Tools and Techniques](https://designshack.net/articles/css/18-css-compression-tools-and-techniques/)
+* [10 CSS Table Examples](https://designshack.net/articles/10-css-table-examples/)
+* [10 CSS Form Examples](https://designshack.net/articles/10-css-form-examples/)
 
