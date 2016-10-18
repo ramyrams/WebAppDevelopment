@@ -127,6 +127,7 @@
 
 # Transitions & Animations
 * [Transitions Animations](http://learn.shayhowe.com/advanced-html-css/transitions-animations/)
+* [animate.css](https://daneden.github.io/animate.css/)
 
 # Responsive Design
 * [Responsive Web Design](http://learn.shayhowe.com/advanced-html-css/responsive-web-design/)
