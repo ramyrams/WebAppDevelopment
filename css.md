@@ -54,6 +54,8 @@
 
 * [CSS TOC](https://thecssworkshop.com/toc)
 
+* [CSS Jump Start](https://mva.microsoft.com/en-US/training-courses/css-jump-start-8474?l=WQPS1WXz_9104984382)
+
 
 # Awesome CSS
 * [Awesome CSS](https://github.com/ikkou/awesome-css)
