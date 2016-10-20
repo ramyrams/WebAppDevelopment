@@ -383,6 +383,7 @@
             d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
             var expires = "expires=" + d.toGMTString();
             document.cookie = cname + "=" + cvalue + "; " + expires;
+            //document.cookie = 'ppkcookie2=another test; expires=Fri, 3 Aug 2001 20:47:11 UTC; path=/'
         }
 
         function getCookie(cname) {
@@ -411,6 +412,11 @@
                 }
             }
         }
+        
+         function deleteCookie() {
+         //set the expires parameter to a passed date
+         document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+         }
 
 </script>
 
