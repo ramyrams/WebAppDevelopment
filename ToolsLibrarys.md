@@ -9,7 +9,8 @@
 13 jQuery SelectBox/Drop-down Plugins
 https://www.sitepoint.com/13-jquery-selectboxdrop-down-plugins/
 
-
+# JS Library
+* [js-cookie](https://github.com/js-cookie/js-cookie) - A simple, lightweight JavaScript API for handling browser cookies
 
 How to Manage Your JavaScript Application State with MobX
 https://www.sitepoint.com/manage-javascript-application-state-mobx/?
