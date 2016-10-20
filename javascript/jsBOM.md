@@ -422,10 +422,7 @@
 ![1](http://images.cnblogs.com/cnblogs_com/daibao9922/bom.gif)
 ![2](https://code.snipcademy.com/code/img/tutorials/javascript/bom/bom.svg)
 ![3](http://javascript.info/files/tutorial/browser/JSTop.png)
-![4](http://code-tricks.com/wp-content/uploads/2014/02/javaScript-DOM-vs-BOM.jpg)
-![5](https://www.safaribooksonline.com/library/view/javascript-by-example/9780137084746/graphics/10fig01.jpg)
 ![6](https://www.visibone.com/products/ebk12-13_850.jpg)
 ![6](http://flylib.com/books/4/357/1/html/2/files/10fig03.gif)
-![6](https://www.microsoft.com/mspress/books/sampchap/4225/f03xx01.jpg)
-![6](http://merc.tv/img/fig/jobjtree.gif)
+
 
