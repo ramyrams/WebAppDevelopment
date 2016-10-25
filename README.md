@@ -74,8 +74,8 @@
 * Automated web application testing - [https://www.youtube.com/watch?v=v5K_CNaGxrI]
 
 ![1](http://cdn2.hubspot.net/hub/208250/file-2451034899-jpg/Blog_Images/ContinuousTestingBlog1.jpg)
-
 ![1](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/analysis-dom-css.png)
-
 ![1](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/waterfall-dom-css-js.png?hl=pl)
 ![1](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/analysis-dom-css-nb-js-async.png?hl=pl)
+![1](https://d2v4zi8pl64nxt.cloudfront.net/the-technical-seo-renaissance/580e78a6cafc65.06578482.png)
+![1](https://d2v4zi8pl64nxt.cloudfront.net/the-technical-seo-renaissance/580e78a635b054.48955432.png)
