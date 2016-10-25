@@ -92,6 +92,10 @@
 
 # Tools
 * [CSS LINT](http://csslint.net/)
+* [cssanimate](http://cssanimate.com)/
+* [simplecss](http://simplecss.eu/)
+* [cssfilters](http://www.cssfilters.co/)
+* [CSSgram](http://una.im/CSSgram/)
 
 # CSS positioning
 * [CSS Position Types Demo](https://codepen.io/bthehuman/pen/BNraLo)
@@ -105,9 +109,6 @@
 * [Understanding Filter](https://www.html5rocks.com/en/tutorials/filters/understanding-css/)
 * [Filter](https://css-tricks.com/almanac/properties/f/filter/)
 
-## Tools
-* [cssfilters](http://www.cssfilters.co/)
-* [CSSgram](http://una.im/CSSgram/)
 
 
 
@@ -159,12 +160,15 @@ PESTICIDE](http://pesticide.io/)
 * [CSS skills pro](https://github.com/AllThingsSmitty/css-protips)
 * [70 Expert Ideas For Better CSS Coding](https://hackhands.com/70-Expert-Ideas-For-Better-CSS-Coding/)
 * [100 Exceedingly Useful CSS Tips and Tricks](http://sixrevisions.com/css/100-exceedingly-useful-css-tips-and-tricks/)
+* [Color Combinations](https://brightside.me/article/the-ultimate-color-combinations-cheat-sheet-92405/)
+
 
 # CSS Cheat Sheet
 * [CSS Cheat Sheet](http://1stwebdesigner.com/css-cheat-sheet/)
 
 # CSS Demo
-* CSS Sytles Demo = http://www.tulane.edu/~gnorth/2015Fall/CPST-2400-10/demo/demo_css.htm
+* [CSS Sytles Demo](http://www.tulane.edu/~gnorth/2015Fall/CPST-2400-10/demo/demo_css.htm)
+* [Angry Birds in Pure CSS](http://codepen.io/rachel_web/pen/JKzrav)
 
 # Examples
 * [Stunning Examples of CSS Loaders](http://www.catswhocode.com/blog/stunning-examples-of-css-loaders)
@@ -181,9 +185,9 @@ PESTICIDE](http://pesticide.io/)
 
 
 
-http://www.webcodegeeks.com/wp-content/uploads/2016/04/webdev-qa-3.jpg
-https://www.webcodegeeks.com/wp-content/uploads/2016/04/webdev-qa-1.jpg
-http://apprize.info/adobe/dreamweaver/dreamweaver.files/image156.jpg
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRCcw3RDVhSrOSazv5LhEO29TMumRr7U7RHfpBVjRlRe0dtPtZDw
-https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRB4OFJ3UtsCvDKEZ40MWfFLUi-0AqiSfYQJ9YwTGP8fClYCEmz
+![1](http://www.webcodegeeks.com/wp-content/uploads/2016/04/webdev-qa-3.jpg)
+![1](https://www.webcodegeeks.com/wp-content/uploads/2016/04/webdev-qa-1.jpg)
+![1](http://apprize.info/adobe/dreamweaver/dreamweaver.files/image156.jpg)
+![1](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRCcw3RDVhSrOSazv5LhEO29TMumRr7U7RHfpBVjRlRe0dtPtZDw)
+![1](https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRB4OFJ3UtsCvDKEZ40MWfFLUi-0AqiSfYQJ9YwTGP8fClYCEmz)
 
