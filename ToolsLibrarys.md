@@ -5,16 +5,14 @@
 * [10 CSS and JavaScript Linting Tools for Code Optimization](http://www.hongkiat.com/blog/code-optimization-css-js-linting-tools/)
 * [jscolor](http://jscolor.com/examples/)
 
-
-13 jQuery SelectBox/Drop-down Plugins
-https://www.sitepoint.com/13-jquery-selectboxdrop-down-plugins/
+# jQuery
+* [13 jQuery SelectBox/Drop-down Plugins](https://www.sitepoint.com/13-jquery-selectboxdrop-down-plugins/)
 
 # JS Library
 * [js-cookie](https://github.com/js-cookie/js-cookie) - A simple, lightweight JavaScript API for handling browser cookies
 * [egjs](https://naver.github.io/egjs/) - Set of UI interactions, effects and utility components library using jQuery.
+* [MobX](https://www.sitepoint.com/manage-javascript-application-state-mobx/) - How to Manage Your JavaScript Application State with MobX
 
-How to Manage Your JavaScript Application State with MobX
-https://www.sitepoint.com/manage-javascript-application-state-mobx/?
 
 
 
