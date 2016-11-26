@@ -183,6 +183,10 @@ PESTICIDE](http://pesticide.io/)
 * [10 CSS Table Examples](https://designshack.net/articles/10-css-table-examples/)
 * [10 CSS Form Examples](https://designshack.net/articles/10-css-form-examples/)
 
+http://cssreference.io/
+https://codegeekz.com/linting-tools-for-javascript-and-css-code-optimization/
+https://medium.freecodecamp.com/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862#.hkqcsxfq4
+https://webkul.github.io/csspin/?utm_source=codropscollective
 
 
 ![1](http://www.webcodegeeks.com/wp-content/uploads/2016/04/webdev-qa-3.jpg)
