@@ -12,6 +12,8 @@
 * [A book series on JavaScript](https://github.com/getify/You-Dont-Know-JS)
 * [Examples of how to  do query, style, dom, ajax, event etc like jQuery with plain JS](https://github.com/oneuijs/You-Dont-Need-jQuery)
 * [Some basic javascript coding challenges](https://github.com/kolodny/exercises)
+Understanding Synchronous and Asynchronous in JavaScript
+http://www.hongkiat.com/blog/synchronous-asynchronous-javascript-part2/
 
 
 
