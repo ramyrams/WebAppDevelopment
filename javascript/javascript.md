@@ -16,7 +16,7 @@ Understanding Synchronous and Asynchronous in JavaScript
 http://www.hongkiat.com/blog/synchronous-asynchronous-javascript-part2/
 
 
-
+https://medium.com/javascript-scene/why-im-thankful-for-js-fatigue-i-know-you-re-sick-of-those-words-but-this-is-different-296fae0c888f#.iwrpqtbmv
 # JS
 * [Parallel Processing in JS](https://advancedweb.hu/2016/08/09/parallel-processing-in-js/)
 * [How to Use Map, Filter, & Reduce in JavaScript](http://code.tutsplus.com/tutorials/how-to-use-map-filter-reduce-in-javascript--cms-26209)
