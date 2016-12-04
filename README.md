@@ -12,6 +12,9 @@
 * [Web application architectures1](http://blog.octo.com/en/new-web-application-architectures-and-impacts-for-enterprises-1/)
 * [Web application architectures2](http://blog.octo.com/en/new-web-application-architectures-and-impacts-for-enterprises-2/)
 
+# Web App Checklist
+* [Progressive Web App Checklist](https://developers.google.com/web/progressive-web-apps/checklist)
+
 # HTML
 * [HTML](https://github.com/ramyrams/WebAppDevelopment/blob/master/html.md)
 * [CSS](https://github.com/ramyrams/WebAppDevelopment/blob/master/css.md)
