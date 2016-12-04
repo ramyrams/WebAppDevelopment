@@ -25,6 +25,8 @@
 
 * [whats-my-browser-size](http://www.webpagefx.com/tools/whats-my-browser-size/)
 * [mincss - Clears the junk out of your CSS](https://www.peterbe.com/plog/mincss)
+* [Create Virtual Reality on the Web with JavaScript and WebVR](http://www.hongkiat.com/blog/webvr/)
+
 
 ## Color Picker
 * [Color Palette Thief](http://lokeshdhakar.com/projects/color-thief/)
