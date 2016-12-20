@@ -38,6 +38,8 @@
 ## Web Basic Testing
 * [HTML validator](https://validator.w3.org/)
 
+## Tools
+http://developer.telerik.com/featured/review-javascript-error-monitoring-services/
 
 ### Image Optimization
 * [Image Optimization with Cloudinary](https://davidwalsh.name/image-optimization-cloudinary)
