@@ -109,7 +109,8 @@
 * [Understanding Filter](https://www.html5rocks.com/en/tutorials/filters/understanding-css/)
 * [Filter](https://css-tricks.com/almanac/properties/f/filter/)
 
-
+# CSS Floats
+* [All about Floats](https://css-tricks.com/all-about-floats/)
 
 
 # Flexbox
