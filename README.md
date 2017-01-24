@@ -14,6 +14,7 @@
 
 # Web App Checklist
 * [Progressive Web App Checklist](https://developers.google.com/web/progressive-web-apps/checklist)
+* [THE ULTIMATE WEB DESIGN CHECKLISTE](https://www.beewits.com/the-ultimate-web-design-checklist-things-to-do-when-launching-a-website/)
 
 # HTML
 * [HTML](https://github.com/ramyrams/WebAppDevelopment/blob/master/html.md)
