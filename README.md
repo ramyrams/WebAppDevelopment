@@ -82,6 +82,7 @@ http://developer.telerik.com/featured/review-javascript-error-monitoring-service
 * Automated web application testing - [https://www.youtube.com/watch?v=v5K_CNaGxrI]
 
 https://www.justinmind.com/blog/web-app-design-trends-2017-6-experts-predictions/
+http://marketingland.com/100-questions-you-must-ask-when-developing-web-site-86342
 
 ![1](http://cdn2.hubspot.net/hub/208250/file-2451034899-jpg/Blog_Images/ContinuousTestingBlog1.jpg)
 ![1](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/analysis-dom-css.png)
