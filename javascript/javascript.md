@@ -16,6 +16,8 @@ Understanding Synchronous and Asynchronous in JavaScript
 http://www.hongkiat.com/blog/synchronous-asynchronous-javascript-part2/
 
 
+* [A Guide to Proper Error Handling in JavaScript](https://www.sitepoint.com/proper-error-handling-javascript/)
+
 https://medium.com/javascript-scene/why-im-thankful-for-js-fatigue-i-know-you-re-sick-of-those-words-but-this-is-different-296fae0c888f#.iwrpqtbmv
 # JS
 * [Parallel Processing in JS](https://advancedweb.hu/2016/08/09/parallel-processing-in-js/)
