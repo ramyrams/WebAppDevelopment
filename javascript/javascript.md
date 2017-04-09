@@ -12,9 +12,9 @@
 * [A book series on JavaScript](https://github.com/getify/You-Dont-Know-JS)
 * [Examples of how to  do query, style, dom, ajax, event etc like jQuery with plain JS](https://github.com/oneuijs/You-Dont-Need-jQuery)
 * [Some basic javascript coding challenges](https://github.com/kolodny/exercises)
-Understanding Synchronous and Asynchronous in JavaScript
-http://www.hongkiat.com/blog/synchronous-asynchronous-javascript-part2/
+* [Understanding Synchronous and Asynchronous in JavaScript](http://www.hongkiat.com/blog/synchronous-asynchronous-javascript-part2/)
 
+* [11 Ways to Invoke a Function ](https://gist.github.com/myshov/05800f083a0afce56e0f782314a103eb)
 
 * [A Guide to Proper Error Handling in JavaScript](https://www.sitepoint.com/proper-error-handling-javascript/)
 
