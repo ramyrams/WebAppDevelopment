@@ -57,6 +57,9 @@ http://developer.telerik.com/featured/review-javascript-error-monitoring-service
 * [Web Font Loading Patterns](https://www.bramstein.com/writing/web-font-loading-patterns.html)
 * [Pattern Lab](http://patternlab.io/)
 
+## Basics
+Everything You Need To Know About Tracking Cookies
+http://www.hackingnewstutorials.com/2017/05/everything-you-need-to-know-about.html?m=1
 
 # Awesome
 * [A curated list of Web Performance Optimization.](https://awesomelists.top/#repos/davidsonfellipe/awesome-wpo)
