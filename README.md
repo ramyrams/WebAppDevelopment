@@ -90,6 +90,8 @@ http://www.hackingnewstutorials.com/2017/05/everything-you-need-to-know-about.ht
 * [Life and death of a container](https://medium.com/@lherrera/life-and-death-of-a-container-146dfc62f808#.qivi1x8ns)
 * [Microservices Today](https://dzone.com/articles/microservices-today)
 * Automated web application testing - [https://www.youtube.com/watch?v=v5K_CNaGxrI]
+Progressive Web Applications
+https://chodounsky.net/2016/12/23/progressive-web-applications/
 
 https://www.justinmind.com/blog/web-app-design-trends-2017-6-experts-predictions/
 http://marketingland.com/100-questions-you-must-ask-when-developing-web-site-86342
