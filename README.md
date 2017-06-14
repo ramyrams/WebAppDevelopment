@@ -1,5 +1,8 @@
 # Web Application Development
 
+* [Spellbook of Modern Web Dev](https://github.com/dexteryy/spellbook-of-modern-webdev)
+
+
 # What Every Front-End Developer Needs to Know
 * [Web Concepts](https://github.com/ramyrams/WebAppDevelopment/blob/master/WebBasicConcepts.md)
 * [UI Jargon](http://jargon.js.org/)
